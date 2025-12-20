@@ -14,19 +14,70 @@
 <h3><img src="images/donga_icon.gif""> Research Topics</h3>
 
 <ul>
-	<li>Structural damage detection</li>
-	<li>System identification</li>
-	<li>Inverse problems</li>
-	<li>Regularization technique</li>
-	<li>Optimization</li>
-	<li>Structural health monitoring</li>
-	<li>Extreme value statistics</li>
-	<li>Statistical pattern recognition</li>
-	<li>Lamb wave propagation</li>
-	<li>Time reversal of elastic waves</li>
-	<li>Active sensing</li>
-    <li>Building Information Modeling (BIM)</li>
+  <li>
+    <b>(1) Modal behaviors of a Timoshenko beam with an edge crack</b><br/>
+    We develop analytical / semi-analytical vibration models for cracked beam-like waveguides where <i>shear deformation</i> and <i>rotary inertia</i> are non-negligible.
+    The emphasis is on interpretable frequency equations and coupling mechanisms (axial–bending and axial–bending–shear) that explain when and why modal sensitivity increases.
+    <ul>
+      <li><b>Deep-beam crack dynamics:</b> for low aspect-ratio beams, mixed crack-mode effects can induce combined axial–bending–shear behavior near the crack, requiring coupled formulations rather than pure bending approximations.</li>
+      <li><b>Frequency-equation formulations:</b> closed-form or reduced iterative equations are constructed to support rapid parametric studies and inversion-ready modeling under arbitrary support conditions.</li>
+      <li><b>High-frequency regime:</b> we clarify limitations of “node-crack insensitivity” assumptions and quantify when higher modes provide stronger crack signatures.</li>
+      <li><b>Key papers:</b>
+        <a href="https://doi.org/10.1016/j.jsv.2024.118613" target="_blank" rel="noopener">JSV 2024 (deep beam with transverse open crack)</a>,
+        <a href="https://doi.org/10.1016/j.jsv.2020.115455" target="_blank" rel="noopener">JSV 2020 (closed-form frequency equation with axial–bending coupling)</a>,
+        <a href="https://doi.org/10.1016/j.engstruct.2018.08.102" target="_blank" rel="noopener">Eng. Struct. 2018 (revisiting “higher-mode sensitivity” premise)</a>,
+        <a href="https://doi.org/10.1016/j.ijmecsci.2022.107217" target="_blank" rel="noopener">IJMS 2022 (crack on a high-frequency bending node)</a>,
+        <a href="https://doi.org/10.1016/j.wavemoti.2017.08.001" target="_blank" rel="noopener">Wave Motion 2017 (simplified frequency equation from a wave perspective)</a>,
+        <a href="https://doi.org/10.1016/j.jsv.2021.116675" target="_blank" rel="noopener">JSV 2022 (phase-closure based generic frequency equation)</a>
+      </li>
+    </ul>
+  </li>
 
+  <li>
+    <b>(2) Physics-informed machine learning for engineering structures</b><br/>
+    We design physics-informed learning workflows for time-dependent structural responses where governing equations are known but conventional calibration can be ill-posed under sparse/noisy measurements.
+    The goal is data-efficient and physically consistent prediction/estimation suitable for engineering interpretation and decision-making.
+    <ul>
+      <li><b>PINN for time-dependent PSC behavior:</b> physics constraints are embedded to learn coupled evolution of prestress and material/time-dependent mechanisms without relying solely on dense time discretization.</li>
+      <li><b>Engineering usability:</b> emphasis on stable training, mechanistic interpretability, and model forms that can be integrated into SHM pipelines (state tracking and parameter inference).</li>
+      <li><b>Key papers:</b>
+        <a href="https://doi.org/10.3390/s23146649" target="_blank" rel="noopener">Sensors 2023 (PINN for early-age time-dependent behaviors of PSC beams)</a>,
+        <a href="https://doi.org/10.1016/j.istruc.2024.107437" target="_blank" rel="noopener">Structures 2024 (Volterra-integral-equation-based prestress-loss estimation)</a>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <b>(3) Guided wave propagation using surface-bonded piezoelectric wafers</b><br/>
+    This theme studies wave-based interpretation and modeling of electromechanical signatures measured by surface-bonded PZT wafers.
+    We connect impedance/admittance evolution to underlying wave fields, reflections, and damping—supporting sensing-range design and robust diagnostics.
+    <ul>
+      <li><b>Wave-to-signature linkage:</b> analytical solutions (piezoelectricity + Timoshenko beam theory) are used to explain how repeated reflections and mode content shape measured admittance evolution.</li>
+      <li><b>Damping and sensing range:</b> estimation of high-frequency damping using electromechanical signatures to improve practical assessment of detectability and effective sensing distance.</li>
+      <li><b>Extension to cement-based materials:</b> multi-mode PZT sensing for in-situ profiling of evolving dynamic properties in cementitious systems.</li>
+      <li><b>Key papers:</b>
+        <a href="https://doi.org/10.1177/1045389X14549874" target="_blank" rel="noopener">JIMSS 2014 (understanding electromechanical admittance from a wave perspective)</a>,
+        <a href="https://doi.org/10.1177/1045389X16667555" target="_blank" rel="noopener">JIMSS 2017 (evolution of electromechanical admittance on a Timoshenko beam)</a>,
+        <a href="https://doi.org/10.12652/Ksce.2017.37.1.0217" target="_blank" rel="noopener">JKSCE 2017 (high-frequency damping via electromechanical signatures)</a>,
+        <a href="https://doi.org/10.1016/j.cemconcomp.2025.106445" target="_blank" rel="noopener">Cem. Concr. Compos. 2025 (multi-mode PZT sensing for cement-based materials)</a>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <b>(4) Inverse problems and system identification</b><br/>
+    Across our research lines, we target inverse estimation: inferring hidden structural states or parameters (e.g., crack severity, prestress loss, damping) from limited measurements.
+    We focus on physically grounded formulations that improve identifiability and numerical stability in noise-sensitive settings.
+    <ul>
+      <li><b>Integral-equation view for estimation:</b> Volterra-type formulations provide a physically interpretable route to estimate time-dependent prestress loss and its interaction with creep/shrinkage/relaxation mechanisms.</li>
+      <li><b>Inversion-ready reduced models:</b> frequency-equation and wave-based reduced models enable rapid forward evaluations that are practical for optimization, calibration, and crack assessment.</li>
+      <li><b>Key papers:</b>
+        <a href="https://doi.org/10.1016/j.istruc.2024.107437" target="_blank" rel="noopener">Structures 2024 (Volterra integral equation → finite difference estimation)</a>,
+        <a href="https://doi.org/10.1016/j.wavemoti.2017.08.001" target="_blank" rel="noopener">Wave Motion 2017 (wave-based simplified frequency equation)</a>,
+        <a href="https://doi.org/10.1016/j.jsv.2021.116675" target="_blank" rel="noopener">JSV 2022 (generic frequency equation via phase closure)</a>
+      </li>
+    </ul>
+  </li>
 </ul>
 
 </div>
@@ -42,3 +93,4 @@
 
 </body>
 </html>
+
