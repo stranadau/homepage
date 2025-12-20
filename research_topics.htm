@@ -64,20 +64,38 @@
     </ul>
   </li>
 
-  <li>
-    <b>(4) Inverse problems and system identification</b><br/>
-    Across our research lines, we target inverse estimation: inferring hidden structural states or parameters (e.g., crack severity, prestress loss, damping) from limited measurements.
-    We focus on physically grounded formulations that improve identifiability and numerical stability in noise-sensitive settings.
-    <ul>
-      <li><b>Integral-equation view for estimation:</b> Volterra-type formulations provide a physically interpretable route to estimate time-dependent prestress loss and its interaction with creep/shrinkage/relaxation mechanisms.</li>
-      <li><b>Inversion-ready reduced models:</b> frequency-equation and wave-based reduced models enable rapid forward evaluations that are practical for optimization, calibration, and crack assessment.</li>
-      <li><b>Key papers:</b>
-        <a href="https://doi.org/10.1016/j.istruc.2024.107437" target="_blank" rel="noopener">Structures 2024 (Volterra integral equation → finite difference estimation)</a>,
-        <a href="https://doi.org/10.1016/j.wavemoti.2017.08.001" target="_blank" rel="noopener">Wave Motion 2017 (wave-based simplified frequency equation)</a>,
-        <a href="https://doi.org/10.1016/j.jsv.2021.116675" target="_blank" rel="noopener">JSV 2022 (generic frequency equation via phase closure)</a>
-      </li>
-    </ul>
-  </li>
+  (2025-12-20 21:33 KST)
+
+아래는 (4) Inverse problems and system identification 항목을, 주신 5편 논문으로만 구성해서 **페이지 포맷(목록형 + 하위 bullet + Key papers 링크)**에 맞춰 다시 정리한 HTML입니다. 그대로 교체해 붙여넣으시면 됩니다.
+
+<li>
+  <b>(4) Inverse problems and system identification</b><br/>
+  We develop numerically stable inverse-analysis and system-identification methodologies to infer hidden structural states and parameters from limited, noise-contaminated measurements.
+  Emphasis is placed on <b>regularization design</b> (Tikhonov, sparsity-promoting, and spatial regularization), <b>robust hyperparameter selection</b>, and
+  practical inverse pipelines such as <b>acceleration-to-displacement reconstruction</b> for low-frequency dominant civil structures.
+  <ul>
+    <li>
+      <b>Displacement reconstruction from acceleration:</b> FIR-filter design and regularized formulations that enable stable displacement recovery in low-frequency dominant structures,
+      mitigating drift/noise amplification typical of direct numerical integration.
+    </li>
+    <li>
+      <b>Regularization-aware system identification:</b> identification under ill-posedness using Tikhonov regularization with principled selection of the regularization factor,
+      and <b>1-norm</b> regularization to recover <i>discontinuous</i> or <i>localized</i> parameter variations without excessive smoothing.
+    </li>
+    <li>
+      <b>Inverse identification of inclusions:</b> boundary-parameterization and spatial-regularization schemes for simultaneous estimation of inclusion geometry and material properties
+      in finite bodies, addressing non-uniqueness and sensitivity to measurement errors.
+    </li>
+    <li>
+      <b>Key papers:</b>
+      <a href="http://dx.doi.org/10.1002/nme.2769" target="_blank" rel="noopener">IJNME 2010 (FIR filter for displacement reconstruction)</a>,
+      <a href="http://dx.doi.org/10.1002/nme.1778" target="_blank" rel="noopener">IJNME 2007 (1-norm regularization for discontinuous parameters)</a>,
+      <a href="http://dx.doi.org/doi:10.1002/nme.219" target="_blank" rel="noopener">IJNME 2001 (optimal Tikhonov factor in system identification)</a>,
+      <a href="http://dx.doi.org/10.1016/S0045-7825(99)00165-6" target="_blank" rel="noopener">CMAME 2000 (boundary parameterization for inclusion ID)</a>,
+      <a href="http://www3.interscience.wiley.com/journal/65500922/abstract" target="_blank" rel="noopener">IJNME 1999 (spatial regularization for inclusion shape ID)</a>
+    </li>
+  </ul>
+</li>
 </ul>
 
 </div>
@@ -93,4 +111,5 @@
 
 </body>
 </html>
+
 
