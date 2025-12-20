@@ -14,106 +14,354 @@
 <h3><img src="images/donga_icon.gif""> Research Topics</h3>
 
 <ul>
+
+<ul>
+
+  <!-- =======================================================
+       (1) Modal behaviors of a Timoshenko beam with an edge crack
+  ======================================================== -->
   <li>
     <b>(1) Modal behaviors of a Timoshenko beam with an edge crack</b><br/>
-    We develop analytical / semi-analytical vibration models for cracked beam-like waveguides where <i>shear deformation</i> and <i>rotary inertia</i> are non-negligible.
-    The emphasis is on interpretable frequency equations and coupling mechanisms (axial–bending and axial–bending–shear) that explain when and why modal sensitivity increases.
+    We develop analytical and semi-analytical formulations to quantify crack-induced changes in modal characteristics of beam-like waveguides,
+    particularly when <i>shear deformation</i> and <i>rotary inertia</i> require a Timoshenko-type description. A recurring emphasis is mechanistic interpretability:
+    explicit frequency equations and coupling mechanisms that explain when and why modal sensitivity increases, supporting both forward prediction and inversion-ready modeling.
     <ul>
-      <li><b>Deep-beam crack dynamics:</b> for low aspect-ratio beams, mixed crack-mode effects can induce combined axial–bending–shear behavior near the crack, requiring coupled formulations rather than pure bending approximations.</li>
-      <li><b>Frequency-equation formulations:</b> closed-form or reduced iterative equations are constructed to support rapid parametric studies and inversion-ready modeling under arbitrary support conditions.</li>
-      <li><b>High-frequency regime:</b> we clarify limitations of “node-crack insensitivity” assumptions and quantify when higher modes provide stronger crack signatures.</li>
-      <li><b>Key papers:</b>
-        <a href="https://doi.org/10.1016/j.jsv.2024.118613" target="_blank" rel="noopener">JSV 2024 (deep beam with transverse open crack)</a>,
-        <a href="https://doi.org/10.1016/j.jsv.2020.115455" target="_blank" rel="noopener">JSV 2020 (closed-form frequency equation with axial–bending coupling)</a>,
-        <a href="https://doi.org/10.1016/j.engstruct.2018.08.102" target="_blank" rel="noopener">Eng. Struct. 2018 (revisiting “higher-mode sensitivity” premise)</a>,
-        <a href="https://doi.org/10.1016/j.ijmecsci.2022.107217" target="_blank" rel="noopener">IJMS 2022 (crack on a high-frequency bending node)</a>,
-        <a href="https://doi.org/10.1016/j.wavemoti.2017.08.001" target="_blank" rel="noopener">Wave Motion 2017 (simplified frequency equation from a wave perspective)</a>,
-        <a href="https://doi.org/10.1016/j.jsv.2021.116675" target="_blank" rel="noopener">JSV 2022 (phase-closure based generic frequency equation)</a>
+
+      <li>
+        <b>Closed-form / reduced frequency equations for cracked beams under general supports</b>
+        <ul>
+          <li>
+            <a href="https://doi.org/10.1016/j.jsv.2020.115455" target="_blank" rel="noopener">
+              A closed-form frequency equation of an arbitrarily supported beam with a transverse open crack considering axial–bending modal coupling
+            </a>, <i>Journal of Sound and Vibration</i>, 2020.
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.jsv.2021.116675" target="_blank" rel="noopener">
+              Generic frequency equation for a cracked beam based on the phase closure principle
+            </a>, <i>Journal of Sound and Vibration</i>, 2022.
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.wavemoti.2017.08.001" target="_blank" rel="noopener">
+              A simplified frequency equation for a beam with an open crack from a wave perspective
+            </a>, <i>Wave Motion</i>, 2017.
+          </li>
+        </ul>
       </li>
+
+      <li>
+        <b>Deep-beam crack modal behavior (axial–bending–shear coupling; mixed crack-mode effects)</b>
+        <ul>
+          <li>
+            <a href="https://doi.org/10.1016/j.jsv.2024.118613" target="_blank" rel="noopener">
+              Investigating the modal behaviors of a deep beam with a transverse open crack
+            </a>, <i>Journal of Sound and Vibration</i>, 2024.
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <b>High-frequency regime and “node-crack insensitivity” revisited</b>
+        <ul>
+          <li>
+            <a href="https://doi.org/10.1016/j.engstruct.2018.08.102" target="_blank" rel="noopener">
+              Investigating a common premise in SHM: Are higher modal frequencies more sensitive to an incipient crack on a beam than lower ones?
+            </a>, <i>Engineering Structures</i>, 2018.
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.ijmecsci.2022.107217" target="_blank" rel="noopener">
+              Investigating the modal behaviors of a beam with a transverse crack on a high-frequency bending node
+            </a>, <i>International Journal of Mechanical Sciences</i>, 2022.
+          </li>
+        </ul>
+      </li>
+
     </ul>
   </li>
 
+
+  <!-- =======================================================
+       (2) Physics-informed machine learning for engineering structures
+  ======================================================== -->
   <li>
     <b>(2) Physics-informed machine learning for engineering structures</b><br/>
-    We design physics-informed learning workflows for time-dependent structural responses where governing equations are known but conventional calibration can be ill-posed under sparse/noisy measurements.
-    The goal is data-efficient and physically consistent prediction/estimation suitable for engineering interpretation and decision-making.
+    We develop physics-informed learning pipelines for structural mechanics problems where governing equations are known but parameter estimation and prediction
+    can be ill-posed under sparse/noisy measurements. The focus is on embedding physics (constraints from mechanics and evolution laws) into learning
+    to obtain data-efficient, physically consistent, and engineering-usable models for prediction and state/parameter inference.
     <ul>
-      <li><b>PINN for time-dependent PSC behavior:</b> physics constraints are embedded to learn coupled evolution of prestress and material/time-dependent mechanisms without relying solely on dense time discretization.</li>
-      <li><b>Engineering usability:</b> emphasis on stable training, mechanistic interpretability, and model forms that can be integrated into SHM pipelines (state tracking and parameter inference).</li>
-      <li><b>Key papers:</b>
-        <a href="https://doi.org/10.3390/s23146649" target="_blank" rel="noopener">Sensors 2023 (PINN for early-age time-dependent behaviors of PSC beams)</a>,
-        <a href="https://doi.org/10.1016/j.istruc.2024.107437" target="_blank" rel="noopener">Structures 2024 (Volterra-integral-equation-based prestress-loss estimation)</a>
+
+      <li>
+        <b>Physics-informed neural networks (PINNs) for time-dependent behavior of prestressed concrete (PSC) members</b>
+        <ul>
+          <li>
+            <a href="https://doi.org/10.3390/s23146649" target="_blank" rel="noopener">
+              Predicting the Early-Age Time-Dependent Behaviors of a Prestressed Concrete Beam by Using Physics-Informed Neural Network
+            </a>, <i>Sensors</i>, 2023.
+          </li>
+        </ul>
       </li>
+
+      <li>
+        <b>Integral-equation-driven estimation as a bridge between mechanics and learning/identification</b>
+        <ul>
+          <li>
+            <a href="https://doi.org/10.1016/j.istruc.2024.107437" target="_blank" rel="noopener">
+              Finite difference equation of Volterra integral equation for estimating the time-dependent prestress loss of a prestressed concrete beam
+            </a>, <i>Structures</i>, 2024.
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <b>ML-assisted crack assessment via physics-based feature construction and sensing augmentation</b>
+        <ul>
+          <li>
+            <span style="font-size:0.95em;">
+              Crack Assessment of Beam Using Machine Learning with Augmented Sensing, (book chapter listed on the profile), 2023.
+            </span>
+          </li>
+        </ul>
+      </li>
+
     </ul>
   </li>
 
-<li>
-  <b>(3) Guided wave propagation using surface-bonded piezoelectric wafers</b><br/>
-  This theme investigates guided-wave excitation, propagation, and wavefield manipulation using surface-bonded piezoelectric (PZT) wafers/transducers for active SHM.
-  We emphasize <b>physics-based interpretation</b> of measured electromechanical and wave signals, including scattering, mode selectivity, and robustness against baseline uncertainty.
-  Key methodological pillars include <b>time-reversal acoustics</b>, <b>reference-free PZT/impedance diagnostics</b>, and <b>computationally efficient wave solvers</b> (e.g., spectral element formulations).
-  <ul>
-    <li>
-      <b>Time-reversal guided waves (Lamb waves):</b> numerical/experimental investigations of time-reversal focusing in plates, including A0-mode spatial focusing using
-      collocated circular PZT transducers and virtual sensor-array modeling; studies also clarify the underlying physics of the time-reversal process in Lamb wave propagation.
-    </li>
-    <li>
-      <b>Reference-free damage diagnosis with PZT wafers:</b> impedance/electromechanical-signal features enabling crack detection in plates without requiring a pristine baseline,
-      improving practicality under operational/temperature variability.
-    </li>
-    <li>
-      <b>Efficient coupled PZT–structure modeling:</b> spectral element formulations for coupled piezoelectric wafer–beam dynamics, enabling broadband simulations and parametric studies
-      relevant to actuator/sensor design and diagnostic sensitivity.
-    </li>
-    <li>
-      <b>Ultrasonic guided modes for defect imaging:</b> visualization and quantification of defects in pipes using longitudinal ultrasonic modes, connecting guided-wave physics to
-      imaging/quantification workflows.
-    </li>
 
-    <li>
-      <b>Key papers:</b>
-      <a href="http://dx.doi.org/10.1016/j.jsv.2012.12.030" target="_blank" rel="noopener">JSV 2013 (time-reversal A0 focusing with circular PZT transducers)</a>,
-      <a href="http://dx.doi.org/10.1016/j.wavemoti.2009.04.004" target="_blank" rel="noopener">Wave Motion 2009 (physics of time reversal in Lamb waves)</a>,
-      <a href="http://dx.doi.org/10.1016/j.jsv.2006.10.044" target="_blank" rel="noopener">JSV 2007 (time-reversal active sensing for composite plates)</a>,
-      <a href="http://dx.doi.org/10.1061/(ASCE)0893-1321(2007)20:3(141)" target="_blank" rel="noopener">ASCE J. Aerospace Eng. 2007 (enhanced time-reversal damage detection)</a>,
-      <a href="http://dx.doi.org/10.1016/j.jsv.2011.07.025" target="_blank" rel="noopener">JSV 2011 (reference-free impedance-based crack detection)</a>,
-      <a href="http://iopscience.iop.org/0964-1726/20/6/065001" target="_blank" rel="noopener">Smart Mater. Struct. 2011 (reference-free diagnosis via electromechanical signals)</a>,
-      <a href="http://dx.doi.org/10.1016/j.compstruc.2010.01.010" target="_blank" rel="noopener">Computers &amp; Structures 2010 (spectral element for PZT wafer–beam coupling)</a>,
-      <a href="http://dx.doi.org/10.1142/S0219455414400082" target="_blank" rel="noopener">IJSSD 2014 (pipe defect visualization using longitudinal modes)</a>,
-      <a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001445248" target="_blank" rel="noopener">KSNVE 2010 (virtual sensor array for A0 time reversal)</a>,
-      <a href="http://dx.doi.org/10.5050/KSNVE.2011.21.12.1120" target="_blank" rel="noopener">KSNVE 2011 (FE study of time-reversal focusing performance)</a>
-    </li>
-  </ul>
-</li>
+  <!-- =======================================================
+       (3) Guided wave propagation using surface-bonded piezoelectric wafers
+  ======================================================== -->
+  <li>
+    <b>(3) Guided wave propagation using surface-bonded piezoelectric wafers</b><br/>
+    This theme investigates guided-wave excitation, propagation, scattering, and wavefield manipulation using surface-bonded piezoelectric (PZT) wafers/transducers for active SHM.
+    We emphasize physics-based interpretation of wave/electromechanical signals, time-reversal acoustics, baseline-independent diagnostics, and efficient coupled PZT–structure modeling.
+    <ul>
+
+      <li>
+        <b>Time-reversal guided waves (Lamb waves)</b>
+        <ul>
+          <li>
+            <b>Physical understanding of time reversal in Lamb-wave propagation</b>
+            <ul>
+              <li>
+                <a href="http://dx.doi.org/10.1016/j.wavemoti.2009.04.004" target="_blank" rel="noopener">
+                  Understanding a time reversal process in Lamb wave propagation
+                </a>, <i>Wave Motion</i>, 2009.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Time-reversal active sensing for composite plates (damage detection)</b>
+            <ul>
+              <li>
+                <a href="http://dx.doi.org/10.1016/j.jsv.2006.10.044" target="_blank" rel="noopener">
+                  Time reversal active sensing for health monitoring of a composite plate
+                </a>, <i>Journal of Sound and Vibration</i>, 2007.
+              </li>
+              <li>
+                <a href="http://dx.doi.org/10.1061/(ASCE)0893-1321(2007)20:3(141)" target="_blank" rel="noopener">
+                  Damage detection in composite plates by using an enhanced time reversal method
+                </a>, <i>Journal of Aerospace Engineering</i> (ASCE), 2007.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Spatial focusing of A0 Lamb-wave mode (numerical simulation and performance evaluation)</b>
+            <ul>
+              <li>
+                <a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001445248" target="_blank" rel="noopener">
+                  Simulating a time reversal process for A0 Lamb wave mode on a rectangular plate using a virtual sensor array model
+                </a>, <i>Transaction of Korean Society of Noise and Vibration Engineering</i>, 2010.
+              </li>
+              <li>
+                <a href="http://dx.doi.org/10.5050/KSNVE.2011.21.12.1120" target="_blank" rel="noopener">
+                  Investigating the spatial focusing performance of time reversal Lamb waves on a plate through the finite element method
+                </a>, <i>Transaction of Korean Society of Noise and Vibration Engineering</i>, 2011.
+              </li>
+              <li>
+                <a href="http://dx.doi.org/10.1016/j.jsv.2012.12.030" target="_blank" rel="noopener">
+                  Numerical simulation and investigation of the spatial focusing of time reversal A0 Lamb wave mode using circular piezoelectric transducers collocated on a rectangular plate
+                </a>, <i>Journal of Sound and Vibration</i>, 2013.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <b>Reference-free damage diagnosis with PZT wafers (impedance / electromechanical signals)</b>
+        <ul>
+          <li>
+            <b>Reference-free impedance-based crack detection in plates</b>
+            <ul>
+              <li>
+                <a href="http://dx.doi.org/10.1016/j.jsv.2011.07.025" target="_blank" rel="noopener">
+                  Reference-free impedance-based crack detection in plates
+                </a>, <i>Journal of Sound and Vibration</i>, 2011.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Reference-free diagnosis using electromechanical signals from collocated PZT wafers</b>
+            <ul>
+              <li>
+                <a href="http://iopscience.iop.org/0964-1726/20/6/065001" target="_blank" rel="noopener">
+                  Investigating electro-mechanical signals from collocated piezoelectric wafers for the reference-free damage diagnosis of a plate
+                </a>, <i>Smart Materials &amp; Structures</i>, 2011.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <b>Efficient coupled PZT–structure modeling (broadband simulation / spectral elements)</b>
+        <ul>
+          <li>
+            <b>Spectral element formulation for coupled PZT wafer–beam dynamics</b>
+            <ul>
+              <li>
+                <a href="http://dx.doi.org/10.1016/j.compstruc.2010.01.010" target="_blank" rel="noopener">
+                  Spectral element formulation for dynamic analysis of a coupled piezoelectric wafer and beam system
+                </a>, <i>Computers &amp; Structures</i>, 2010.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <b>Ultrasonic guided modes for defect imaging and quantification (pipes)</b>
+        <ul>
+          <li>
+            <b>Defect visualization and quantification using longitudinal ultrasonic modes</b>
+            <ul>
+              <li>
+                <a href="http://dx.doi.org/10.1142/S0219455414400082" target="_blank" rel="noopener">
+                  Pipe Defect Visualization and Quantification Using Longitudinal Ultrasonic Modes
+                </a>, <i>International Journal of Structural Stability and Dynamics</i>, 2014.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <b>Extension to cement-based materials (multi-mode PZT sensing)</b>
+        <ul>
+          <li>
+            <b>In-situ profiling of evolving dynamic properties in cement-based materials</b>
+            <ul>
+              <li>
+                <a href="https://doi.org/10.1016/j.cemconcomp.2025.106445" target="_blank" rel="noopener">
+                  Multi-mode piezoelectric (PZT) sensing for in-situ profiling of the evolution of dynamic properties in cement-based materials
+                </a>, <i>Cement and Concrete Composites</i>, 2025.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </li>
+
+
+  <!-- =======================================================
+       (4) Inverse problems and system identification
+  ======================================================== -->
+  <li>
+    <b>(4) Inverse problems and system identification</b><br/>
+    We develop numerically stable inverse-analysis and system-identification methodologies to infer hidden structural states and parameters from limited, noise-contaminated measurements.
+    Emphasis is placed on <b>regularization design</b> (Tikhonov, sparsity-promoting, and spatial regularization), <b>robust hyperparameter selection</b>, and practical inverse pipelines
+    such as <b>acceleration-to-displacement reconstruction</b> for low-frequency dominant structures.
+    <ul>
+
+      <li>
+        <b>Displacement reconstruction from acceleration</b>
+        <ul>
+          <li>
+            <b>FIR-filter design for drift-robust displacement recovery in low-frequency dominant structures</b>
+            <ul>
+              <li>
+                Hae Sung Lee, Yun Hwa Hong and Hyun Woo Park,
+                <a href="http://dx.doi.org/10.1002/nme.2769" target="_blank" rel="noopener">
+                  Design of an FIR filter for the displacement reconstruction using measured acceleration in low-frequency dominant structures
+                </a>,
+                <i>International Journal for Numerical Methods in Engineering</i>, Vol. 82, No. 4, 403–434, 2010.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <b>Regularization-aware system identification</b>
+        <ul>
+          <li>
+            <b>1-norm regularization for discontinuous / localized system parameters</b>
+            <ul>
+              <li>
+                Hyun Woo Park, Man Woo Park, Byeong Kyu Ahn and Hae Sung Lee,
+                <a href="http://dx.doi.org/10.1002/nme.1778" target="_blank" rel="noopener">
+                  1-norm based regularization scheme for system identification of structures with discontinuous system parameters
+                </a>,
+                <i>International Journal for Numerical Methods in Engineering</i>, Vol. 69, No. 3, 504–523, 2007.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Optimal selection of the Tikhonov regularization factor for linear elastic continua</b>
+            <ul>
+              <li>
+                Hyun Woo Park, Soobong Shin and Hae Sung Lee,
+                <a href="http://dx.doi.org/doi:10.1002/nme.219" target="_blank" rel="noopener">
+                  Determination of an optimal regularization factor in system identification with Tikhonov regularization for linear elastic continua
+                </a>,
+                <i>International Journal for Numerical Methods in Engineering</i>, Vol. 51, No. 10, 1211–1230, 2001.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <b>Inverse identification of inclusions (geometry and material properties)</b>
+        <ul>
+          <li>
+            <b>Boundary parameterization for simultaneous identification of inclusion shape and material properties</b>
+            <ul>
+              <li>
+                Hae Sung Lee, Cheon Jong Park and Hyun Woo Park,
+                <a href="http://dx.doi.org/10.1016/S0045-7825(99)00165-6" target="_blank" rel="noopener">
+                  Identification of geometric shapes and material properties of inclusions in two-dimensional finite bodies by boundary parameterization
+                </a>,
+                <i>Computer Methods in Applied Mechanics and Engineering</i>, Vol. 181, No. 1–2, 1–20, 2000.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Spatial regularization for stable identification of inclusion geometry</b>
+            <ul>
+              <li>
+                Hae Sung Lee, Yong Han Kim, Cheon Jong Park and Hyun Woo Park,
+                <a href="http://www3.interscience.wiley.com/journal/65500922/abstract" target="_blank" rel="noopener">
+                  A new spatial regularization scheme for the identification of the geometric shape of an inclusion in a finite body
+                </a>,
+                <i>International Journal for Numerical Methods in Engineering</i>, Vol. 46, No. 7, 973–992, 1999.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </li>
+
+</ul>
 	
-<li>
-  <b>(4) Inverse problems and system identification</b><br/>
-  We develop numerically stable inverse-analysis and system-identification methodologies to infer hidden structural states and parameters from limited, noise-contaminated measurements.
-  Emphasis is placed on <b>regularization design</b> (Tikhonov, sparsity-promoting, and spatial regularization), <b>robust hyperparameter selection</b>, and
-  practical inverse pipelines such as <b>acceleration-to-displacement reconstruction</b> for low-frequency dominant civil structures.
-  <ul>
-    <li>
-      <b>Displacement reconstruction from acceleration:</b> FIR-filter design and regularized formulations that enable stable displacement recovery in low-frequency dominant structures,
-      mitigating drift/noise amplification typical of direct numerical integration.
-    </li>
-    <li>
-      <b>Regularization-aware system identification:</b> identification under ill-posedness using Tikhonov regularization with principled selection of the regularization factor,
-      and <b>1-norm</b> regularization to recover <i>discontinuous</i> or <i>localized</i> parameter variations without excessive smoothing.
-    </li>
-    <li>
-      <b>Inverse identification of inclusions:</b> boundary-parameterization and spatial-regularization schemes for simultaneous estimation of inclusion geometry and material properties
-      in finite bodies, addressing non-uniqueness and sensitivity to measurement errors.
-    </li>
-    <li>
-      <b>Key papers:</b>
-      <a href="http://dx.doi.org/10.1002/nme.2769" target="_blank" rel="noopener">IJNME 2010 (FIR filter for displacement reconstruction)</a>,
-      <a href="http://dx.doi.org/10.1002/nme.1778" target="_blank" rel="noopener">IJNME 2007 (1-norm regularization for discontinuous parameters)</a>,
-      <a href="http://dx.doi.org/doi:10.1002/nme.219" target="_blank" rel="noopener">IJNME 2001 (optimal Tikhonov factor in system identification)</a>,
-      <a href="http://dx.doi.org/10.1016/S0045-7825(99)00165-6" target="_blank" rel="noopener">CMAME 2000 (boundary parameterization for inclusion ID)</a>,
-      <a href="http://www3.interscience.wiley.com/journal/65500922/abstract" target="_blank" rel="noopener">IJNME 1999 (spatial regularization for inclusion shape ID)</a>
-    </li>
-  </ul>
-</li>
 </ul>
 
 </div>
@@ -129,6 +377,7 @@
 
 </body>
 </html>
+
 
 
 
