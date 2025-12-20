@@ -1,5 +1,163 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
+<style>
+/* ===== Fancy Research Topics (drop-in) ===== */
+.rt{
+  --ink:#0f172a;
+  --muted:#52607a;
+  --line:#e6ecf5;
+  --card:#ffffff;
+  --wash:#f6f9ff;
+  --accent:#0ea5e9;
+  --accent2:#6366f1;
+  --shadow: 0 10px 30px rgba(15,23,42,.08);
+  --shadow2: 0 6px 16px rgba(15,23,42,.08);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+}
+
+.rt ul{ list-style: none; padding-left: 0; margin: 0; }
+.rt li{ margin: 0; }
+
+/* Top-level categories as cards */
+.rt > ul > li{
+  background: linear-gradient(180deg, var(--wash), #fff);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px 16px 12px;
+  margin: 14px 0;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.rt > ul > li::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(600px 140px at 20% 0%, rgba(14,165,233,.12), transparent 60%),
+    radial-gradient(500px 120px at 85% 15%, rgba(99,102,241,.10), transparent 60%);
+  pointer-events:none;
+}
+
+.rt > ul > li > b{
+  display:block;
+  font-size: 1.05rem;
+  letter-spacing: .1px;
+}
+
+.rt > ul > li > br{ display:none; }
+
+/* First paragraph line (the description text right after title) */
+.rt > ul > li{
+  line-height: 1.55;
+}
+.rt > ul > li > b + br + span,
+.rt > ul > li > b + span{ display:block; }
+
+.rt a{
+  color: #0b4aa2;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(11,74,162,.25);
+}
+.rt a:hover{
+  color: var(--accent2);
+  border-bottom-color: rgba(99,102,241,.45);
+}
+
+/* Nested lists: treat as “modules” inside each card */
+.rt > ul > li > ul{
+  margin-top: 12px;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.rt > ul > li > ul > li{
+  background: rgba(255,255,255,.9);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 12px 10px;
+  box-shadow: var(--shadow2);
+  position: relative;
+}
+
+.rt > ul > li > ul > li > b{
+  display:block;
+  font-size: .98rem;
+  margin-bottom: 6px;
+}
+
+/* Sub-sub bullet blocks */
+.rt > ul > li > ul > li > ul{
+  margin-top: 8px;
+  padding-left: 0;
+  border-left: 3px solid rgba(14,165,233,.25);
+  padding-left: 12px;
+}
+
+.rt > ul > li > ul > li > ul > li{
+  margin: 8px 0;
+  color: var(--muted);
+}
+
+.rt i{ color: #334155; }
+
+/* Make paper entries compact chips */
+.rt > ul > li > ul > li > ul > li > ul{
+  margin-top: 6px;
+  padding-left: 0;
+  display: grid;
+  gap: 8px;
+  border-left: none;
+}
+
+.rt > ul > li > ul > li > ul > li > ul > li{
+  background: #fff;
+  border: 1px dashed rgba(15,23,42,.18);
+  border-radius: 12px;
+  padding: 10px 10px;
+  color: var(--ink);
+}
+
+/* Highlight year/journal feel a bit */
+.rt > ul > li > ul > li > ul > li > ul > li i{
+  color:#111827;
+}
+
+/* Optional: make the deepest list look like timeline dots */
+.rt > ul > li > ul > li > ul{
+  position: relative;
+}
+.rt > ul > li > ul > li > ul::before{
+  content:"";
+  position:absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 3px;
+  background: linear-gradient(180deg, rgba(14,165,233,.35), rgba(99,102,241,.25));
+  border-radius: 99px;
+}
+
+/* Responsive */
+@media (min-width: 980px){
+  .rt > ul > li > ul{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* A11y focus */
+.rt a:focus{
+  outline: 3px solid rgba(14,165,233,.35);
+  outline-offset: 3px;
+  border-bottom-color: transparent;
+}
+</style>	
+
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=ks_c_5601-1987">
 <link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
@@ -377,6 +535,7 @@
 
 </body>
 </html>
+
 
 
 
