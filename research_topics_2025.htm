@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <style>
 /* Clean hierarchy without UL/LI: cards + details/summary */
@@ -36,6 +38,7 @@
 }
 
 .rt2 details{ position: relative; }
+
 .rt2 summary{
   list-style: none;
   cursor: pointer;
@@ -45,6 +48,8 @@
   border: 1px solid var(--line);
   box-shadow: var(--shadow2);
   user-select: none;
+  position: relative;
+  padding-right: 44px; /* for chevron */
 }
 .rt2 summary::-webkit-details-marker{ display:none; }
 
@@ -134,17 +139,130 @@
 @media (prefers-reduced-motion: reduce){
   .rt2 .paper:hover{ transform:none; transition:none; }
 }
-</style>  
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+
+/* =========================================================
+   Hierarchy typography + indentation (requested)
+========================================================= */
+.rt2{
+  --lvl0-size: 1.10rem;  /* Topic */
+  --lvl1-size: 1.00rem;  /* Subtopic */
+  --lvl2-size: 0.95rem;  /* Sub-sub title */
+  --paper-size: 0.94rem; /* Paper item */
+
+  --indent1: 14px;   /* Subtopic indent */
+  --indent2: 28px;   /* Sub-sub indent */
+  --indent3: 42px;   /* Paper indent */
+}
+
+/* Topic (level 0) */
+.rt2 .topic > details > summary{
+  padding: 12px 14px;
+  font-size: var(--lvl0-size);
+}
+.rt2 .topic > details > summary .topic-title{
+  font-weight: 750;
+}
+
+/* Subtopic (level 1) */
+.rt2 .subtopic > details > summary{
+  margin-left: var(--indent1);
+  padding: 10px 12px;
+  font-size: var(--lvl1-size);
+  border-left: 4px solid rgba(99,102,241,.18);
+}
+
+/* Sub-sub (level 2) */
+.rt2 .subsub{
+  margin-left: var(--indent2);
+  border-left-width: 4px;
+}
+.rt2 .subsub-title{
+  font-size: var(--lvl2-size);
+  font-weight: 700;
+}
+
+/* Papers (level 3) */
+.rt2 .papers{
+  margin-left: var(--indent3);
+}
+.rt2 .paper,
+.rt2 .paper.plain{
+  font-size: var(--paper-size);
+  line-height: 1.55;
+}
+
+/* Chevron indicator */
+.rt2 summary::after{
+  content: "›";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  font-size: 1.25em;
+  color: rgba(15,23,42,.55);
+  transition: transform 160ms ease;
+}
+.rt2 details[open] > summary::after{
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* Rails / guides */
+.rt2 .topic{
+  position: relative;
+}
+.rt2 .topic::after{
+  content:"";
+  position:absolute;
+  left: 22px;
+  top: 68px;
+  bottom: 16px;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(14,165,233,.20), rgba(99,102,241,.18));
+  border-radius: 999px;
+  pointer-events:none;
+  opacity: .9;
+}
+
+.rt2 .subtopic > details{
+  position: relative;
+}
+.rt2 .subtopic > details::before{
+  content:"";
+  position:absolute;
+  left: calc(var(--indent1) - 8px);
+  top: 40px;
+  bottom: 6px;
+  width: 2px;
+  background: rgba(99,102,241,.14);
+  border-radius: 999px;
+  pointer-events:none;
+}
+
+/* Mobile compact */
+@media (max-width: 640px){
+  .rt2{
+    --indent1: 10px;
+    --indent2: 18px;
+    --indent3: 28px;
+    --lvl0-size: 1.05rem;
+    --lvl1-size: 0.98rem;
+  }
+}
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
 <link rel="stylesheet" media="print" type="text/css" href="./style.css" />
 <title>Research Topics</title>
 </head>
 
 <body>
-  
+
 <div class="rt2">
 
+  <!-- =======================================================
+       (1) Modal behaviors of a Timoshenko beam with an edge crack
+  ======================================================== -->
   <section class="topic">
     <details open>
       <summary>
@@ -209,6 +327,9 @@
   </section>
 
 
+  <!-- =======================================================
+       (2) Physics-informed machine learning for engineering structures
+  ======================================================== -->
   <section class="topic">
     <details>
       <summary><span class="topic-title">Physics-informed machine learning for engineering structures</span></summary>
@@ -259,6 +380,9 @@
   </section>
 
 
+  <!-- =======================================================
+       (3) Guided wave propagation using surface-bonded piezoelectric wafers
+  ======================================================== -->
   <section class="topic">
     <details>
       <summary><span class="topic-title">Guided wave propagation using surface-bonded piezoelectric wafers</span></summary>
@@ -384,6 +508,9 @@
   </section>
 
 
+  <!-- =======================================================
+       (4) Inverse problems and system identification
+  ======================================================== -->
   <section class="topic">
     <details>
       <summary><span class="topic-title">Inverse problems and system identification</span></summary>
@@ -412,6 +539,7 @@
       <div class="subtopic">
         <details>
           <summary><span class="subtopic-title">Regularization-aware system identification</span></summary>
+
           <div class="subsub">
             <div class="subsub-title">1-norm regularization for discontinuous / localized system parameters</div>
             <div class="papers">
@@ -437,6 +565,7 @@
               </div>
             </div>
           </div>
+
         </details>
       </div>
 
