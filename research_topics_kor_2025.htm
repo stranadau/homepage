@@ -270,9 +270,12 @@
       </summary>
 
       <p class="topic-desc">
-        We develop analytical and semi-analytical formulations to quantify crack-induced changes in modal characteristics of beam-like waveguides,
-        particularly when <i>shear deformation</i> and <i>rotary inertia</i> require a Timoshenko-type description. A recurring emphasis is mechanistic interpretability:
-        explicit frequency equations and coupling mechanisms that explain when and why modal sensitivity increases, supporting both forward prediction and inversion-ready modeling.
+  보(beam) 구조물에 균열이 생기면 고유진동수와 모드형상 같은 “진동 특성”이 어떻게 달라지는지,
+  해석식(수식 기반 모델)과 준해석 기법을 이용해 정량적으로 설명합니다.
+  특히 전단 변형(<i>shear deformation</i>)과 회전 관성(<i>rotary inertia</i>)의 영향이 커서
+  Timoshenko 보 모델이 필요한 경우를 중점적으로 다룹니다.
+  또한 “왜 어떤 경우에 균열 민감도가 커지는지”를 주파수 방정식과 결합 메커니즘으로 직관적으로 보여주어,
+  예측(순방향 해석)뿐 아니라 균열 위치/크기 추정 같은 역문제(inversion)에도 바로 활용할 수 있는 모델링을 목표로 합니다.
       </p>
 
       <div class="subtopic">
@@ -335,9 +338,12 @@
       <summary><span class="topic-title">Physics-informed machine learning for engineering structures</span></summary>
 
       <p class="topic-desc">
-        We develop physics-informed learning pipelines for structural mechanics problems where governing equations are known but parameter estimation and prediction
-        can be ill-posed under sparse/noisy measurements. The focus is on embedding physics (constraints from mechanics and evolution laws) into learning
-        to obtain data-efficient, physically consistent, and engineering-usable models for prediction and state/parameter inference.
+        구조역학 문제에서는 지배방정식(물리 법칙)은 알고 있지만,
+  센서 데이터가 적거나 잡음이 많아 예측과 파라미터 추정이 어려운 경우가 많습니다.
+  이 연구는 물리 법칙(역학 제약, 시간 변화 법칙 등)을 머신러닝 학습 과정에 함께 넣는
+  physics-informed 접근을 통해, 적은 데이터로도 신뢰할 수 있고 물리적으로 말이 되는 모델을 만드는 데 초점을 둡니다.
+  최종 목표는 구조물의 거동 예측뿐 아니라 상태 추정과 재료/구조 파라미터 추정까지
+  공학적으로 “바로 쓸 수 있는” 학습 기반 해석 도구를 구축하는 것입니다.
       </p>
 
       <div class="subtopic">
@@ -388,8 +394,11 @@
       <summary><span class="topic-title">Guided wave propagation using surface-bonded piezoelectric wafers</span></summary>
 
       <p class="topic-desc">
-        This theme investigates guided-wave excitation, propagation, scattering, and wavefield manipulation using surface-bonded piezoelectric (PZT) wafers/transducers for active SHM.
-        We emphasize physics-based interpretation of wave/electromechanical signals, time-reversal acoustics, baseline-independent diagnostics, and efficient coupled PZT–structure modeling.
+        구조물 표면에 부착한 압전(PZT) 센서/구동기를 이용해 유도파(guided wave)를 발생시키고,
+  그 파동이 구조물 내부를 어떻게 전파하고(Propagation) 결함에서 어떻게 산란되는지(Scattering)를 연구합니다.
+  시간역전(time reversal) 같은 파동 제어 기법, 기준 신호 없이도 진단하는 방법(baseline-independent),
+  그리고 PZT와 구조물이 함께 움직이는 연성(전기-기계 결합) 모델링을 통해
+  효율적이고 해석 가능한 능동형 SHM(구조건전성 모니터링) 기술을 발전시키는 것이 목적입니다.
       </p>
 
       <div class="subtopic">
@@ -516,9 +525,13 @@
       <summary><span class="topic-title">Inverse problems and system identification</span></summary>
 
       <p class="topic-desc">
-        We develop numerically stable inverse-analysis and system-identification methodologies to infer hidden structural states and parameters from limited, noise-contaminated measurements.
-        Emphasis is placed on <b>regularization design</b> (Tikhonov, sparsity-promoting, and spatial regularization), <b>robust hyperparameter selection</b>, and practical inverse pipelines
-        such as <b>acceleration-to-displacement reconstruction</b> for low-frequency dominant structures.
+ 잡음이 섞인 제한된 계측 데이터만으로 구조물의 숨은 상태(변위, 손상, 물성 등)를 추정하는
+  역문제(inverse analysis) 및 시스템 식별(system identification) 기법을 연구합니다.
+  특히 정규화(regularization)를 어떻게 설계하느냐가 결과 안정성을 좌우하기 때문에,
+  Tikhonov 정규화, 희소 정규화, 공간 정규화 등 다양한 방법과
+  정규화 계수(하이퍼파라미터)를 안정적으로 고르는 절차에 집중합니다.
+  또한 저주파 거동이 중요한 구조물에서 “가속도 → 변위”를 안정적으로 복원하는 등
+  실제 현장에서 바로 적용 가능한 역해석 파이프라인도 함께 다룹니다.
       </p>
 
       <div class="subtopic">
