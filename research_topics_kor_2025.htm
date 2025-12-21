@@ -1,566 +1,443 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> -->
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
 <link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
 <link rel="stylesheet" media="print" type="text/css" href="./style.css" />
 <title>Research Topics</title>
+</head>
+
 <style>
-/* Clean hierarchy without UL/LI: cards + details/summary */
-.rt2{
+/* ===== Fancy Research Topics (drop-in) ===== */
+.rt{
   --ink:#0f172a;
-  --muted:#51617c;
-  --line:#e6edf6;
+  --muted:#52607a;
+  --line:#e6ecf5;
   --card:#ffffff;
   --wash:#f6f9ff;
   --accent:#0ea5e9;
   --accent2:#6366f1;
   --shadow: 0 10px 30px rgba(15,23,42,.08);
-  --shadow2: 0 6px 16px rgba(15,23,42,.07);
-  color: var(--ink);
+  --shadow2: 0 6px 16px rgba(15,23,42,.08);
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
 }
 
-.rt2 .topic{
+.rt ul{ list-style: none; padding-left: 0; margin: 0; }
+.rt li{ margin: 0; }
+
+/* Top-level categories as cards */
+.rt > ul > li{
   background: linear-gradient(180deg, var(--wash), #fff);
   border: 1px solid var(--line);
   border-radius: 16px;
-  padding: 14px 14px 10px;
+  padding: 16px 16px 12px;
   margin: 14px 0;
   box-shadow: var(--shadow);
   position: relative;
   overflow: hidden;
 }
 
-.rt2 .topic::before{
+.rt > ul > li::before{
   content:"";
-  position:absolute; inset:0;
+  position:absolute;
+  inset:0;
   background:
-    radial-gradient(650px 150px at 16% 0%, rgba(14,165,233,.12), transparent 60%),
-    radial-gradient(520px 130px at 84% 20%, rgba(99,102,241,.10), transparent 60%);
+    radial-gradient(600px 140px at 20% 0%, rgba(14,165,233,.12), transparent 60%),
+    radial-gradient(500px 120px at 85% 15%, rgba(99,102,241,.10), transparent 60%);
   pointer-events:none;
 }
 
-.rt2 details{ position: relative; }
-
-.rt2 summary{
-  list-style: none;
-  cursor: pointer;
-  padding: 10px 10px;
-  border-radius: 14px;
-  background: rgba(255,255,255,.85);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow2);
-  user-select: none;
-  position: relative;
-  padding-right: 44px; /* for chevron */
-}
-.rt2 summary::-webkit-details-marker{ display:none; }
-
-.rt2 .topic-title{
-  font-weight: 700;
+.rt > ul > li > b{
+  display:block;
+  font-size: 1.05rem;
   letter-spacing: .1px;
 }
 
-.rt2 .topic-desc{
-  margin: 12px 6px 6px;
-  color: var(--muted);
-  line-height: 1.6;
-}
+.rt > ul > li > br{ display:none; }
 
-.rt2 .subtopic{
-  margin: 10px 0 0;
+/* First paragraph line (the description text right after title) */
+.rt > ul > li{
+  line-height: 1.55;
 }
+.rt > ul > li > b + br + span,
+.rt > ul > li > b + span{ display:block; }
 
-.rt2 .subtopic summary{
-  background: #fff;
-  box-shadow: none;
-}
-
-.rt2 .subtopic-title{
-  font-weight: 650;
-}
-
-.rt2 .subsub{
-  margin: 10px 10px 0;
-  padding: 10px 12px;
-  border-left: 3px solid rgba(14,165,233,.28);
-  background: rgba(255,255,255,.8);
-  border-radius: 12px;
-  border: 1px solid var(--line);
-}
-
-.rt2 .subsub-title{
-  font-weight: 650;
-  margin-bottom: 8px;
-}
-
-.rt2 .papers{
-  display: grid;
-  gap: 8px;
-  margin-top: 8px;
-}
-
-.rt2 .paper{
-  display: block;
-  text-decoration: none;
-  color: #0b4aa2;
-  background: #fff;
-  border: 1px dashed rgba(15,23,42,.18);
-  border-radius: 12px;
-  padding: 10px 10px;
-}
-.rt2 .paper:hover{
-  border-style: solid;
-  border-color: rgba(99,102,241,.35);
-  transform: translateY(-1px);
-  transition: 140ms ease;
-}
-
-.rt2 .paper.plain{
-  color: var(--ink);
-  border-style: solid;
-  border-color: var(--line);
-}
-
-.rt2 .meta{
-  display:block;
-  margin-top: 6px;
-  color: var(--muted);
-  font-size: .92em;
-}
-
-.rt2 a{
+.rt a{
   color: #0b4aa2;
   text-decoration: none;
-  border-bottom: 1px solid rgba(11,74,162,.22);
+  border-bottom: 1px solid rgba(11,74,162,.25);
 }
-.rt2 a:hover{
+.rt a:hover{
   color: var(--accent2);
   border-bottom-color: rgba(99,102,241,.45);
 }
 
-@media (prefers-reduced-motion: reduce){
-  .rt2 .paper:hover{ transform:none; transition:none; }
+/* Nested lists: treat as “modules” inside each card */
+.rt > ul > li > ul{
+  margin-top: 12px;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 
-/* =========================================================
-   Hierarchy typography + indentation (requested)
-========================================================= */
-.rt2{
-  --lvl0-size: 1.00rem;  /* Topic */
-  --lvl1-size: 0.90rem;  /* Subtopic */
-  --lvl2-size: 0.85rem;  /* Sub-sub title */
-  --paper-size: 0.83rem; /* Paper item */
-
-  --indent1: 14px;   /* Subtopic indent */
-  --indent2: 28px;   /* Sub-sub indent */
-  --indent3: 42px;   /* Paper indent */
-}
-
-/* Topic (level 0) */
-.rt2 .topic > details > summary{
-  padding: 12px 14px;
-  font-size: var(--lvl0-size);
-}
-.rt2 .topic > details > summary .topic-title{
-  font-weight: 750;
-}
-
-/* Subtopic (level 1) */
-.rt2 .subtopic > details > summary{
-  margin-left: var(--indent1);
-  padding: 10px 12px;
-  font-size: var(--lvl1-size);
-  border-left: 4px solid rgba(99,102,241,.18);
-}
-
-/* Sub-sub (level 2) */
-.rt2 .subsub{
-  margin-left: var(--indent2);
-  border-left-width: 4px;
-}
-.rt2 .subsub-title{
-  font-size: var(--lvl2-size);
-  font-weight: 700;
-}
-
-/* Papers (level 3) */
-.rt2 .papers{
-  margin-left: var(--indent3);
-}
-.rt2 .paper,
-.rt2 .paper.plain{
-  font-size: var(--paper-size);
-  line-height: 1.55;
-}
-
-/* Chevron indicator */
-.rt2 summary::after{
-  content: "›";
-  position: absolute;
-  right: 14px;
-  top: 50%;
-  transform: translateY(-50%) rotate(0deg);
-  font-size: 1.25em;
-  color: rgba(15,23,42,.55);
-  transition: transform 160ms ease;
-}
-.rt2 details[open] > summary::after{
-  transform: translateY(-50%) rotate(90deg);
-}
-
-/* Rails / guides */
-.rt2 .topic{
+.rt > ul > li > ul > li{
+  background: rgba(255,255,255,.9);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 12px 10px;
+  box-shadow: var(--shadow2);
   position: relative;
 }
-.rt2 .topic::after{
-  content:"";
-  position:absolute;
-  left: 22px;
-  top: 68px;
-  bottom: 16px;
-  width: 2px;
-  background: linear-gradient(180deg, rgba(14,165,233,.20), rgba(99,102,241,.18));
-  border-radius: 999px;
-  pointer-events:none;
-  opacity: .9;
+
+.rt > ul > li > ul > li > b{
+  display:block;
+  font-size: .98rem;
+  margin-bottom: 6px;
 }
 
-.rt2 .subtopic > details{
+/* Sub-sub bullet blocks */
+.rt > ul > li > ul > li > ul{
+  margin-top: 8px;
+  padding-left: 0;
+  border-left: 3px solid rgba(14,165,233,.25);
+  padding-left: 12px;
+}
+
+.rt > ul > li > ul > li > ul > li{
+  margin: 8px 0;
+  color: var(--muted);
+}
+
+.rt i{ color: #334155; }
+
+/* Make paper entries compact chips */
+.rt > ul > li > ul > li > ul > li > ul{
+  margin-top: 6px;
+  padding-left: 0;
+  display: grid;
+  gap: 8px;
+  border-left: none;
+}
+
+.rt > ul > li > ul > li > ul > li > ul > li{
+  background: #fff;
+  border: 1px dashed rgba(15,23,42,.18);
+  border-radius: 12px;
+  padding: 10px 10px;
+  color: var(--ink);
+}
+
+/* Highlight year/journal feel a bit */
+.rt > ul > li > ul > li > ul > li > ul > li i{
+  color:#111827;
+}
+
+/* Optional: make the deepest list look like timeline dots */
+.rt > ul > li > ul > li > ul{
   position: relative;
 }
-.rt2 .subtopic > details::before{
+.rt > ul > li > ul > li > ul::before{
   content:"";
   position:absolute;
-  left: calc(var(--indent1) - 8px);
-  top: 40px;
+  left: 0;
+  top: 6px;
   bottom: 6px;
-  width: 2px;
-  background: rgba(99,102,241,.14);
-  border-radius: 999px;
-  pointer-events:none;
+  width: 3px;
+  background: linear-gradient(180deg, rgba(14,165,233,.35), rgba(99,102,241,.25));
+  border-radius: 99px;
 }
 
-/* Mobile compact */
-@media (max-width: 640px){
-  .rt2{
-    --indent1: 10px;
-    --indent2: 18px;
-    --indent3: 28px;
-    --lvl0-size: 1.00rem;
-    --lvl1-size: 0.90rem;
+/* Responsive */
+@media (min-width: 980px){
+  .rt > ul > li > ul{
+    grid-template-columns: 1fr 1fr;
   }
 }
-</style>
 
-</head>
+/* A11y focus */
+.rt a:focus{
+  outline: 3px solid rgba(14,165,233,.35);
+  outline-offset: 3px;
+  border-bottom-color: transparent;
+}
+</style>	
 
 <body>
 
-<div class="rt2">
+<div class="main_content">
+
+<h3><img src="images/donga_icon.gif""> Research Topics</h3>
+
+<ul>
+
+<ul>
 
   <!-- =======================================================
        (1) Modal behaviors of a Timoshenko beam with an edge crack
   ======================================================== -->
-  <section class="topic">
-    <details open>
-      <summary>
-        <span class="topic-title">Modal behaviors of a Timoshenko beam with an edge crack</span>
-      </summary>
-
-      <p class="topic-desc">
+  <li>
+    <b>Modal behaviors of a Timoshenko beam with an edge crack</b>
   보(beam) 구조물에 균열이 생기면 고유진동수와 모드형상 같은 “진동 특성”이 어떻게 달라지는지,
   해석식(수식 기반 모델)과 준해석 기법을 이용해 정량적으로 설명합니다.
   특히 전단 변형(<i>shear deformation</i>)과 회전 관성(<i>rotary inertia</i>)의 영향이 커서
   Timoshenko 보 모델이 필요한 경우를 중점적으로 다룹니다.
   또한 “왜 어떤 경우에 균열 민감도가 커지는지”를 주파수 방정식과 결합 메커니즘으로 직관적으로 보여주어,
   예측(순방향 해석)뿐 아니라 균열 위치/크기 추정 같은 역문제(inversion)에도 바로 활용할 수 있는 모델링을 목표로 합니다.
-      </p>
+    <ul>
 
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Closed-form / reduced frequency equations for cracked beams under general supports</span></summary>
-          <div class="papers">
-            <a class="paper" href="https://doi.org/10.1016/j.jsv.2020.115336" target="_blank" rel="noopener">
+      <li>
+        <b>Closed-form / reduced frequency equations for cracked beams under general supports</b>
+        <ul>
+          <li>
+            <a href="https://doi.org/10.1016/j.jsv.2020.115455" target="_blank" rel="noopener">
               A closed-form frequency equation of an arbitrarily supported beam with a transverse open crack considering axial–bending modal coupling
-              <span class="meta"><i>Journal of Sound and Vibration</i>, 2020</span>
-            </a>
-            <a class="paper" href="https://doi.org/10.1016/j.jsv.2021.116675" target="_blank" rel="noopener">
+            </a>, <i>Journal of Sound and Vibration</i>, 2020.
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.jsv.2021.116675" target="_blank" rel="noopener">
               Generic frequency equation for a cracked beam based on the phase closure principle
-              <span class="meta"><i>Journal of Sound and Vibration</i>, 2022</span>
-            </a>
-            <a class="paper" href="https://doi.org/10.1016/j.wavemoti.2017.08.001" target="_blank" rel="noopener">
+            </a>, <i>Journal of Sound and Vibration</i>, 2022.
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.wavemoti.2017.08.001" target="_blank" rel="noopener">
               A simplified frequency equation for a beam with an open crack from a wave perspective
-              <span class="meta"><i>Wave Motion</i>, 2017</span>
-            </a>
-          </div>
-        </details>
-      </div>
+            </a>, <i>Wave Motion</i>, 2017.
+          </li>
+        </ul>
+      </li>
 
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Deep-beam crack modal behavior (axial–bending–shear coupling; mixed crack-mode effects)</span></summary>
-          <div class="papers">
-            <a class="paper" href="https://doi.org/10.1016/j.jsv.2024.118613" target="_blank" rel="noopener">
+      <li>
+        <b>Deep-beam crack modal behavior (axial–bending–shear coupling; mixed crack-mode effects)</b>
+        <ul>
+          <li>
+            <a href="https://doi.org/10.1016/j.jsv.2024.118613" target="_blank" rel="noopener">
               Investigating the modal behaviors of a deep beam with a transverse open crack
-              <span class="meta"><i>Journal of Sound and Vibration</i>, 2024</span>
-            </a>
-          </div>
-        </details>
-      </div>
+            </a>, <i>Journal of Sound and Vibration</i>, 2024.
+          </li>
+        </ul>
+      </li>
 
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">High-frequency regime and “node-crack insensitivity” revisited</span></summary>
-          <div class="papers">
-            <a class="paper" href="https://doi.org/10.1016/j.engstruct.2018.08.102" target="_blank" rel="noopener">
+      <li>
+        <b>High-frequency regime and “node-crack insensitivity” revisited</b>
+        <ul>
+          <li>
+            <a href="https://doi.org/10.1016/j.engstruct.2018.08.102" target="_blank" rel="noopener">
               Investigating a common premise in SHM: Are higher modal frequencies more sensitive to an incipient crack on a beam than lower ones?
-              <span class="meta"><i>Engineering Structures</i>, 2018</span>
-            </a>
-            <a class="paper" href="https://doi.org/10.1016/j.ijmecsci.2022.107217" target="_blank" rel="noopener">
+            </a>, <i>Engineering Structures</i>, 2018.
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.ijmecsci.2022.107217" target="_blank" rel="noopener">
               Investigating the modal behaviors of a beam with a transverse crack on a high-frequency bending node
-              <span class="meta"><i>International Journal of Mechanical Sciences</i>, 2022</span>
-            </a>
-          </div>
-        </details>
-      </div>
+            </a>, <i>International Journal of Mechanical Sciences</i>, 2022.
+          </li>
+        </ul>
+      </li>
 
-    </details>
-  </section>
+    </ul>
+  </li>
 
 
   <!-- =======================================================
        (2) Physics-informed machine learning for engineering structures
   ======================================================== -->
-  <section class="topic">
-    <details>
-      <summary><span class="topic-title">Physics-informed machine learning for engineering structures</span></summary>
-
-      <p class="topic-desc">
+  <li>
+    <b>Physics-informed machine learning for engineering structures</b><br/>
         구조역학 문제에서는 지배방정식(물리 법칙)은 알고 있지만,
   센서 데이터가 적거나 잡음이 많아 예측과 파라미터 추정이 어려운 경우가 많습니다.
   이 연구는 물리 법칙(역학 제약, 시간 변화 법칙 등)을 머신러닝 학습 과정에 함께 넣는
   physics-informed 접근을 통해, 적은 데이터로도 신뢰할 수 있고 물리적으로 말이 되는 모델을 만드는 데 초점을 둡니다.
   최종 목표는 구조물의 거동 예측뿐 아니라 상태 추정과 재료/구조 파라미터 추정까지
   공학적으로 “바로 쓸 수 있는” 학습 기반 해석 도구를 구축하는 것입니다.
-      </p>
-
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Physics-informed neural networks (PINNs) for time-dependent behavior of prestressed concrete (PSC) members</span></summary>
-          <div class="papers">
-            <a class="paper" href="https://doi.org/10.3390/s23146649" target="_blank" rel="noopener">
+    <ul>
+      <li>
+        <b>Physics-informed neural networks (PINNs) for time-dependent behavior of prestressed concrete (PSC) members</b>
+        <ul>
+          <li>
+            <a href="https://doi.org/10.3390/s23146649" target="_blank" rel="noopener">
               Predicting the Early-Age Time-Dependent Behaviors of a Prestressed Concrete Beam by Using Physics-Informed Neural Network
-              <span class="meta"><i>Sensors</i>, 2023</span>
-            </a>
-          </div>
-        </details>
-      </div>
+            </a>, <i>Sensors</i>, 2023.
+          </li>
+        </ul>
+      </li>
 
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Integral-equation-driven estimation as a bridge between mechanics and learning/identification</span></summary>
-          <div class="papers">
-            <a class="paper" href="https://doi.org/10.1016/j.istruc.2024.107437" target="_blank" rel="noopener">
+      <li>
+        <b>Integral-equation-driven estimation as a bridge between mechanics and learning/identification</b>
+        <ul>
+          <li>
+            <a href="https://doi.org/10.1016/j.istruc.2024.107437" target="_blank" rel="noopener">
               Finite difference equation of Volterra integral equation for estimating the time-dependent prestress loss of a prestressed concrete beam
-              <span class="meta"><i>Structures</i>, 2024</span>
-            </a>
-          </div>
-        </details>
-      </div>
+            </a>, <i>Structures</i>, 2024.
+          </li>
+        </ul>
+      </li>
 
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">ML-assisted crack assessment via physics-based feature construction and sensing augmentation</span></summary>
-          <div class="papers">
-            <div class="paper plain">
-              <span>Crack Assessment of Beam Using Machine Learning with Augmented Sensing</span>
-              <span class="meta">Book chapter (listed on profile), 2023</span>
-            </div>
-          </div>
-        </details>
-      </div>
+      <li>
+        <b>ML-assisted crack assessment via physics-based feature construction and sensing augmentation</b>
+        <ul>
+          <li>
+            <span style="font-size:0.95em;">
+              Crack Assessment of Beam Using Machine Learning with Augmented Sensing, (book chapter listed on the profile), 2023.
+            </span>
+          </li>
+        </ul>
+      </li>
 
-    </details>
-  </section>
+    </ul>
+  </li>
 
 
   <!-- =======================================================
        (3) Guided wave propagation using surface-bonded piezoelectric wafers
   ======================================================== -->
-  <section class="topic">
-    <details>
-      <summary><span class="topic-title">Guided wave propagation using surface-bonded piezoelectric wafers</span></summary>
-
-      <p class="topic-desc">
+  <li>
+    <b>Guided wave propagation using surface-bonded piezoelectric wafers</b><br/>
         구조물 표면에 부착한 압전(PZT) 센서/구동기를 이용해 유도파(guided wave)를 발생시키고,
   그 파동이 구조물 내부를 어떻게 전파하고(Propagation) 결함에서 어떻게 산란되는지(Scattering)를 연구합니다.
   시간역전(time reversal) 같은 파동 제어 기법, 기준 신호 없이도 진단하는 방법(baseline-independent),
   그리고 PZT와 구조물이 함께 움직이는 연성(전기-기계 결합) 모델링을 통해
   효율적이고 해석 가능한 능동형 SHM(구조건전성 모니터링) 기술을 발전시키는 것이 목적입니다.
-      </p>
+    <ul>
 
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Time-reversal guided waves (Lamb waves)</span></summary>
+      <li>
+        <b>Time-reversal guided waves (Lamb waves)</b>
+        <ul>
+          <li>
+            <b>Physical understanding of time reversal in Lamb-wave propagation</b>
+            <ul>
+              <li>
+                <a href="http://dx.doi.org/10.1016/j.wavemoti.2009.04.004" target="_blank" rel="noopener">
+                  Understanding a time reversal process in Lamb wave propagation
+                </a>, <i>Wave Motion</i>, 2009.
+              </li>
+            </ul>
+          </li>
 
-          <div class="subsub">
-            <div class="subsub-title">Physical understanding of time reversal in Lamb-wave propagation</div>
-            <div class="papers">
-              <a class="paper" href="http://dx.doi.org/10.1016/j.wavemoti.2009.04.004" target="_blank" rel="noopener">
-                Understanding a time reversal process in Lamb wave propagation
-                <span class="meta"><i>Wave Motion</i>, 2009</span>
-              </a>
-            </div>
-          </div>
+          <li>
+            <b>Time-reversal active sensing for composite plates (damage detection)</b>
+            <ul>
+              <li>
+                <a href="http://dx.doi.org/10.1016/j.jsv.2006.10.044" target="_blank" rel="noopener">
+                  Time reversal active sensing for health monitoring of a composite plate
+                </a>, <i>Journal of Sound and Vibration</i>, 2007.
+              </li>
+              <li>
+                <a href="http://dx.doi.org/10.1061/(ASCE)0893-1321(2007)20:3(141)" target="_blank" rel="noopener">
+                  Damage detection in composite plates by using an enhanced time reversal method
+                </a>, <i>Journal of Aerospace Engineering</i> (ASCE), 2007.
+              </li>
+            </ul>
+          </li>
 
-          <div class="subsub">
-            <div class="subsub-title">Time-reversal active sensing for composite plates (damage detection)</div>
-            <div class="papers">
-              <a class="paper" href="http://dx.doi.org/10.1016/j.jsv.2006.10.044" target="_blank" rel="noopener">
-                Time reversal active sensing for health monitoring of a composite plate
-                <span class="meta"><i>Journal of Sound and Vibration</i>, 2007</span>
-              </a>
-              <a class="paper" href="http://dx.doi.org/10.1061/(ASCE)0893-1321(2007)20:3(141)" target="_blank" rel="noopener">
-                Damage detection in composite plates by using an enhanced time reversal method
-                <span class="meta"><i>Journal of Aerospace Engineering</i> (ASCE), 2007</span>
-              </a>
-            </div>
-          </div>
+          <li>
+            <b>Spatial focusing of A0 Lamb-wave mode (numerical simulation and performance evaluation)</b>
+            <ul>
+              <li>
+                <a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001445248" target="_blank" rel="noopener">
+                  Simulating a time reversal process for A0 Lamb wave mode on a rectangular plate using a virtual sensor array model
+                </a>, <i>Transaction of Korean Society of Noise and Vibration Engineering</i>, 2010.
+              </li>
+              <li>
+                <a href="http://dx.doi.org/10.5050/KSNVE.2011.21.12.1120" target="_blank" rel="noopener">
+                  Investigating the spatial focusing performance of time reversal Lamb waves on a plate through the finite element method
+                </a>, <i>Transaction of Korean Society of Noise and Vibration Engineering</i>, 2011.
+              </li>
+              <li>
+                <a href="http://dx.doi.org/10.1016/j.jsv.2012.12.030" target="_blank" rel="noopener">
+                  Numerical simulation and investigation of the spatial focusing of time reversal A0 Lamb wave mode using circular piezoelectric transducers collocated on a rectangular plate
+                </a>, <i>Journal of Sound and Vibration</i>, 2013.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
 
-          <div class="subsub">
-            <div class="subsub-title">Spatial focusing of A0 Lamb-wave mode (numerical simulation and performance evaluation)</div>
-            <div class="papers">
-              <a class="paper" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001445248" target="_blank" rel="noopener">
-                Simulating a time reversal process for A0 Lamb wave mode on a rectangular plate using a virtual sensor array model
-                <span class="meta"><i>Transaction of Korean Society of Noise and Vibration Engineering</i>, 2010</span>
-              </a>
-              <a class="paper" href="http://dx.doi.org/10.5050/KSNVE.2011.21.12.1120" target="_blank" rel="noopener">
-                Investigating the spatial focusing performance of time reversal Lamb waves on a plate through the finite element method
-                <span class="meta"><i>Transaction of Korean Society of Noise and Vibration Engineering</i>, 2011</span>
-              </a>
-              <a class="paper" href="http://dx.doi.org/10.1016/j.jsv.2012.12.030" target="_blank" rel="noopener">
-                Numerical simulation and investigation of the spatial focusing of time reversal A0 Lamb wave mode using circular piezoelectric transducers collocated on a rectangular plate
-                <span class="meta"><i>Journal of Sound and Vibration</i>, 2013</span>
-              </a>
-            </div>
-          </div>
+      <li>
+        <b>Reference-free damage diagnosis with PZT wafers (impedance / electromechanical signals)</b>
+        <ul>
+          <li>
+            <b>Reference-free impedance-based crack detection in plates</b>
+            <ul>
+              <li>
+                <a href="http://dx.doi.org/10.1016/j.jsv.2011.07.025" target="_blank" rel="noopener">
+                  Reference-free impedance-based crack detection in plates
+                </a>, <i>Journal of Sound and Vibration</i>, 2011.
+              </li>
+            </ul>
+          </li>
 
-        </details>
-      </div>
+          <li>
+            <b>Reference-free diagnosis using electromechanical signals from collocated PZT wafers</b>
+            <ul>
+              <li>
+                <a href="http://iopscience.iop.org/0964-1726/20/6/065001" target="_blank" rel="noopener">
+                  Investigating electro-mechanical signals from collocated piezoelectric wafers for the reference-free damage diagnosis of a plate
+                </a>, <i>Smart Materials &amp; Structures</i>, 2011.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
 
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Reference-free damage diagnosis with PZT wafers (impedance / electromechanical signals)</span></summary>
+      <li>
+        <b>Efficient coupled PZT–structure modeling (broadband simulation / spectral elements)</b>
+        <ul>
+          <li>
+            <b>Spectral element formulation for coupled PZT wafer–beam dynamics</b>
+            <ul>
+              <li>
+                <a href="http://dx.doi.org/10.1016/j.compstruc.2010.01.010" target="_blank" rel="noopener">
+                  Spectral element formulation for dynamic analysis of a coupled piezoelectric wafer and beam system
+                </a>, <i>Computers &amp; Structures</i>, 2010.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
 
-          <div class="subsub">
-            <div class="subsub-title">Reference-free impedance-based crack detection in plates</div>
-            <div class="papers">
-              <a class="paper" href="http://dx.doi.org/10.1016/j.jsv.2011.07.025" target="_blank" rel="noopener">
-                Reference-free impedance-based crack detection in plates
-                <span class="meta"><i>Journal of Sound and Vibration</i>, 2011</span>
-              </a>
-            </div>
-          </div>
+      <li>
+        <b>Ultrasonic guided modes for defect imaging and quantification (pipes)</b>
+        <ul>
+          <li>
+            <b>Defect visualization and quantification using longitudinal ultrasonic modes</b>
+            <ul>
+              <li>
+                <a href="http://dx.doi.org/10.1142/S0219455414400082" target="_blank" rel="noopener">
+                  Pipe Defect Visualization and Quantification Using Longitudinal Ultrasonic Modes
+                </a>, <i>International Journal of Structural Stability and Dynamics</i>, 2014.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
 
-          <div class="subsub">
-            <div class="subsub-title">Reference-free diagnosis using electromechanical signals from collocated PZT wafers</div>
-            <div class="papers">
-              <a class="paper" href="http://iopscience.iop.org/0964-1726/20/6/065001" target="_blank" rel="noopener">
-                Investigating electro-mechanical signals from collocated piezoelectric wafers for the reference-free damage diagnosis of a plate
-                <span class="meta"><i>Smart Materials &amp; Structures</i>, 2011</span>
-              </a>
-            </div>
-          </div>
+      <li>
+        <b>Extension to cement-based materials (multi-mode PZT sensing)</b>
+        <ul>
+          <li>
+            <b>In-situ profiling of evolving dynamic properties in cement-based materials</b>
+            <ul>
+              <li>
+                <a href="https://doi.org/10.1016/j.cemconcomp.2025.106445" target="_blank" rel="noopener">
+                  Multi-mode piezoelectric (PZT) sensing for in-situ profiling of the evolution of dynamic properties in cement-based materials
+                </a>, <i>Cement and Concrete Composites</i>, 2025.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
 
-        </details>
-      </div>
-
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Efficient coupled PZT–structure modeling (broadband simulation / spectral elements)</span></summary>
-          <div class="papers">
-            <a class="paper" href="http://dx.doi.org/10.1016/j.compstruc.2010.01.010" target="_blank" rel="noopener">
-              Spectral element formulation for dynamic analysis of a coupled piezoelectric wafer and beam system
-              <span class="meta"><i>Computers &amp; Structures</i>, 2010</span>
-            </a>
-          </div>
-        </details>
-      </div>
-
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Ultrasonic guided modes for defect imaging and quantification (pipes)</span></summary>
-          <div class="papers">
-            <a class="paper" href="http://dx.doi.org/10.1142/S0219455414400082" target="_blank" rel="noopener">
-              Pipe Defect Visualization and Quantification Using Longitudinal Ultrasonic Modes
-              <span class="meta"><i>International Journal of Structural Stability and Dynamics</i>, 2014</span>
-            </a>
-          </div>
-        </details>
-      </div>
-
-       <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Electromechanical admittance/impedance of PZT transducers from a wave-propagation perspective</span></summary>
-
-          <div class="subsub">
-            <div class="subsub-title">Admittance evolution and interpretation on beams (Timoshenko / finite-beam effects)</div>
-            <div class="papers">
-
-              <a class="paper" href="https://doi.org/10.1177/1045389X16667555" target="_blank" rel="noopener">
-                Evolution of electromechanical admittance of piezoelectric transducers on a Timoshenko beam from wave propagation perspective
-                <span class="meta"><i>Journal of Intelligent Material Systems and Structures</i>, Vol. 28, No. 9, 1221–1245, 2017</span>
-              </a>
-
-              <a class="paper" href="https://doi.org/10.1177/1045389X14549874" target="_blank" rel="noopener">
-                Understanding the electromechanical admittance of piezoelectric transducers collocated on a finite beam from the perspective of wave propagation
-                <span class="meta"><i>Journal of Intelligent Material Systems and Structures</i>, Vol. 25, No. 17, 2122–2140, 2014</span>
-              </a>
-
-            </div>
-          </div>
-
-          <div class="subsub">
-            <div class="subsub-title">High-frequency damping estimation via electromechanical signatures</div>
-            <div class="papers">
-
-              <a class="paper" href="https://doi.org/10.12652/Ksce.2017.37.1.0217" target="_blank" rel="noopener">
-                Estimating High-Frequency Damping of a Beam through Electro-Mechanical Signatures of Piezoelectric Wafer Mounted on the Beam
-                <span class="meta"><i>Journal of the Korean Society of Civil Engineers</i>, Vol. 37, No. 1, 217–229, 2017</span>
-              </a>
-
-            </div>
-          </div>
-
-        </details>
-      </div>
-
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Extension to cement-based materials (multi-mode PZT sensing)</span></summary>
-          <div class="papers">
-            <a class="paper" href="https://doi.org/10.1016/j.cemconcomp.2025.106445" target="_blank" rel="noopener">
-              Multi-mode piezoelectric (PZT) sensing for in-situ profiling of the evolution of dynamic properties in cement-based materials
-              <span class="meta"><i>Cement and Concrete Composites</i>, 2025</span>
-            </a>
-          </div>
-        </details>
-      </div>
-
-    </details>
-  </section>
+    </ul>
+  </li>
 
 
   <!-- =======================================================
        (4) Inverse problems and system identification
   ======================================================== -->
-  <section class="topic">
-    <details>
-      <summary><span class="topic-title">Inverse problems and system identification</span></summary>
-
-      <p class="topic-desc">
+  <li>
+    <b>Inverse problems and system identification</b><br/>
  잡음이 섞인 제한된 계측 데이터만으로 구조물의 숨은 상태(변위, 손상, 물성 등)를 추정하는
   역문제(inverse analysis) 및 시스템 식별(system identification) 기법을 연구합니다.
   특히 정규화(regularization)를 어떻게 설계하느냐가 결과 안정성을 좌우하기 때문에,
@@ -568,92 +445,104 @@
   정규화 계수(하이퍼파라미터)를 안정적으로 고르는 절차에 집중합니다.
   또한 저주파 거동이 중요한 구조물에서 “가속도 → 변위”를 안정적으로 복원하는 등
   실제 현장에서 바로 적용 가능한 역해석 파이프라인도 함께 다룹니다.
-      </p>
+    <ul>
 
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Displacement reconstruction from acceleration</span></summary>
-          <div class="papers">
-            <div class="paper plain">
-              Hae Sung Lee, Yun Hwa Hong and Hyun Woo Park,
-              <a href="http://dx.doi.org/10.1002/nme.2769" target="_blank" rel="noopener">
-                Design of an FIR filter for the displacement reconstruction using measured acceleration in low-frequency dominant structures
-              </a>,
-              <span class="meta"><i>International Journal for Numerical Methods in Engineering</i>, Vol. 82, No. 4, 403–434, 2010</span>
-            </div>
-          </div>
-        </details>
-      </div>
+      <li>
+        <b>Displacement reconstruction from acceleration</b>
+        <ul>
+          <li>
+            <b>FIR-filter design for drift-robust displacement recovery in low-frequency dominant structures</b>
+            <ul>
+              <li>
+                Hae Sung Lee, Yun Hwa Hong and Hyun Woo Park,
+                <a href="http://dx.doi.org/10.1002/nme.2769" target="_blank" rel="noopener">
+                  Design of an FIR filter for the displacement reconstruction using measured acceleration in low-frequency dominant structures
+                </a>,
+                <i>International Journal for Numerical Methods in Engineering</i>, Vol. 82, No. 4, 403–434, 2010.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
 
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Regularization-aware system identification</span></summary>
-
-          <div class="subsub">
-            <div class="subsub-title">1-norm regularization for discontinuous / localized system parameters</div>
-            <div class="papers">
-              <div class="paper plain">
+      <li>
+        <b>Regularization-aware system identification</b>
+        <ul>
+          <li>
+            <b>1-norm regularization for discontinuous / localized system parameters</b>
+            <ul>
+              <li>
                 Hyun Woo Park, Man Woo Park, Byeong Kyu Ahn and Hae Sung Lee,
                 <a href="http://dx.doi.org/10.1002/nme.1778" target="_blank" rel="noopener">
                   1-norm based regularization scheme for system identification of structures with discontinuous system parameters
                 </a>,
-                <span class="meta"><i>International Journal for Numerical Methods in Engineering</i>, Vol. 69, No. 3, 504–523, 2007</span>
-              </div>
-            </div>
-          </div>
+                <i>International Journal for Numerical Methods in Engineering</i>, Vol. 69, No. 3, 504–523, 2007.
+              </li>
+            </ul>
+          </li>
 
-          <div class="subsub">
-            <div class="subsub-title">Optimal selection of the Tikhonov regularization factor for linear elastic continua</div>
-            <div class="papers">
-              <div class="paper plain">
+          <li>
+            <b>Optimal selection of the Tikhonov regularization factor for linear elastic continua</b>
+            <ul>
+              <li>
                 Hyun Woo Park, Soobong Shin and Hae Sung Lee,
                 <a href="http://dx.doi.org/doi:10.1002/nme.219" target="_blank" rel="noopener">
                   Determination of an optimal regularization factor in system identification with Tikhonov regularization for linear elastic continua
                 </a>,
-                <span class="meta"><i>International Journal for Numerical Methods in Engineering</i>, Vol. 51, No. 10, 1211–1230, 2001</span>
-              </div>
-            </div>
-          </div>
+                <i>International Journal for Numerical Methods in Engineering</i>, Vol. 51, No. 10, 1211–1230, 2001.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
 
-        </details>
-      </div>
-
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Inverse identification of inclusions (geometry and material properties)</span></summary>
-
-          <div class="subsub">
-            <div class="subsub-title">Boundary parameterization for simultaneous identification of inclusion shape and material properties</div>
-            <div class="papers">
-              <div class="paper plain">
+      <li>
+        <b>Inverse identification of inclusions (geometry and material properties)</b>
+        <ul>
+          <li>
+            <b>Boundary parameterization for simultaneous identification of inclusion shape and material properties</b>
+            <ul>
+              <li>
                 Hae Sung Lee, Cheon Jong Park and Hyun Woo Park,
                 <a href="http://dx.doi.org/10.1016/S0045-7825(99)00165-6" target="_blank" rel="noopener">
                   Identification of geometric shapes and material properties of inclusions in two-dimensional finite bodies by boundary parameterization
                 </a>,
-                <span class="meta"><i>Computer Methods in Applied Mechanics and Engineering</i>, Vol. 181, No. 1–2, 1–20, 2000</span>
-              </div>
-            </div>
-          </div>
+                <i>Computer Methods in Applied Mechanics and Engineering</i>, Vol. 181, No. 1–2, 1–20, 2000.
+              </li>
+            </ul>
+          </li>
 
-          <div class="subsub">
-            <div class="subsub-title">Spatial regularization for stable identification of inclusion geometry</div>
-            <div class="papers">
-              <div class="paper plain">
+          <li>
+            <b>Spatial regularization for stable identification of inclusion geometry</b>
+            <ul>
+              <li>
                 Hae Sung Lee, Yong Han Kim, Cheon Jong Park and Hyun Woo Park,
                 <a href="http://www3.interscience.wiley.com/journal/65500922/abstract" target="_blank" rel="noopener">
                   A new spatial regularization scheme for the identification of the geometric shape of an inclusion in a finite body
                 </a>,
-                <span class="meta"><i>International Journal for Numerical Methods in Engineering</i>, Vol. 46, No. 7, 973–992, 1999</span>
-              </div>
-            </div>
-          </div>
+                <i>International Journal for Numerical Methods in Engineering</i>, Vol. 46, No. 7, 973–992, 1999.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
 
-        </details>
-      </div>
+    </ul>
+  </li>
 
-    </details>
-  </section>
+</ul>
+	
+</ul>
 
+</div>
+
+<br/>
+<img src="images/bottomline_.jpg">
+<br/>
+
+<div class="bottom">
+	Copyright(c) 'Structural Analysis Lab., Department of Civil Engineering, Dong-A University' All rights reserved.<br/>
+	If you have any questions, please send an email to <a href="mailto:hwpark@donga.ac.kr" target="_blank"> ( hwpark@donga.ac.kr ) </a>
 </div>
 
 </body>
