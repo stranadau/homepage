@@ -1,4 +1,140 @@
 <head>
+<style>
+/* Clean hierarchy without UL/LI: cards + details/summary */
+.rt2{
+  --ink:#0f172a;
+  --muted:#51617c;
+  --line:#e6edf6;
+  --card:#ffffff;
+  --wash:#f6f9ff;
+  --accent:#0ea5e9;
+  --accent2:#6366f1;
+  --shadow: 0 10px 30px rgba(15,23,42,.08);
+  --shadow2: 0 6px 16px rgba(15,23,42,.07);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.rt2 .topic{
+  background: linear-gradient(180deg, var(--wash), #fff);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px 14px 10px;
+  margin: 14px 0;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.rt2 .topic::before{
+  content:"";
+  position:absolute; inset:0;
+  background:
+    radial-gradient(650px 150px at 16% 0%, rgba(14,165,233,.12), transparent 60%),
+    radial-gradient(520px 130px at 84% 20%, rgba(99,102,241,.10), transparent 60%);
+  pointer-events:none;
+}
+
+.rt2 details{ position: relative; }
+.rt2 summary{
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.85);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow2);
+  user-select: none;
+}
+.rt2 summary::-webkit-details-marker{ display:none; }
+
+.rt2 .topic-title{
+  font-weight: 700;
+  letter-spacing: .1px;
+}
+
+.rt2 .topic-desc{
+  margin: 12px 6px 6px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.rt2 .subtopic{
+  margin: 10px 0 0;
+}
+
+.rt2 .subtopic summary{
+  background: #fff;
+  box-shadow: none;
+}
+
+.rt2 .subtopic-title{
+  font-weight: 650;
+}
+
+.rt2 .subsub{
+  margin: 10px 10px 0;
+  padding: 10px 12px;
+  border-left: 3px solid rgba(14,165,233,.28);
+  background: rgba(255,255,255,.8);
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+.rt2 .subsub-title{
+  font-weight: 650;
+  margin-bottom: 8px;
+}
+
+.rt2 .papers{
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.rt2 .paper{
+  display: block;
+  text-decoration: none;
+  color: #0b4aa2;
+  background: #fff;
+  border: 1px dashed rgba(15,23,42,.18);
+  border-radius: 12px;
+  padding: 10px 10px;
+}
+.rt2 .paper:hover{
+  border-style: solid;
+  border-color: rgba(99,102,241,.35);
+  transform: translateY(-1px);
+  transition: 140ms ease;
+}
+
+.rt2 .paper.plain{
+  color: var(--ink);
+  border-style: solid;
+  border-color: var(--line);
+}
+
+.rt2 .meta{
+  display:block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: .92em;
+}
+
+.rt2 a{
+  color: #0b4aa2;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(11,74,162,.22);
+}
+.rt2 a:hover{
+  color: var(--accent2);
+  border-bottom-color: rgba(99,102,241,.45);
+}
+
+@media (prefers-reduced-motion: reduce){
+  .rt2 .paper:hover{ transform:none; transition:none; }
+}
+</style>  
 <meta http-equiv=Content-Type content="text/html; charset=utf-8">
 <link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
 <link rel="stylesheet" media="print" type="text/css" href="./style.css" />
