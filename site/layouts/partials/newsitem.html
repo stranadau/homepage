@@ -1,0 +1,9 @@
+{{- $lang := .lang -}}{{- $n := .n -}}
+<li class="news-item" data-type="{{ $n.type }}">
+  <div class="news-date">{{ partial "date.html" $n.date }}</div>
+  <div class="news-body">
+    <span class="badge badge-{{ $n.type }}">{{ i18n (printf "type_%s" $n.type) }}</span>
+    <div class="news-title">{{ with $n.link }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ partial "l.html" (dict "v" $n.title "lang" $lang) }}{{ with $n.link }}</a>{{ end }}</div>
+    {{ with $n.body }}<div class="news-text">{{ partial "l.html" (dict "v" . "lang" $lang) }}</div>{{ end }}
+  </div>
+</li>

@@ -1,0 +1,909 @@
+journals:
+- authors: Nur Indah Mukharromah, Taejeong Lim and Hyun Woo Park
+  title: 'Closed-Form Scattering Coefficients for Incident Axial and Evanescent Bending Waves in Edge-Cracked Timoshenko Beams: Completion of the 18-Coefficient Scattering Matrix'
+  venue: Wave Motion
+  details: Vol. 147, 103801, 2026
+  year: 2026
+  url: https://doi.org/10.1016/j.wavemoti.2026.103801
+- authors: Jin Ho Hwang and Hyun Woo Park
+  title: Physics-informed machine learning-assisted assessment of multiple incipient cracks using broadband modal frequencies from piezoelectric wafers bonded on a beam
+  venue: Structural Control and Health Monitoring
+  details: Vol. 2026(1), 5524571, 2026
+  year: 2026
+  url: https://doi.org/10.1155/stc/5524571
+- authors: Hyun Woo Park, Dongmin Lee, Jin Ho Hwang and Seong-Cheol Lee
+  title: Rational estimation of initial state of post-tensioned concrete beams using field measurement data
+  venue: International Journal of Concrete Structures and Materials
+  details: Vol. 20, Article 34, 2026
+  year: 2026
+  url: https://doi.org/10.1186/s40069-026-00910-8
+- authors: Taejeong Lim, Nur Indah Mukharromah, and Hyun Woo Park
+  title: Closed-form solutions for wave scattering coefficients of a Timoshenko beam with an edge crack considering axial–bending–shear coupling
+  venue: Applied Mathematical Modelling
+  details: Vol. 155, 116748, 2026
+  year: 2026
+  url: https://doi.org/10.1016/j.apm.2026.116748
+- authors: Taejeong Lim, Jin-Ho Hwang, Yerim Byun, Hyun Woo Park, and Dongho Jeon
+  title: Multi-mode piezoelectric (PZT) sensing for in-situ profiling of the evolution of dynamic properties in cement-based materials
+  venue: Cement and Concrete Composites
+  details: Vol. 167, 106445, 2026
+  year: 2026
+  url: https://doi.org/10.1016/j.cemconcomp.2025.106445
+- authors: Nur Indah Mukharromah, Taejeong Lim and Hyun Woo Park
+  title: Determination of Wave Scattering Coefficients in an Infinite Elastic Waveguide with a Crack Considering Axial-Bending Coupling
+  venue: KSCE Journal of Civil and Environmental Engineering Research
+  details: Vol. 45, No. 1, pp. 13–22, 2025
+  year: 2025
+  url: https://doi.org/10.12652/Ksce.2025.45.1.0013
+- authors: Hyun Woo Park, Nur Indah Mukharromah, Jin Ho Hwang, and Seong-Cheol Lee
+  title: Finite difference equation of Volterra integral equation for estimating the time-dependent prestress loss of a prestressed concrete beam
+  venue: Structures
+  details: Vol. 69, 107437, 2024
+  year: 2024
+  url: https://doi.org/10.1016/j.istruc.2024.107437
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Investigating the modal behaviors of a deep beam with a transverse open crack
+  venue: Journal of Sound and Vibration
+  details: Vol. 590, 118613, 2024
+  year: 2024
+  url: https://doi.org/10.1016/j.jsv.2024.118613
+- authors: Hyun Woo Park and Jin Ho Hwang
+  title: Predicting the Early-Age Time-Dependent Behaviors of a Prestressed Concrete Beam by Using Physics-Informed Neural Network
+  venue: Sensors
+  details: Vol. 23, No. 14, 6649, 2023
+  year: 2023
+  url: https://www.mdpi.com/1424-8220/23/14/6649
+- authors: Nansukusa Mirembe Sarah and Hyun Woo Park
+  title: Frequency Equation of a Curved Beam using the Phase-Closure Principle
+  venue: Transaction of Korean Society of Noise and Vibration Engineering
+  details: Vol. 32, No. 3, 280-294, 2022
+  year: 2022
+  url: https://doi.org/10.5050/KSNVE.2022.32.3.280
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Investigating the modal behaviors of a beam with a transverse crack on a high-frequency bending node
+  venue: International Journal of Mechanical Sciences
+  details: Vol. 221, 107217, 2022
+  year: 2022
+  url: https://doi.org/10.1016/j.ijmecsci.2022.107217
+- authors: Hyun Young Kim, Do Hyeon Ko and Hyun Woo Park
+  title: Camber Reconstruction for a Prefab PSC Girder Using Collocated Strain Measurements
+  venue: KSCE Journal of Civil and Environmental Engineering Research
+  details: Vol. 42, No. 2, 151-162, 2022
+  year: 2022
+  url: http://journal.auric.kr/jksce/ArticleDetail/RD_R/412524
+- authors: Hyun Woo Park and Jin Ho Hwang
+  title: Generic frequency equation for one-dimensional waveguides with incipient cracks based on the phase closure principle
+  venue: Journal of Sound and Vibration
+  details: Vol. 521, 116675, 2022
+  year: 2022
+  url: https://doi.org/10.1016/j.jsv.2021.116675
+- authors: Hyun Woo Park and Taejeong Lim
+  title: A closed-form frequency equation of an arbitrarily supported beam with a transverse open crack considering axial-bending modal coupling
+  venue: Journal of Sound and Vibration
+  details: Vol. 477, 115336, 2020
+  year: 2020
+  url: https://doi.org/10.1016/j.jsv.2020.115336
+- authors: Ji Kang Kang, Taejeong Lim and Hyun Woo Park
+  title: Predicting the modal frequencies of a cracked beam considering axial-bending coupling
+  venue: Transaction of Korean Society of Noise and Vibration Engineering
+  details: Vol. 29, No. 2, 270-279, 2019
+  year: 2019
+  url: https://doi.org/10.5050/KSNVE.2019.29.2.270
+- authors: Hyun Woo Park and Taejeong Lim
+  title: 'Investigating a common premise in structural health monitoring: Are higher modal frequencies more sensitive to an incipient crack on a beam than lower ones?'
+  venue: Engineering Structures
+  details: Vol. 176, 385-395, 2018
+  year: 2018
+  url: https://doi.org/10.1016/j.engstruct.2018.08.102
+- authors: Young Kon Ko, Jae Woong Hwang, Ji Kang Kang and Hyun Woo Park
+  title: Investigating moving and lifting impact factors of a crane runway girder
+  venue: Transaction of Korean Society of Noise and Vibration Engineering
+  details: Vol. 27, No. 6, 691-704, 2017
+  year: 2017
+  url: https://doi.org/10.5050/KSNVE.2017.27.6.691
+- authors: Hyun Woo Park
+  title: A simplified frequency equation and its approximate solution of a beam with an incipient crack from a wave perspective
+  venue: Wave Motion
+  details: Vol. 75, 1-12, 2017
+  year: 2017
+  url: https://doi.org/10.1016/j.wavemoti.2017.08.001
+- authors: Hyun Woo Park
+  title: Evolution of electromechanical admittance of piezoelectric transducers on a Timoshenko beam from wave propagation perspective
+  venue: Journal of Intelligent Material Systems and Structures
+  details: Vol. 28, No. 9, 1221-1245, 2017
+  year: 2017
+  url: https://doi.org/10.1177/1045389X16667555
+- authors: Yong Jae Shin and Hyun Woo Park
+  title: Estimating High-Frequency Damping of a Beam through Electro-Mechanical Signatures of Piezoelectric Wafer Mounted on the Beam
+  venue: Journal of the Korean Society of Civil Engineers
+  details: Vol. 37, No. 1, 217-229, 2017
+  year: 2017
+  url: https://doi.org/10.12652/Ksce.2017.37.1.0217
+- authors: Eun Jin Kim and Hyun Woo Park
+  title: The Evolution of Electromechanical Admittance from Mode-converted Lamb Waves Reverberating on a Notched Beam
+  venue: Transaction of Korean Society of Noise and Vibration Engineering
+  details: Vol. 26, No. 3, 270-280, 2016
+  year: 2016
+  url: https://doi.org/10.5050/KSNVE.2016.26.3.270
+- authors: Hyun Woo Park
+  title: Understanding the electromechanical admittance of piezoelectric transducers collocated on a finite beam from the perspective of wave propagation
+  venue: Journal of Intelligent Material Systems and Structures
+  details: Vol. 25, No. 17, 2122-2140, 2014
+  year: 2014
+  url: https://doi.org/10.1177/1045389X14549874
+- authors: Hyeonseok Lee, Hyun Woo Park and Hoon Sohn
+  title: Pipe Defect Visualization and Quantification Using Longitudinal Ultrasonic Modes
+  venue: International Journal of Structural Stability and Dynamics
+  details: Vol. 14, 1440008, 2014
+  year: 2014
+  url: https://doi.org/10.1142/S0219455414400082
+- authors: Hyun Woo Park
+  title: Numerical simulation and investigation of the spatial focusing of time reversal A0 Lamb wave mode using circular piezoelectric transducers collocated on a rectangular plate
+  venue: Journal of Sound and Vibration
+  details: Vol. 332, 2672-2687, 2013
+  year: 2013
+  url: https://doi.org/10.1016/j.jsv.2012.12.030
+- authors: Seung Keun Park and Hyun Woo Park
+  title: Determining the Size of a Hankel Matrix in Subspace System Identification for Estimating the Stiffness Matrix and Flexural Rigidities of a Shear Building
+  venue: Journal of Computational Structural Engineering Institute of Korea
+  details: Vol. 26, No. 2, 99-112, 2013
+  year: 2013
+  url: https://doi.org/10.7734/COSEIK.2013.26.2.99
+- authors: Jeong Hee Choi, Hae Sung Lee and Hyun Woo Park
+  title: Investigating the spatial focusing performance of time reversal Lamb waves on a plate through the finite element method
+  venue: Transaction of Korean Society of Noise and Vibration Engineering
+  details: Vol. 21, No. 12, 1120-1131, 2011
+  year: 2011
+  url: https://doi.org/10.5050/KSNVE.2011.21.12.1120
+- authors: Hyun Woo Park
+  title: Investigating the spatial focusing of time reversal Lamb waves using a virtual sensor model on a rectangular plate
+  venue: Journal of Computational Structural Engineering Institute of Korea
+  details: Vol. 24, No. 5, 553-568, 2011
+  year: 2011
+  url: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001597504
+- authors: Min Koo Kim, Eun Jin Kim, Yun Kyu An, Hyun Woo Park and Hoon Sohn
+  title: Reference-free impedance-based crack detection in plates
+  venue: Journal of Sound and Vibration
+  details: Vol. 330, Iss. 24, 5949-5962, 2011
+  year: 2011
+  url: https://doi.org/10.1016/j.jsv.2011.07.025
+- authors: Eun Jin Kim, Hyun Woo Park, Min Koo Kim and Hoon Sohn
+  title: Investigating electro-mechanical signals from collocated piezoelectric wafers for the reference-free damage diagnosis of a plate
+  venue: Smart Materials and Structures
+  details: Vol. 20, 065001, 2011
+  year: 2011
+  url: https://doi.org/10.1088/0964-1726/20/6/065001
+- authors: Seung Bum Kim, Chang Gil Lee, Jung Wuk Hong, Hyun Woo Park and Hoon Sohn
+  title: Applications of an instantaneous damage detection technique to plates with additional complexities
+  venue: Journal of Nondestructive Evaluation
+  details: Vol. 29, Iss. 3, 189-205, 2010
+  year: 2010
+  url: http://www.springerlink.com/content/u080455522304107
+- authors: Hyun Woo Park
+  title: Simulating a time reversal process for A0 Lamb wave mode on a rectangular plate using a virtual sensor array model
+  venue: Transaction of Korean Society of Noise and Vibration Engineering
+  details: Vol. 20, No. 5, 460-469, 2010
+  year: 2010
+  url: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001445248
+- authors: Hyun Woo Park, Ki Lyong Lim, Eun Jin Kim and Hoon Sohn
+  title: Spectral element formulation for dynamic analysis of a coupled piezoelectric wafer and beam system
+  venue: Computers & Structures
+  details: Vol. 88, Iss. 9-10, 567-580, 2010
+  year: 2010
+  url: https://doi.org/10.1016/j.compstruc.2010.01.010
+- authors: Hae Sung Lee, Yun Hwa Hong and Hyun Woo Park
+  title: Design of an FIR filter for the displacement reconstruction using measured acceleration in low-frequency dominant structures
+  venue: International Journal for Numerical Methods in Engineering
+  details: Vol. 82, No. 4, 403-434, 2010
+  year: 2010
+  url: https://doi.org/10.1002/nme.2769
+- authors: Eun Jin Kim, Hoon Sohn and Hyun Woo Park
+  title: Experimental verification of spectral element analysis for the high-frequency responses of a beam with a surface bonded piezoelectric transducer
+  venue: Transaction of Korean Society of Noise and Vibration Engineering
+  details: Vol. 19, No. 12, 1347-1355, 2009
+  year: 2009
+  url: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001396905
+- authors: Hyun Woo Park, Seung Bum Kim and Hoon Sohn
+  title: Understanding a time reversal process in Lamb wave propagation
+  venue: Wave Motion
+  details: Vol. 46, No. 7, 451-467, 2009
+  year: 2009
+  url: https://doi.org/10.1016/j.wavemoti.2009.04.004
+- authors: Hyun Woo Park, Seung Bum Kim and Hoon Sohn
+  title: Understanding the Effects of the Dispersion and Reflection of Lamb Waves on a Time Reversal Process
+  venue: Journal of Computational Structural Engineering Institute of Korea
+  details: Vol. 22, No. 1, 89-104, 2009
+  year: 2009
+  url: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001318639
+- authors: Joo Sung Kang and Hyun Woo Park
+  title: Understanding the asymptotic convergence of domain of attraction in extreme value distribution for establishing baseline distribution in statistical damage assessment of a structure
+  venue: Transaction of the Korea Institute for Structural Maintenance Inspection
+  details: Vol. 13, No. 2, 231-242, 2009
+  year: 2009
+  url: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001330841
+- authors: Ki Lyong Lim, Eun Jin Kim, Joo Sung Kang and Hyun Woo Park
+  title: Spectral element formulation for analysis of Lamb wave propagation on a plate induced by surface bonded PZT transducers
+  venue: Journal of Korean Society of Noise and Vibration Engineering
+  details: Vol. 18, No. 11, 1157-1169, 2008
+  year: 2008
+  url: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001291910
+- authors: Seung Keun Park, Hyun Woo Park, Soobong Shin and Hae Sung Lee
+  title: Detection of abrupt structural damage induced by an earthquake using a moving time window technique
+  venue: Computers and Structures
+  details: Vol. 86, 1253-1265, 2008
+  year: 2008
+  url: https://doi.org/10.1016/j.compstruc.2007.11.003
+- authors: Hoon Sohn, Hyun Woo Park, Kincho H. Law and Charles R. Farrar
+  title: Damage detection in composite plates by using an enhanced time reversal method
+  venue: Journal of Aerospace Engineering
+  details: (ASCE), Vol. 20, No. 3, 141-151, 2007
+  year: 2007
+  url: https://doi.org/10.1061/(ASCE)0893-1321(2007)20:3(141)
+- authors: Hyun Woo Park, Hoon Sohn, Kincho H. Law and Charles R. Farrar
+  title: Time reversal active sensing for health monitoring of a composite plate
+  venue: Journal of Sound and Vibration
+  details: Vol. 302, 50-66, 2007
+  year: 2007
+  url: https://doi.org/10.1016/j.jsv.2006.10.044
+- authors: Hyun Woo Park, Man Woo Park, Byeong Kyu Ahn and Hae Sung Lee
+  title: 1-norm based regularization scheme for system identification of structures with discontinuous system parameters
+  venue: International Journal for Numerical Methods in Engineering
+  details: Vol. 69, No. 3, 504-523, 2007
+  year: 2007
+  url: https://doi.org/10.1002/nme.1778
+- authors: Hoon Sohn, Hyun Woo Park, Kincho H. Law and Charles R. Farrar
+  title: Combination of a time reversal process and a consecutive outlier analysis for baseline-free damage diagnosis
+  venue: Journal of Intelligent Material Systems and Structures
+  details: Vol. 18, No. 4, 335-346, 2007
+  year: 2007
+  url: https://doi.org/10.1177/1045389X06066291
+- authors: Hyun Woo Park and Hoon Sohn
+  title: Parameter estimation of the generalized extreme value distribution for structural health monitoring
+  venue: Probabilistic Engineering Mechanics
+  details: Vol. 21, Iss. 4, 366-376, 2006
+  year: 2006
+  url: https://doi.org/10.1016/j.probengmech.2005.11.009
+- authors: Hyun Woo Park, Soobong Shin and Hae Sung Lee
+  title: Determination of an optimal regularization factor in system identification with Tikhonov regularization for linear elastic continua
+  venue: International Journal for Numerical Methods in Engineering
+  details: Vol. 51, No. 10, 1211-1230, 2001
+  year: 2001
+  url: https://doi.org/10.1002/nme.219
+- authors: Hae Sung Lee, Cheon Jong Park and Hyun Woo Park
+  title: Identification of geometric shapes and material properties of inclusions in two-dimensional finite bodies by boundary parameterization
+  venue: Computer Methods in Applied Mechanics and Engineering
+  details: Vol. 181, No. 1-2, pp.1-20, 2000
+  year: 2000
+  url: https://doi.org/10.1016/S0045-7825(99)00165-6
+- authors: Hae Sung Lee, Yong Han Kim, Cheon Jong Park and Hyun Woo Park
+  title: A new spatial regularization scheme for the identification of the geometric shape of an inclusion in a finite body
+  venue: International Journal for Numerical Methods in Engineering
+  details: Vol. 46, No. 7, pp. 973-992, 1999
+  year: 1999
+  url: https://doi.org/10.1002/(SICI)1097-0207(19991110)46:7%3C973::AID-NME730%3E3.0.CO;2-Q
+- authors: Hyun Woo Park and Hae Sung Lee
+  title: A study on damage detection in continuum structures by plastic system identification technique with static responses
+  venue: Journal of Korean Society of Civil Engineers
+  details: Vol. 19, No. I-4, 623-633, 1999
+  year: 1999
+  url: http://strana.dau.ac.kr/publications/KSCE99.pdf
+conferences:
+- authors: Taejeong Lim, Nur Indah Mukharromah and Hyun Woo Park
+  title: Analytical solution of wave scattering coefficients for bending incident waves in a cracked beam considering axial-bending-shear coupling
+  venue: Proceedings of the 2025 COSEIK Academic Symposium
+  details: '2025'
+  year: 2025
+- authors: Nur Indah Mukharromah, Taejeong Lim and Hyun Woo Park
+  title: Investigating the wave scattering coefficients considering the axial-bending-shear coupling at an edge crack on a Timoshenko beam
+  venue: Proceedings of the KSNVE Autumn Conference 2025
+  details: '2025'
+  year: 2025
+- authors: Nur Indah Mukharromah, Taejeong Lim and Hyun Woo Park
+  title: Wave scattering coefficients at the crack in an infinite elastic beam considering axial-bending coupling
+  venue: Proceedings of the 31st International Congress on Sound and Vibration (ICSV31)
+  details: '2025'
+  year: 2025
+- authors: Jin Ho Hwang and Hyun Woo Park
+  title: Evaluation of initial state of prestressed concrete girder using field measurement data
+  venue: Proceedings of the 2025 KSCE Busan·Ulsan·Gyeongnam (BUG) Convention
+  details: '2025'
+  year: 2025
+- authors: Nur Indah Mukharromah, Taejeong Lim and Hyun Woo Park
+  title: Effect of axial-bending coupling on crack-induced wave scattering coefficients in infinite beams
+  venue: Proceedings of the 2025 KSCE Busan·Ulsan·Gyeongnam (BUG) Convention
+  details: '2025'
+  year: 2025
+- authors: Taejeong Lim, Jin Ho Hwang, Yerim Byun, Hyun Woo Park and Dongho Jeon
+  title: An experimental approach using surface-bonded piezoelectric wafers to estimate the dynamic elastic modulus of Portland cement
+  venue: Proceedings of the 2025 KSCE Busan·Ulsan·Gyeongnam (BUG) Convention
+  details: '2025'
+  year: 2025
+- authors: Nur Indah Mukharromah, Taejeong Lim and Hyun Woo Park
+  title: Scattering coefficient analysis of a rod with an edge crack considering axial-bending coupling
+  venue: Proceedings of the KSNVE Fall Conference
+  details: '2024'
+  year: 2024
+- authors: Taejeong Lim, Nur Indah Mukharromah and Hyun Woo Park
+  title: Determination of wave scattering coefficients for bending incident waves in infinite elastic waveguide with a crack considering axial–bending coupling
+  venue: Proceedings of the KSCE 2024 Convention
+  details: '2024'
+  year: 2024
+- authors: Taejeong Lim and Hyun Woo Park
+  title: 'Predicting the modal frequencies of deep beams with a transverse crack: addressing limitations of conventional methods through an analytical model considering modes I and II crack'
+  venue: Proceedings of the 2024 KSCE Busan–Ulsan–Gyeongnam Civil Engineering Convention
+  details: '2024'
+  year: 2024
+- authors: Jin Ho Hwang, Nur Indah Mukharromah and Hyun Woo Park
+  title: Multiple incipient cracks assessment of a beam using the phase-closure principle based broadband modal frequency prediction model
+  venue: Proceedings of the 2024 KSCE Busan–Ulsan–Gyeongnam Civil Engineering Convention
+  details: '2024'
+  year: 2024
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Addressing limitations of previous studies for predicting the modal frequencies of deep beams with a transverse crack
+  venue: Proceedings of the KSNVE Spring Conference
+  details: '2024'
+  year: 2024
+- authors: Jin Ho Hwang and Hyun Woo Park
+  title: Multiple incipient cracks assessment of a beam using broad-band modal frequency equation based on the phase closure principle
+  venue: Proceedings of the KSNVE Spring Conference
+  details: '2024'
+  year: 2024
+- authors: Jin Ho Hwang, Nur Indah Mukharromah and Hyun Woo Park
+  title: Physics-informed neural network approach for time-dependent behavior prediction and camber reconstruction of a PSC girder
+  venue: Proceedings of the COSEIK Annual Conference
+  details: '2024'
+  year: 2024
+- authors: Jin Ho Hwang, Nur Indah Mukharromah and Hyun Woo Park
+  title: Physics-Informed neural network approach for predicting early-age prestress loss and camber of a PSC beam
+  venue: Proceedings of ANCRiSST 2024
+  details: '2024'
+  year: 2024
+- authors: Taejeong Lim and Hyun Woo Park
+  title: 'Modal frequency prediction of a cracked deep beam: addressing the fundamental limitation of previous methods'
+  venue: Proceedings of the 3rd IABSE Young Engineers Colloquium in East Asia
+  details: '2024'
+  year: 2024
+- authors: Jin Ho Hwang, Nur Indah Mukharromah, and Hyun Woo Park
+  title: Predicting the early-age time-dependent behaviors of a prestressed concrete beam using a physics-informed neural network
+  venue: Proceedings of the 3rd IABSE Young Engineers Colloquium in East Asia
+  details: '2024'
+  year: 2024
+- authors: Jin Ho Hwang, Nur Indah Mukharromah, and Hyun Woo Park
+  title: Physics-Informed Neural Network Approach for Predicting the Time-Dependent Behaviors of a PSC Beam
+  venue: Proceedings of the KSCE Convention 2023
+  details: '2023'
+  year: 2023
+- authors: Jin Ho Hwang and Hyun Woo Park
+  title: PINN based AI model for PSC girder shape management
+  venue: Proceedings of the KSNVE Autumn Conference 2023
+  details: '2023'
+  year: 2023
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Experimental verification of dynamic analysis of a deep beam with a crack
+  venue: Proceedings of the 2023 KIBSE Technology Conference
+  details: '2023'
+  year: 2023
+- authors: Jin Ho Hwang and Hyun Woo Park
+  title: Physics-Informed Neural Network Approach for Predicting the Early-Age Time-Dependent Behaviors of a Prestressed Concrete Beam
+  venue: Proceedings of ITC 2023 (International Technical Conference)
+  details: '2023'
+  year: 2023
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Analysis of the Modal Frequencies of a Cracked Deep Beam
+  venue: Proceedings of ICSV29 (The 29th International Congress on Sound and Vibration)
+  details: '2023'
+  year: 2023
+- authors: Jin Ho Hwang and Hyun Woo Park
+  title: Multiple Incipient Crack Assessment of Beam Using Physics-Informed Machine Learning with Broadband Modal Frequencies
+  venue: Proceedings of ICSV29 (The 29th International Congress on Sound and Vibration)
+  details: '2023'
+  year: 2023
+- authors: Jin Ho Hwang and Hyun Woo Park
+  title: PSC Girder Camber Reconstruction Using Physics-Informed Neural Network
+  venue: Proceedings of the KSNVE Spring Conference
+  details: '2023'
+  year: 2023
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Analysis of vibration characteristics of a deep beam with a transverse crack
+  venue: Proceedings of the 2023 Spring Conference of the Korean Society of Noise and Vibration Engineering (KSNVE)
+  details: '2023'
+  year: 2023
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Analysis of the dynamic characteristics of a cracked deep beam
+  venue: Proceedings of KIBSE 2022 Technology Conference
+  details: '2022'
+  year: 2022
+- authors: Jin Ho Hwang and Hyun Woo Park
+  title: Experimental Verification of a Physics-Informed Classification Learning Model for assessing multiple incipient cracks of a beam
+  venue: Proceedings of KSNVE 2022 Autumn Conference
+  details: '2022'
+  year: 2022
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Estimating the crack depth in a beam by using the multiple modal frequencies
+  venue: Proceedings of KSNVE 2022 Autumn Conference
+  details: '2022'
+  year: 2022
+- authors: Jin Ho Hwang and Hyun Woo Park
+  title: Experimental verification of a Physics-Informed classification learning model for assessing multiple cracks of a beam
+  venue: Proceedings of KSCE 2022 Convention
+  details: '2022'
+  year: 2022
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Investigating the Modal Frequency Characteristics of a Deep Beam with a Crack
+  venue: Proceedings of KSCE 2022 Convention
+  details: '2022'
+  year: 2022
+- authors: Jin Ho Hwang and Hyun Woo Park
+  title: Crack assessment of beam using machine learning with augmented sensing
+  venue: Proceedings of The 17th East Asian-Pacific Conference on Structural Engineering and Construction
+  details: '2022'
+  year: 2022
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Predicting the Modal Frequencies of a Cracked Beam Considering Crack Modes 1 and 2
+  venue: Proceedings of The 17th East Asian-Pacific Conference on Structural Engineering and Construction
+  details: '2022'
+  year: 2022
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Estimating the Local Flexibility of a Crack on a Beam by Using the Broadband Modal Frequencies
+  venue: Proceedings of KSNVE 2022 Spring conference
+  details: '2022'
+  year: 2022
+- authors: Jin Ho Hwang, Taejeong Lim, Hyun Woo Park
+  title: Crack Detection of beam using machine learning and fractional reduction of modal frequencies
+  venue: Proceedings of the 2021 ICTSCE Autumn Conference
+  details: '2021'
+  year: 2021
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Predicting broadband mode frequencies considering in-plane crack modes of a cracked beam
+  venue: Proceedings of KSNVE 2021 Autumn Conference
+  details: '2021'
+  year: 2021
+- authors: Jin Ho Hwang, Hyun Woo Park
+  title: Multiple incipient crack detection of a beam using machine learning and augmented sensing
+  venue: Proceedings of KSNVE 2021 Autumn conference
+  details: '2021'
+  year: 2021
+- authors: Taejeong Lim and Hyun Woo Park
+  title: A closed frequency equation of a cracked beam considering shear crack mode
+  venue: Proceedings of KSCE 2021 Convention
+  details: '2021'
+  year: 2021
+- authors: Jin Ho Hwang, Taejeong Lim, Hyun Woo Park
+  title: Crack detection of a beam using machine learning and augmented sensing
+  venue: Proceedings of KSCE 2021 Conference
+  details: '2021'
+  year: 2021
+- authors: Kim, Hyunyoung, Ko, Dohyeon, Park, Hyunwoo
+  title: Reconstructing the camber shape of prefab PSC girder using strain measurements
+  venue: Proceedings of KSCE 2021 Conference
+  details: '2021'
+  year: 2021
+- authors: Kim, Hyunyoung, Ko, Dohyeon, Park, Hyunwoo
+  title: Development of structural module for predicting core performance of prefab PSC girders considering time-dependent behavior
+  venue: Proceedings of KIBIM 2021 Conference
+  details: '2021'
+  year: 2021
+- authors: Nansukusa Mirembe Sarah, Hyun Woo Park
+  title: Frequency Equation of a Curved Beam using Phase-Closure Principle
+  venue: Proceedings of KSNVE 2021 Spring Conference
+  details: 73, 2021
+  year: 2021
+- authors: Jin Ho Hwang, Taejeong Lim, Hyun Woo Park
+  title: Crack detection of a beam using machine learning and fractional reduction of modal frequencies
+  venue: Proceedings of KSNVE 2021 Spring Conference
+  details: '2021'
+  year: 2021
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Analysis of high frequency modal frequency of a cracked beam considering open crack mode and in-plane shear crack mode
+  venue: Proceedings of KSNVE 2020 Autumn Conference
+  details: 54, 2020
+  year: 2020
+- authors: Jin Ho Hwang and Hyun Woo Park
+  title: High mode frequency prediction model of multi-cracked beams
+  venue: Proceedings of KSNVE 2020 Autumn Conference
+  details: 305, 2020
+  year: 2020
+- authors: Hyun Woo Park, Nansukusa Mirembe Sarah, Do Hyeon Ko
+  title: Investigating the Dynamic Analysis Models of Prestressed Concrete Beams from Wave Mechanics Perspective
+  venue: Proceedings of KSCE 2020 Convention
+  details: 708, 2020
+  year: 2020
+- authors: Jin Ho Hwang, Hyun Young Kim, Do Hyeon Ko, Hyun Woo Park
+  title: High-mode frequency prediction model of a cracked beam considering temperature variation
+  venue: Proceedings of KSCE 2020 Convention
+  details: 702, 2020
+  year: 2020
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Analysis of high frequency modal frequency of a cracked beam considering in-plane shear crack mode
+  venue: Proceedings of KSCE 2020 Convention
+  details: 705, 2020
+  year: 2020
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Analysis of high frequency modal frequency of a cracked beam considering in-plane shear crack mode
+  venue: Proceedings of KSNVE 2020 Spring Conference
+  details: 83, 2020
+  year: 2020
+- authors: Jin Ho Hwang, Taejeong Lim, Hyun Woo Park
+  title: High-mode frequency prediction model of a cracked beam considering temperature variation
+  venue: Proceedings of KIBIM 2020 Conference
+  details: '2020'
+  year: 2020
+- authors: Taejeong Lim, Jin Ho Hwang and Hyun Woo Park
+  title: A generalized frequency equation of a cracked beam using a modal coupling factor
+  venue: Proceedings of KSNVE 2019 Fall Conference
+  details: 178, 2019
+  year: 2019
+- authors: Taejeong Lim, Jin Ho Hwang and Hyun Woo Park
+  title: Pursuing a unified closed-form frequency equation of a cracked beam considering heterogeneous modal coupling
+  venue: Proceedings of KSCE 2019 Convention
+  details: 75, 2019
+  year: 2019
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Investigating the axial-bending coupling of a cracked beam in the high frequency domain
+  venue: Proceedings of KSNVE 2019 Spring Conference
+  details: 237, 2019
+  year: 2019
+- authors: Kwang Yeun Park and Hyun Woo Park
+  title: Error factor analysis of cable tension estimation for cable-stayed bridge using multiple natural frequencies
+  venue: Proceedings of KSCE 2018 Convention
+  details: 351-352, 2018
+  year: 2018
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Natural frequencies of a cracked beam with axial force considering axial-bending coupling
+  venue: Proceedings of KSCE 2018 Convention
+  details: 349-350, 2018
+  year: 2018
+- authors: Kwang Yeun Park and Hyun Woo Park
+  title: Error analysis of cable tension estimation using linear regression
+  venue: Proceedings of 2018 KSMI Autumn Conference
+  details: 236-237, 2018
+  year: 2018
+- authors: Taejeong Lim and Hyun Woo Park
+  title: An approximate solution for predicting the modal frequencies of a cracked beam under a compressive axial force
+  venue: Proceedings of 2018 KSNVE Spring Conference
+  details: 203, 2018
+  year: 2018
+- authors: Hyun Woo Park and Taejeong Lim
+  title: Are high-frequency vibration responses more sensitive to an incipient crack on a beam than low-frequency ones?
+  venue: Proceedings of KSCE 2017 Convention
+  details: 81, 2017
+  year: 2017
+- authors: Hyun Woo Park
+  title: Approximate natural frequencies of an arbitrarily-supported beam with an incipient crack
+  venue: Proceedings of KSCE 2017 Convention
+  details: 25-26, 2017
+  year: 2017
+- authors: Ji Kang Kang and Hyun Woo Park
+  title: Predicting the natural frequencies of a cracked beam considering axial-bending coupling from wave propagation perspective
+  venue: Proceedings of COSEIK 2017 Annual Conference
+  details: 133, 2017
+  year: 2017
+- authors: Hyun Woo Park, Young Kon Ko, Jae Woong Hwang and Ji Kang Kang
+  title: Experimental study for evaluating impact factor of crane runway girders
+  venue: Proceedings of KSCE 2016 Convention
+  details: 61-62, 2016
+  year: 2016
+- authors: Hyun Woo Park and Yong Jae Shin
+  title: Estimating high-frequency damping of a beam through electro-mechanical signatures of piezoelectric transducer mounted on a beam
+  venue: Proceedings of KSCE 2016 Convention
+  details: 44-45, 2016
+  year: 2016
+- authors: Ji Kang Kang and Hyun Woo Park
+  title: Formulating natural frequencies of a cracked beam from wave propagation perspective
+  venue: Proceedings of 2016 KSMI Autumn Conference
+  details: 15-17, 2016
+  year: 2016
+- authors: Young Kon Ko, Jae Woong Hwang, Ji Kang Kang and Hyun Woo Park
+  title: Analyzing the effects of dynamic loads on a crane runway girder
+  venue: Proceedings of 2016 KSNVE Spring Conference
+  details: 728-729, 2016
+  year: 2016
+- authors: Hyun Woo Park
+  title: Electromechanical admittance of piezoelectric transducers on a finite Timoshenko beam from wave propagation perspective
+  venue: presented at KIBSE Annual Conference
+  details: November, 2014
+  year: 2014
+- authors: Hyun Woo Park, Seung Yup Jang and Seong Baik Park
+  title: Correlation analysis between track irregularity and maintenance of high-speed railway
+  venue: presented at KSR Autumn Conference
+  details: October, 2014
+  year: 2014
+- authors: Seung Keun Park and Hyun Woo Park
+  title: Determination of optimal sampling rate and Hankel matrix size for subspace SI in shear building under earthquake
+  venue: Proc. SPIE 9064, Health Monitoring of Structural and Biological Systems 2014
+  details: 90641P, March 2014
+  year: 2014
+- authors: Dae Jae Seo and Hyun Woo Park
+  title: Investigating the spatial focusing performance of time reversal Lamb waves on a plate with respect to input source location and the number of sensors
+  venue: presented at KSMI Annual Conference
+  details: April 2013
+  year: 2013
+- authors: Seung Keun Park, Hae Sung Lee and Hyun Woo Park
+  title: Parameter estimation in Subspace SI for the numerical stability of structural system identification
+  venue: presented at KSMI Annual Conference
+  details: November 2012
+  year: 2012
+- authors: Hyun Woo Park
+  title: Investigating Elasto-dynamic Correlation between Wave Propagation and Vibration in a Finite Waveguide
+  venue: presented at KSNVE conference
+  details: April 2012
+  year: 2012
+- authors: Seung Keun Park, Hae Sung Lee and Hyun Woo Park
+  title: Investigation of numerical instability in N4SID for structural system identification
+  venue: presented at COSEIK Annual Conference
+  details: April, 2012
+  year: 2012
+- authors: Hyeonseok Lee, Hoon Sohn and Hyun Woo Park
+  title: Imaging of pipeline defects based on extraction of mode-converted guided waves
+  venue: ''
+  details: Proc. SPIE 8348, Health Monitoring of Structural and Biological Systems 2012, 83480C, March 2012
+  year: 2012
+- authors: Jeong Hee Choi, Hae Sung Lee and Hyun Woo Park
+  title: Investigating the spatial focusing performance of time reversal Lamb waves for impact localization on a plate
+  venue: presented at KSNVE conference
+  details: Hotel Inter-Burgo Daegu, 28 October, 2011
+  year: 2011
+- authors: Hyun Woo Park
+  title: Simulating the spatial focusing of time reversal Lamb waves using virtual sensors
+  venue: presented at COSEIK Annual Conference
+  details: Haeundae Grand Hotel Busan, 14 April, 2011
+  year: 2011
+- authors: Hyeonseok Lee, Hoon Sohn and Hyun Woo Park
+  title: Pipeline monitoring using an integrated MFC/FBG system
+  venue: ''
+  details: SPIE 7981 (85), pp. 1-13, March, 2011
+  year: 2011
+- authors: Eun Jin Kim, Hoon Sohn and Hyun Woo Park
+  title: Investigating mode-converted Lamb wave signals induced by a notch on a beam in the frequency domain
+  venue: ''
+  details: SPIE 7984 (38), pp. 1-10, March, 2011
+  year: 2011
+- authors: Joo Sung Kang and Hyun Woo Park
+  title: Statistical Damage assessment based on the extreme value distribution using vibration responses
+  venue: Presented at the Fifth International Conference on Bridge Maintenance
+  details: Safety and Management, IABMAS 2010, Philadelphia USA, 14 July, 2010
+  year: 2010
+- authors: Hyun Woo Park
+  title: Simulating a time reversal process for A0 Lamb wave mode on a rectangular plate using a virtual sensor array model
+  venue: presented at KSNVE conference
+  details: Hotel Ramada Plaza Jeju, 13 May, 2010
+  year: 2010
+- authors: Eun Jin Kim, Hyun Woo Park, Hoon Sohn and Min Koo Kim
+  title: Understanding a reference-free approach using the electro-mechanical signatures from piezoelectric wafers collocated on a plate
+  venue: presented at KSNVE conference
+  details: Hotel Ramada Plaza Jeju, 13 May, 2010
+  year: 2010
+- authors: Eun Jin Kim, Hoon Sohn and Hyun Woo Park
+  title: Decomposing the electro-mechanical signatures of collocated piezoelectric wafers for the baseline-free damage diagnosis of a plate
+  venue: presented at COSEIK Annual Conference
+  details: Pheonix Island Jeju, 8 April, 2010
+  year: 2010
+- authors: Eun Jin Kim, Hoon Sohn and Hyun Woo Park
+  title: Spectrum element analysis for the frequency response functions of a beam with a surface bonded piezoelectric transducer
+  venue: presented at KSNVE conference
+  details: Hotel Hyundai Mokpo, 29 October, 2009
+  year: 2009
+- authors: Eun Jin Kim, Hoon Sohn and Hyun Woo Park
+  title: Spectrum element analysis for the electro-mechanical admittance of dual piezoelectric transducers bonded on a beam with damage
+  venue: Proceedings of 2009 KSCE Conference
+  details: 340-343 2009
+  year: 2009
+- authors: Eun Jin Kim, Hoon Sohn and Hyun Woo Park
+  title: Spectral element analysis of the electro-mechanical admittance of piezoelectric sensors bonded on a structure
+  venue: presented at KSNVE conference
+  details: Han-hwa Resort Seol-ak, 23 April, 2009
+  year: 2009
+- authors: Hyun Woo Park, Ki Lyong Lim, Eun Jin Kim and Hoon Sohn
+  title: Spectral element formulation for analysis of high-frequency dynamic responses induced by surface-bonded piezoelectric transducers
+  venue: ''
+  details: SPIE 7292 (23), pp. 1-12, March, 2009
+  year: 2009
+- authors: Joo Sung Kang and Hyun Woo Park
+  title: Understanding the asymptotic convergence of domain of attraction in extreme value distribution for establishing baseline distribution in statistical damage assessment of a structure
+  venue: presented at 2008 KSMI Spring Conference
+  details: 27 November, 2008
+  year: 2008
+- authors: Ki Lyong Lim, Eun Jin Kim, Kwang Kyu Choi and Hyun Woo Park
+  title: Analysis of Lamb wave propagation on a plate using the spectral element method
+  venue: presented at KSNVE conference
+  details: Changwon Convention Center, 20 November, 2008
+  year: 2008
+- authors: Ki Lyong Lim, Eun Jin Kim, Kwang Kyu Choi and Hyun Woo Park
+  title: Analysis of Lamb wave propagation on a plate using the spectral element method
+  venue: Proceedings of 2008 KSCE Conference
+  details: Daejeon Convention Center, 29-31 October, 2008 (poster)
+  year: 2008
+- authors: Joo Sung Kang and Hyun Woo Park
+  title: Asymptotic convergence of domain of attraction in extreme value distribution for structural health monitoring
+  venue: Proceedings of 2008 KSCE Conference
+  details: 2544-2547, 2008
+  year: 2008
+- authors: Yun Hwa Hong, Hyun Woo Park and Hae Sung Lee
+  title: A regularization scheme for displacement reconstruction using measured structural acceleration data
+  venue: Proceedings of the Fourth International Conference on Bridge Maintenance
+  details: Safety and Management, IABMAS '08, Seoul, Korea, July 13-17, pp.520-527, 2008.7
+  year: 2008
+- authors: Yong Han Kim, Hyun Woo Park, Jae Woong Hwang and Hae Sung Lee
+  title: Internal damage localization in a thick plate using moving sensing windows
+  venue: Proceedings of the Fourth International Conference on Bridge Maintenance
+  details: Safety and Management, IABMAS '08, Seoul, Korea, July 13-17, pp.896-902, 2008.7
+  year: 2008
+- authors: Hyun Woo Park, Joo Sung Kang, Jung-Wuk Hong and Hoon Sohn
+  title: Understanding the effects of complex structural features on guided wave propagation
+  venue: Proceedings of the 15th International Congress on Sound and Vibration
+  details: 1299-1306, 2008
+  year: 2008
+- authors: Yun Hwa Hong, Hyun Woo Park and Hae Sung Lee
+  title: A regularization scheme for displacement reconstruction using acceleration data measured from structures
+  venue: ''
+  details: SPIE 6932 (28), pp. 1-11, March, 2008
+  year: 2008
+- authors: Yun Hwa Hong, Hyun Woo Park and Hae Sung Lee
+  title: A Regularization scheme for displacement reconstruction using acceleration data measured from structures
+  venue: Proceedings of 2007 KSMI Spring Conference
+  details: Seoul, May. 11, 2007.5
+  year: 2007
+- authors: Jongheon Kim, Hyun Woo Park, Yun Hwa Hong, Hae Sung Lee
+  title: Moving vehicle identification using measured bridge acceleration
+  venue: Proceedings of 2007 KSCE Conference
+  details: Taegu EXCO, Taegu, Oct. 10-12, pp.3019-3022, 2007.10. (Poster)
+  year: 2007
+- authors: Yun Hwa Hong, Hyun Woo Park, Sung Uk Lee and Hae Sung Lee
+  title: A Regularization scheme for displacement reconstruction using acceleration data measured from structures
+  venue: Proceedings of 2006 KSCE Conference
+  details: Kim Dae-Jung Convention Center, Kwangju, Oct. 12-13, pp338-341., 2006
+  year: 2006
+- authors: Yong Han Kim, Hyun Woo Park and Hae Sung Lee
+  title: Damage localization of a thick plate with internal defect using moving sensing-window
+  venue: Proceedings of 2006 KSCE Conference
+  details: Kim Dae-Jung Convention Center, Kwangju, Oct. 12-13, pp.775-778, 2006
+  year: 2006
+- authors: Hyun Woo Park, Hoon Sohn and Hae Sung Lee
+  title: Statistical damage detection of structures by using system identification with 1-norm based regularization
+  venue: Proceedings of the Third International Conference on Bridge Maintenance
+  details: Safety and Management, Porto-Portugal, July 16-19, 2006
+  year: 2006
+- authors: Yun Hwa Hong, Hyun Woo Park, and Hae Sung Lee
+  title: A regularization scheme for double integration of accelerations with measurement noise
+  venue: KSIAM annual meeting
+  details: Daegu Expo, Korea, May 26-27, 2006
+  year: 2006
+- authors: Hyun Woo Park, Seung Bum Kim, and Hoon Sohn
+  title: Understanding the reciprocity of Lamb waves induced by active sensors
+  venue: Proceedings of KSIAM Annual meeting
+  details: Muju Resort, Nov. 25-26, pp.69-70, 2005
+  year: 2005
+- authors: Hyun Woo Park, Man Woo Park, Byeong Kyu Ahn, and Hae Sung Lee
+  title: 1-norm regularization function for an inverse problem of elastic continua with discontinuous system parameters
+  venue: Proceedings of KSIAM Annual meeting
+  details: Muju Resort, Nov. 25-26, pp.163-164, 2005
+  year: 2005
+- authors: Hyun Woo Park, Seung Bum Kim, and Hoon Sohn
+  title: Time reversal active sensing for structural health monitoring
+  venue: presented at the conference of Korea Institute for Structural Maintenance Inspection
+  details: October 28-29, 2005
+  year: 2005
+- authors: Yong Han Kim, Hyun Woo Park, Man Gil Son, Jai Min Gang, and Sung Ho Kim
+  title: Bonding condition assessment of layered plate using guided waves
+  venue: presented at the conference of Korea Institute for Structural Maintenance Inspection
+  details: October 28-29, 2005
+  year: 2005
+- authors: Joo Sung Kang, Hyun Woo Park, and Hae Sung Lee
+  title: Structural Health Monitoring using Dynamic Responses with Autoregressive Model
+  venue: Proceedings of 2005 KSCE Conference
+  details: ICC Jeju, Oct. 20-21, pp. 22262-2265, 2005.10. (Poster)
+  year: 2005
+- authors: Yong Han Kim, Hyun Woo Park, Hae Sung Lee, Hoon Sohn, and Man Gil Son
+  title: A research on the applicability of Lamb wave to structural health monitoring of civil structures
+  venue: Proceedings of 2005 KSCE Conference
+  details: ICC Jeju, Oct. 20-21, 2005.10. (Poster)
+  year: 2005
+- authors: Hoon Sohn, Seung Bum Kim, Hyun Woo Park
+  title: Searching for a reference-free damage detection technique
+  venue: The Second International Workshop on Advanced Smart Materials and Smart Structures Technology
+  details: Gyeong-ju, Korea, July 21-24, 2005
+  year: 2005
+- authors: Hyun Woo Park and Hoon Sohn
+  title: Parameter estimation of the generalized extreme value distribution using quadratic programming
+  venue: presented at the Korea Society for Industrial and Applied Mathematics Spring Conference
+  details: Seoul National University, Seoul Korea, May 20-21, 2005
+  year: 2005
+- authors: Hyun Woo Park and Hoon Sohn
+  title: Parameter estimation of the generalized extreme value distribution for structural health monitoring
+  venue: Proceedings of ASCE Structures Congress
+  details: New York, NY, April 20-24, 2005
+  year: 2005
+- authors: Hoon Sohn and Hyun Woo Park
+  title: Can damage be detected without any baseline data?
+  venue: SPIE's Smart Structures/NDE Conference
+  details: San Diego, CA, March 6-10, 2005
+  year: 2005
+- authors: Hoon Sohn, Hyun Woo Park, Kincho H. Law, and Charles R. Farrar
+  title: Instantaneous online monitoring of unmanned aerial vehicles without baseline signals
+  venue: Proceedings of the 23rd International Modal Analysis Conference
+  details: Orlando, FL, January 31- February 3, 2005
+  year: 2005
+- authors: Hoon Sohn, Hyun Woo Park, Kincho H. Law, and Charles R. Farrar
+  title: Instantaneous damage detection using time reversal process
+  venue: the 15th International Conference on Adaptive Structures and Technologies
+  details: Bar Harbor, Maine, 25-27 October, 2004
+  year: 2004
+- authors: Hyun Woo Park, Hoon Sohn, and Kincho H. Law
+  title: Damage detection in composite plates by using time reversal active sensing
+  venue: the 3rd International Conference on Advances in Structural Engineering and Mechanics
+  details: Seoul, Korea, September 2-4, 2004
+  year: 2004
+- authors: Hoon Sohn, Hyun Woo Park, Kincho H. Law, and Charles R. Farrar
+  title: Minimizing misclassification of damage using extreme values statistics
+  venue: the US-Korea Workshop on Smart Structure Technologies
+  details: Seoul, Korea, September 2-4, 2004
+  year: 2004
+- authors: Hyun Woo Park, Young Sun Choun and Jeong Moon Seo
+  title: Estimation of Hysteretic Behaviors of a Seismic Isolator by Using the Bilinear Model and Measured-Isolation-Mode-Accelerations
+  venue: ''
+  details: Proceedings of Korea Nuclear Society, May 2003
+  year: 2003
+- authors: Hyun Woo Park, Young Sun Choun and Jeong Moon Seo
+  title: Estimation of Hysteretic Behaviors of a Seismic Isolator Using a Regularized Output Error Estimator
+  venue: ''
+  details: Proceedings of KEERC, March 2003
+  year: 2003
+- authors: Man Woo Park, Byeong Kyu Ahn, Hyun Woo Park and Hae Sung Lee
+  title: Determination of an Optimal Truncation Number in the L -TSVD for Estimating Material Properties of an Inclusion in a Finite Body
+  venue: ''
+  details: Proceedings of Korea Society of Civil Engineering, November 2002
+  year: 2002
+- authors: Hyun Woo Park and Young Sun Choun
+  title: A Time Domain System Identification for Nonlinear Behaviors of a Seismic Isolator Using the Secant Stiffness Model
+  venue: ''
+  details: Proceedings of Korea Nuclear Society, October 2002
+  year: 2002
+- authors: Hyun Woo Park and Hae Sung Lee
+  title: The role of regularization functions in various structural system identification problems
+  venue: presented at Second International Conference on Advances in Structural Engineering and Mechanics
+  details: Busan Convention Center, 21-23 August 2002, Busan, Korea
+  year: 2002
+- authors: Hyun Woo Park, Hyun Moo Kho, and Hae Sung Lee
+  title: L1-regularization functions for the SI of structures
+  venue: presented at First European Workshop on Structural Health Monitoring
+  details: 10-12, July, 2002, Paris, France
+  year: 2002
+- authors: Hyun Woo Park and Hae Sung Lee
+  title: A new structural damage isolation technique using PP-TSVD
+  venue: Proceedings of the 3rd World Conference on Structural Control
+  details: Como, Italy, 7-12 April, 2002
+  year: 2002
+- authors: Byeong Kyu Ahn, Hyun Woo Park, and Hae Sung Lee
+  title: System identification for determining material properties of an inclusion in a finite body using PP-TSVD
+  venue: Proceedings of Korean Society of Civil Engineering (KOEX Intercontinental Hotel Korea)
+  details: Nov., 2001
+  year: 2001
+- authors: Hyun Woo Park, Soobong Shin, and Hae Sung Lee
+  title: A Tikhonov Regularization Scheme for System Identification of Continuous Structures
+  venue: Transactions of 15th International Conference on Structural Mechanics In Reactor Technology
+  details: vol. II, pp.II-157- II-164, Aug., 1999
+  year: 1999
+- authors: Hyun Woo Park, Hae Sung Lee, and Soobong Shin
+  title: A system identification scheme for damage detection in elasto-plastic materials
+  venue: Proceedings of 6th East Asia-Pacific Conference on Structural Engineering and Construction
+  details: vol.3, pp. 2231-2236, Jan., 1998
+  year: 1998
+- authors: Hyun Woo Park, Hae Sung Lee, Soobong Shin
+  title: A system identification scheme for damage detection in elasto-plastic materials
+  venue: Proceedings of Korean Society of Civil Engineering
+  details: Vol. 1, pp. 541-544, Oct., 1997
+  year: 1997
+- authors: Hae Sung Lee, Hyun Woo Park
+  title: An inverse analysis for identifying plastic-material properties in a pile subjected to internal pressure
+  venue: Proceedings of Korean Society of Civil Engineering
+  details: Vol. 1, pp. 99-102, Nov., 1996
+  year: 1996
+reports:
+- authors: Hong Yun Hwa, Hyun Woo Park and Hae Sung Lee
+  title: A displacement reconstruction scheme with measured acceleration in time domain
+  details: KBRC TRS 039, Korea Bridge Design & Engineering Research Center, 2008
+  year: 2008
+- authors: Hyun Woo Park, Young Sun Chun, Jeong Moon Seo
+  title: Development of a time domain system identification technique for damage assessment of seismic isolators
+  details: KAERI/TR-2439/2003, Korea Atomic Energy Research Institute, 2003
+  year: 2003

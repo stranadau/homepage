@@ -1,0 +1,53 @@
+{{ define "main" }}
+{{ $lang := .Site.Language.Lang }}
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">{{ i18n "labFull" }}</p>
+      <h1>{{ i18n "tagline" }}</h1>
+      <p class="lead">{{ i18n "intro" }}</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="{{ "join/" | relLangURL }}">{{ i18n "joinUs" }} →</a>
+        <a class="btn" href="{{ "research/" | relLangURL }}">{{ i18n "seeResearch" }}</a>
+      </div>
+    </div>
+    <a class="hero-figure" href="{{ "images/main_2026_timeline.png" | relURL }}" target="_blank" title="{{ i18n "enlarge" }}">
+      <img src="{{ "images/main_2026_timeline.png" | relURL }}" alt="Research timeline">
+    </a>
+  </div>
+</section>
+
+{{ $pubs := .Site.Data.publications }}{{ $th := .Site.Data.theses }}
+<section class="stats wrap">
+  <div><strong>{{ len $pubs.journals }}</strong><span>{{ i18n "statJournals" }}</span></div>
+  <div><strong>{{ len $th.phd }}</strong><span>{{ i18n "statPhD" }}</span></div>
+  <div><strong>{{ len .Site.Data.members.alumni }}</strong><span>{{ i18n "statAlumni" }}</span></div>
+</section>
+
+<section class="wrap section">
+  <h2>{{ i18n "researchTopics" }}</h2>
+  <div class="card-grid">
+  {{ range $i, $t := .Site.Data.research.topics }}
+    <a class="card topic-card" href="{{ "research/" | relLangURL }}#topic-{{ add $i 1 }}">
+      <span class="topic-icon">{{ partial "icon.html" $t.icon }}</span>
+      <h3>{{ if eq $lang "ko" }}{{ $t.ko }}{{ else }}{{ $t.en }}{{ end }}</h3>
+      <p>{{ if eq $lang "ko" }}{{ $t.short_ko }}{{ else }}{{ $t.short_en }}{{ end }}</p>
+    </a>
+  {{ end }}
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="section-head"><h2>{{ i18n "recentNews" }}</h2><a href="{{ "news/" | relLangURL }}">{{ i18n "allNews" }} →</a></div>
+  <ul class="timeline">
+    {{ range partial "newsitems.html" (dict "limit" 5) }}{{ partial "newsitem.html" (dict "n" . "lang" $lang) }}{{ end }}
+  </ul>
+</section>
+
+<section class="join-banner">
+  <div class="wrap join-inner">
+    <div><h2>{{ i18n "joinTitle" }}</h2><p>{{ i18n "joinText" }}</p></div>
+    <a class="btn btn-light" href="{{ "join/" | relLangURL }}">{{ i18n "learnMore" }} →</a>
+  </div>
+</section>
+{{ end }}

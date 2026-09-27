@@ -12,7 +12,12 @@ Prof. Hyun Woo Park, Structural Analysis Lab., Dong-A University. Communicate wi
   The cloud environment's network policy must allow `scholar.google.com` for this to work.
 - Research topics pages cite only representative papers; every cited paper must exist in the publication list with the same DOI and year.
 
-## Page map
+## New site (Hugo, `site/`)
+- Source in `site/` (custom theme, no external modules; Hugo 0.123.7). Data-driven: `site/data/*.yaml`, one YAML file per news item in `site/data/news/`.
+- `.github/workflows/pages.yml` builds and deploys on push to `main` (Pages source must be "GitHub Actions"). The old site is bundled under `/legacy/`.
+- Keep the legacy pages and the Hugo data in sync until the legacy site is retired.
+
+## Page map (legacy site)
 - Frames: `index.htm` / `index_kor.htm` -> menus `top.htm` / `top_kor.htm` + content frame.
 - Front page: `main.htm` / `main_kor.htm`, image `images/main_2026_timeline.png` (source: `.svg` next to it).
 - Research topics: `research_topics_2026.htm` / `research_topics_kor_2026.htm` (KR titles: Korean title + English original beneath).

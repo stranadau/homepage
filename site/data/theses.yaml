@@ -1,0 +1,12 @@
+# 학위논문. file: 저장소의 theses/ 폴더 PDF 파일명
+phd:
+  - {name: {ko: 황진호, en: Jin Ho Hwang}, year: 2026, file: jhhwang_2026.pdf, title: {ko: "보형 구조물을 위한 물리 정보 기반 기계학습: 금속보의 다중 초기 균열 진단 및 프리스트레스트 콘크리트 보의 시간의존적 거동 예측", en: "Physics-informed machine learning for beam-type structures: multiple incipient crack assessment in metal beams and time-dependent behavior prediction of prestressed concrete beams"}}
+  - {name: {ko: 임태정, en: Taejeong Lim}, year: 2024, file: tlim_2023.pdf, title: {ko: "횡균열을 가진 2차원 보의 모달 거동: 균열모드 Ⅰ 및 Ⅱ에 대한 하중을 고려한 해석적 접근과 부착형 압전 소자를 이용한 실험적 검증", en: "Modal behavior of a two-dimensional beam with a transverse crack: an analytical approach considering mode I and II loadings with experimental verification using surface-bonded piezoelectric wafers"}}
+  - {name: {ko: 김은진, en: Eun Jin Kim}, year: 2011, file: ejkim_2011.pdf, title: {ko: "판의 무기저 손상 탐지를 위한 압전소자와 보체계의 동탄성학적 해석", en: "Elasto-dynamic interpretation of a coupled PZT beam system for reference-free damage diagnosis of a plate"}}
+ms:
+  - {name: {ko: 고도현, en: Dohyeon Ko}, year: 2022, file: dhko_2021.pdf, title: {ko: "병치 변형률 계측치를 이용한 다경간 프리팹 거더의 캠버 재구성", en: "Camber reconstruction for a multi-span prefab PSC girder using collocated strain measurements (in Korean)"}}
+  - {name: {ko: 김현영, en: Hyun-young Kim}, year: 2021, file: hykim_2021.pdf, title: {ko: "병치된 변형률 계측치를 이용한 프리팹 PSC 거더 캠버 재구성", en: "Camber reconstruction for a prefab PSC girder using collocated strain measurements (in Korean)"}}
+  - {name: {ko: 난수쿠사 미렘베 사라, en: Nansukusa Mirembe Sarah}, year: 2021, file: NMS_2021.pdf, title: {ko: "위상폐합원리를 이용한 곡선보의 진동수 방정식", en: "Frequency equation of a curved beam using the phase-closure principle"}}
+  - {name: {ko: 강지강, en: Ji Kang Kang}, year: 2016, file: jkkang_2016.pdf, title: {ko: "파 전달 관점에서 균열이 발생한 보의 축-굽힘 방향 커플링을 고려한 고유진동수 예측", en: "Predicting the natural frequencies of a cracked beam considering axial-bending coupling from wave propagation perspective (in Korean)"}}
+  - {name: {ko: 신용재, en: Yong Jae Shin}, year: 2016, file: yjshin_2016.pdf, title: {ko: "부착형 압전소자의 전기역학적 신호를 이용한 보의 감쇠 추정", en: "Estimating the damping property of a beam through electro-mechanical signatures of surface-bonded piezoelectric transducers (in Korean)"}}
+  - {name: {ko: 서대재, en: Dae Jae Seo}, year: 2013, file: djseo_2013.pdf, title: {ko: "입력소스의 위치와 센서개수에 따른 평판에서의 시간반전램파의 공간집속성능 규명", en: "Investigating the spatial focusing performance of time reversal Lamb waves on a plate with respect to input source location and the number of sensors (in Korean)"}}

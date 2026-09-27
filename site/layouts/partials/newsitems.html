@@ -1,0 +1,11 @@
+{{/* Sorted news list (newest first). Params: dict "limit" (0 = all).
+     Dates may be "YYYY", "YYYY-MM" or "YYYY-MM-DD"; missing parts sort as 00 (below dated items of the same year). */}}
+{{- $items := slice -}}
+{{- range $k, $v := site.Data.news -}}
+  {{- $d := printf "%v" $v.date -}}
+  {{- $key := printf "%s%s" $d (substr "-00-00" (sub (len $d) 4)) -}}
+  {{- $items = $items | append (merge $v (dict "date" $d "sortkey" $key)) -}}
+{{- end -}}
+{{- $items = sort $items "sortkey" "desc" -}}
+{{- if gt .limit 0 -}}{{- $items = first .limit $items -}}{{- end -}}
+{{- return $items -}}

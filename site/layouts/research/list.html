@@ -1,0 +1,19 @@
+{{ define "main" }}{{ $lang := .Site.Language.Lang }}
+{{ partial "pagehead.html" . }}
+<section class="wrap">
+  <nav class="toc">{{ range $i, $t := .Site.Data.research.topics }}<a href="#topic-{{ add $i 1 }}">{{ if eq $lang "ko" }}{{ $t.ko }}{{ else }}{{ $t.en }}{{ end }}</a>{{ end }}</nav>
+  {{ range $i, $t := .Site.Data.research.topics }}
+  <article class="topic" id="topic-{{ add $i 1 }}">
+    <div class="topic-head"><span class="topic-icon">{{ partial "icon.html" $t.icon }}</span>
+      <div><h2>{{ if eq $lang "ko" }}{{ $t.ko | safeHTML }}{{ else }}{{ $t.en | safeHTML }}{{ end }}</h2>{{ if eq $lang "ko" }}<p class="sub-en">{{ $t.en | safeHTML }}</p>{{ end }}</div></div>
+    <p>{{ if eq $lang "ko" }}{{ $t.desc_ko | safeHTML }}{{ else }}{{ $t.desc_en | safeHTML }}{{ end }}</p>
+    {{ range $t.subs }}
+      <details class="sub"><summary>{{ if eq $lang "ko" }}{{ .ko | safeHTML }}{{ else }}{{ .en | safeHTML }}{{ end }}</summary>
+        {{ with .papers }}{{ partial "paperlist.html" (dict "papers" .) }}{{ end }}
+        {{ range .groups }}<h4>{{ if eq $lang "ko" }}{{ .ko | safeHTML }}{{ else }}{{ .en | safeHTML }}{{ end }}</h4>{{ partial "paperlist.html" (dict "papers" .papers) }}{{ end }}
+      </details>
+    {{ end }}
+  </article>
+  {{ end }}
+</section>
+{{ end }}

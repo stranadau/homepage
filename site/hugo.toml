@@ -1,0 +1,87 @@
+baseURL = "https://stranadau.github.io/homepage/"
+title = "Structural Analysis Lab. (STRANA)"
+defaultContentLanguage = "ko"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  email = "hwpark@dau.ac.kr"
+  scholar = "https://scholar.google.com/citations?user=2K8ydwMAAAAJ&hl=ko"
+  github = "https://github.com/stranadau/homepage"
+
+[languages]
+  [languages.ko]
+    languageName = "한국어"
+    languageCode = "ko"
+    weight = 1
+    contentDir = "content/ko"
+    title = "동아대학교 구조해석연구실"
+    [[languages.ko.menus.main]]
+      name = "연구"
+      pageRef = "/research"
+      weight = 1
+    [[languages.ko.menus.main]]
+      name = "소식"
+      pageRef = "/news"
+      weight = 2
+    [[languages.ko.menus.main]]
+      name = "구성원"
+      pageRef = "/members"
+      weight = 3
+    [[languages.ko.menus.main]]
+      name = "논문"
+      pageRef = "/publications"
+      weight = 4
+    [[languages.ko.menus.main]]
+      name = "강의"
+      pageRef = "/teaching"
+      weight = 5
+    [[languages.ko.menus.main]]
+      name = "대학원 진학"
+      pageRef = "/join"
+      weight = 6
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 2
+    contentDir = "content/en"
+    title = "Structural Analysis Lab., Dong-A University"
+    [[languages.en.menus.main]]
+      name = "Research"
+      pageRef = "/research"
+      weight = 1
+    [[languages.en.menus.main]]
+      name = "News"
+      pageRef = "/news"
+      weight = 2
+    [[languages.en.menus.main]]
+      name = "Members"
+      pageRef = "/members"
+      weight = 3
+    [[languages.en.menus.main]]
+      name = "Publications"
+      pageRef = "/publications"
+      weight = 4
+    [[languages.en.menus.main]]
+      name = "Teaching"
+      pageRef = "/teaching"
+      weight = 5
+    [[languages.en.menus.main]]
+      name = "Join Us"
+      pageRef = "/join"
+      weight = 6
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[module]
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "../images"
+    target = "static/images"
+  [[module.mounts]]
+    source = "../theses"
+    target = "static/theses"

@@ -1,0 +1,5 @@
+# 학기가 바뀌면 semester와 courses만 수정
+semester: {ko: 2026년 2학기, en: Fall Semester 2026}
+courses:
+  - {ko: 공업역학, en: Statics, level: {ko: 학부, en: Undergraduate}}
+  - {ko: 구조역학 1, en: Structural Mechanics I, level: {ko: 학부, en: Undergraduate}}

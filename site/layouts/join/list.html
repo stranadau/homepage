@@ -1,0 +1,13 @@
+{{ define "main" }}{{ $lang := .Site.Language.Lang }}
+{{ partial "pagehead.html" . }}
+<section class="wrap prose">{{ .Content }}</section>
+<section class="wrap section">
+  <h2>{{ if eq $lang "ko" }}졸업생은 이런 곳에서 일합니다{{ else }}Where our alumni work{{ end }}</h2>
+  <div class="card-grid">{{ range .Site.Data.members.alumni }}<div class="card small-card"><b>{{ partial "l.html" (dict "v" .name "lang" $lang) }}</b><span class="small">{{ partial "l.html" (dict "v" .degree "lang" $lang) }}</span><p>{{ partial "l.html" (dict "v" .now "lang" $lang) }}</p></div>{{ end }}</div>
+</section>
+<section class="wrap section">
+  <h2>{{ if eq $lang "ko" }}연구실 학생들의 최근 성과{{ else }}Recent achievements of our students{{ end }}</h2>
+  <ul class="timeline">{{ range first 6 (where (partial "newsitems.html" (dict "limit" 0)) "type" "in" (slice "publication" "conference" "award" "degree")) }}{{ partial "newsitem.html" (dict "n" . "lang" $lang) }}{{ end }}</ul>
+</section>
+<section class="join-banner"><div class="wrap join-inner"><div><h2>{{ if eq $lang "ko" }}관심이 있다면 편하게 연락 주세요{{ else }}Interested? Get in touch{{ end }}</h2><p>{{ if eq $lang "ko" }}학부 학년과 관심 분야를 간단히 적어 보내 주시면 면담 일정을 잡겠습니다.{{ else }}Send a short note with your background and interests, and we will set up a meeting.{{ end }}</p></div><a class="btn btn-light" href="mailto:{{ site.Params.email }}?subject={{ if eq $lang "ko" }}[대학원 진학 문의]{{ else }}[Graduate admission inquiry]{{ end }}">{{ site.Params.email }}</a></div></section>
+{{ end }}

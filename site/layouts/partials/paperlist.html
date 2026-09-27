@@ -1,0 +1,3 @@
+<ul class="paper-list">
+{{ range .papers }}<li>{{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .title | safeHTML }}{{ with .url }}</a>{{ end }}<span class="meta"><i>{{ .venue }}</i>, {{ .year }}</span></li>{{ end }}
+</ul>

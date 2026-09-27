@@ -1,0 +1,44 @@
+# 구성원 데이터. 새 학생은 해당 그룹에 항목을 추가하고, 졸업하면 alumni로 옮기면 됩니다.
+# photo: ../images/ 폴더의 파일명 (없으면 비워 두기)
+advisor:
+  name: {ko: 박현우, en: Hyun Woo Park}
+  role: {ko: 교수, en: Professor}
+  photo: hwpark_recent.jpg
+  lines:
+    - {ko: "공학박사 (2002), 서울대학교 토목공학과 (구조공학)", en: "Ph.D. (2002), Civil Engineering, Seoul National University (Structural Engineering)"}
+    - {ko: "겸직: 동아대학교 대학원 ICT융합해양스마트시티공학과", en: "Concurrent appointment: Dept. of ICT Integrated Ocean-front Smart City Engineering, Graduate School"}
+
+groups:
+  - title: {ko: 박사후연구원, en: Postdoctoral Researchers}
+    people:
+      - name: {ko: 황진호, en: Jin Ho Hwang}
+        role: {ko: 박사후연구원, en: Postdoctoral researcher}
+        photo: jhhwang.jpg
+        lines:
+          - {ko: "공학박사 (2026), 동아대학교 ICT융합해양스마트시티공학과", en: "Ph.D. (2026), Dept. of ICT integrated Ocean-front Smart City Engineering, Dong-A Univ."}
+          - {ko: "공학사 (2019), 동아대학교 토목공학과", en: "B.S. (2019), Dept. of Civil Engineering, Dong-A Univ."}
+        skills: Matlab, Labview, MIDAS Civil
+  - title: {ko: 박사과정, en: Ph.D. Students}
+    people:
+      - name: {ko: 누르 인다 무하로마흐, en: Nur Indah Mukharromah}
+        role: {ko: 박사과정 4년차, en: Ph.D. student (4th year)}
+        photo: NIM.jpg
+        lines:
+          - {ko: "공학석사 (2023), 경성대학교 토목공학과", en: "M.S. (2023), Dept. of Civil Engineering, Kyungsung Univ."}
+        skills: ABAQUS, MIDAS Civil, SAP2000, ETABS, ANSYS
+  - title: {ko: 석사과정, en: M.S. Students}
+    people:
+      - name: {ko: 오긱 프랜시스 피터, en: Ogik Francis Peter}
+        role: {ko: "석사과정 1년차 (2026년 9월 입학)", en: "M.S. student (1st year, since September 2026)"}
+
+alumni:
+  - {name: {ko: 임태정, en: Taejeong Lim}, degree: {ko: 공학박사 (2024), en: Ph.D. (2024)}, now: {ko: 한국건설기술연구원 박사후연구원, en: "Postdoctoral researcher, Korea Institute of Civil Engineering and Building Technology (KICT)"}}
+  - {name: {ko: 고도현, en: Dohyeon Ko}, degree: {ko: 공학석사 (2022), en: M.S. (2022)}, now: {ko: 골든엔지니어링 기업부설연구소, en: "Research & Development center, Golden Engineering"}}
+  - {name: {ko: 김현영, en: Hyun-young Kim}, degree: {ko: 공학석사 (2021), en: M.S. (2021)}, now: {ko: DM엔지니어링 설계실, en: "Department of Design, DM Engineering"}}
+  - {name: {ko: 난수쿠사 미렘베 사라, en: Nansukusa Mirembe Sarah}, degree: {ko: 공학석사 (2021), en: M.S. (2021)}, now: {ko: 캄보고대학교 구조실험실, en: "Structural department, Kyambogo University"}}
+  - {name: {ko: 박광연, en: Kwang-yeun Park}, degree: {ko: "연구교수 (2018.5–2019.1)", en: "Research Professor (May 2018 – Jan. 2019)"}, now: {ko: 한국건설기술연구원 지진안전연구센터, en: "Seismic Safety Research Center, KICT"}}
+  - {name: {ko: 강지강, en: Ji Kang Kang}, degree: {ko: 공학석사 (2016), en: M.S. (2016)}, now: {ko: "비코비엔(주) 기술부", en: "Department of Technology, BCOBEN Co., Ltd."}}
+  - {name: {ko: 신용재, en: Yong Jae Shin}, degree: {ko: 공학석사 (2016), en: M.S. (2016)}, now: {ko: 부산대학교 지진방재연구센터, en: "Seismic Simulation Test Center, Pusan National University"}}
+  - {name: {ko: 박승근, en: Seung Keun Park}, degree: {ko: "연구교수 (2012.3–2013.8)", en: "Research Professor (Mar. 2012 – Aug. 2013)"}, now: {ko: 한국과학기술정보연구원, en: "Korea Institute of Science and Technology Information (KISTI)"}}
+  - {name: {ko: 서대재, en: Dae Jae Seo}, degree: {ko: 공학석사 (2013), en: M.S. (2013)}, now: {ko: CNSC 기술부, en: "Technical division, CNSC"}}
+  - {name: {ko: 김은진, en: Eun Jin Kim}, degree: {ko: 공학박사 (2011), en: Ph.D. (2011)}, now: {ko: 서울시설공단 도로시설처, en: "Road Facility Management Division, Seoul Metropolitan Facilities Management Corporation"}}

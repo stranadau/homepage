@@ -1,0 +1,7 @@
+{{ define "main" }}{{ $lang := .Site.Language.Lang }}{{ $t := .Site.Data.teaching }}
+{{ partial "pagehead.html" . }}
+<section class="wrap">
+  <h2>{{ partial "l.html" (dict "v" $t.semester "lang" $lang) }}</h2>
+  <div class="card-grid">{{ range $t.courses }}<div class="card"><span class="badge">{{ partial "l.html" (dict "v" .level "lang" $lang) }}</span><h3>{{ partial "l.html" (dict "v" . "lang" $lang) }}</h3>{{ if eq $lang "ko" }}<p class="sub-en">{{ .en }}</p>{{ end }}</div>{{ end }}</div>
+</section>
+{{ end }}

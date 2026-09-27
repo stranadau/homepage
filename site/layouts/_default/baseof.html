@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ i18n "labName" }}{{ end }}</title>
+<meta name="description" content="{{ i18n "intro" }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{ end }}
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ "" | relLangURL }}">
+      <span class="brand-mark">S</span>
+      <span class="brand-text"><strong>{{ i18n "labName" }}</strong><small>Dong-A University</small></span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="menu">
+    <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <nav class="nav">
+      {{ $cur := . }}
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="{{ if or ($cur.IsMenuCurrent "main" .) ($cur.HasMenuCurrent "main" .) (eq $cur.RelPermalink .URL) }}active{{ end }}{{ if eq .Page.Section "join" }} nav-cta{{ end }}">{{ .Name }}</a>
+      {{ end }}
+      {{ range .Translations }}<a class="lang" href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}">{{ if eq .Language.Lang "en" }}EN{{ else }}한국어{{ end }}</a>{{ end }}
+    </nav>
+  </div>
+</header>
+<main>
+{{ block "main" . }}{{ end }}
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <strong>{{ i18n "labFull" }}</strong><br>
+      {{ i18n "address" }}<br>
+      <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+    </div>
+    <div class="footer-links">
+      <a href="{{ .Site.Params.scholar }}" target="_blank" rel="noopener">{{ i18n "scholar" }}</a>
+      <a href="{{ "cv/" | relLangURL }}">{{ i18n "cv" }}</a>
+      <a href="{{ "legacy/index.htm" | relURL }}">{{ i18n "oldSite" }}</a>
+    </div>
+  </div>
+  <div class="wrap copyright">© {{ now.Year }} Structural Analysis Lab., Dong-A University</div>
+</footer>
+<script src="{{ "js/site.js" | relURL }}" defer></script>
+</body>
+</html>

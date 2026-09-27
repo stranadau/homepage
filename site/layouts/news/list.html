@@ -1,0 +1,16 @@
+{{ define "main" }}{{ $lang := .Site.Language.Lang }}
+{{ partial "pagehead.html" . }}
+<section class="wrap">
+  {{ $items := partial "newsitems.html" (dict "limit" 0) }}
+  <div class="filters" data-target="#news-list">
+    <button class="chip on" data-filter="all">{{ i18n "all" }}</button>
+    {{ range slice "publication" "conference" "award" "talk" "degree" "member" }}<button class="chip" data-filter="{{ . }}">{{ i18n (printf "type_%s" .) }}</button>{{ end }}
+  </div>
+  <div id="news-list">
+  {{ range (sort (uniq (apply $items "partial" "newsyear.html" ".")) "value" "desc") }}{{ $y := . }}
+    <h2 class="year">{{ $y }}</h2>
+    <ul class="timeline">{{ range $items }}{{ if eq (substr .date 0 4) $y }}{{ partial "newsitem.html" (dict "n" . "lang" $lang) }}{{ end }}{{ end }}</ul>
+  {{ end }}
+  </div>
+</section>
+{{ end }}

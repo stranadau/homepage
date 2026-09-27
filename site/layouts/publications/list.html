@@ -1,0 +1,28 @@
+{{ define "main" }}{{ $lang := .Site.Language.Lang }}{{ $p := .Site.Data.publications }}{{ $th := .Site.Data.theses }}
+{{ partial "pagehead.html" . }}
+<section class="wrap">
+  <div class="pub-tools">
+    <input type="search" id="pub-search" placeholder="{{ i18n "search" }}">
+    <a class="btn btn-small" href="{{ site.Params.scholar }}" target="_blank" rel="noopener">{{ i18n "scholar" }}</a>
+  </div>
+  <nav class="toc"><a href="#journals">{{ i18n "journals" }} ({{ len $p.journals }})</a><a href="#conferences">{{ i18n "conferences" }} ({{ len $p.conferences }})</a><a href="#theses">{{ i18n "theses" }}</a><a href="#reports">{{ i18n "reports" }}</a></nav>
+  {{ range slice "journals" "conferences" }}{{ $sec := . }}
+    <h2 id="{{ $sec }}">{{ i18n $sec }}</h2>
+    {{ $list := index $p $sec }}
+    {{ $years := slice }}{{ range $list }}{{ $years = $years | append .year }}{{ end }}
+    {{ range sort (uniq $years) "value" "desc" }}{{ $y := . }}
+      <h3 class="year">{{ $y }}</h3>
+      <ol class="pubs">{{ range $list }}{{ if eq .year $y }}
+        <li class="pub"><span class="pub-title">{{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .title }}{{ with .url }}</a>{{ end }}</span><span class="pub-auth">{{ .authors }}</span><span class="pub-venue"><i>{{ .venue }}</i>{{ with .details }}, {{ . }}{{ end }}</span></li>
+      {{ end }}{{ end }}</ol>
+    {{ end }}
+  {{ end }}
+  <h2 id="theses">{{ i18n "theses" }}</h2>
+  {{ range slice "phd" "ms" }}{{ $k := . }}
+    <h3>{{ if eq $k "phd" }}{{ i18n "phdTheses" }}{{ else }}{{ i18n "msTheses" }}{{ end }}</h3>
+    <ol class="pubs">{{ range index $th $k }}<li class="pub"><span class="pub-title"><a href="{{ printf "theses/%s" .file | relURL }}" target="_blank">{{ partial "l.html" (dict "v" .title "lang" $lang) }}</a> <span class="pdf">PDF</span></span><span class="pub-auth">{{ partial "l.html" (dict "v" .name "lang" $lang) }} ({{ .year }})</span></li>{{ end }}</ol>
+  {{ end }}
+  <h2 id="reports">{{ i18n "reports" }}</h2>
+  <ol class="pubs">{{ range $p.reports }}<li class="pub"><span class="pub-title">{{ .title }}</span><span class="pub-auth">{{ .authors }}</span><span class="pub-venue">{{ .details }}</span></li>{{ end }}</ol>
+</section>
+{{ end }}

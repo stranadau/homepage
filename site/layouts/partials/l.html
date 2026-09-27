@@ -1,0 +1,4 @@
+{{/* Localize a {ko:..., en:...} map (or return a plain string). Usage: partial "l.html" (dict "v" .title "lang" $.Site.Language.Lang) */}}
+{{- $v := .v -}}{{- $r := $v -}}
+{{- if reflect.IsMap $v -}}{{- $r = index $v .lang -}}{{- if not $r -}}{{- $r = index $v "ko" -}}{{- end -}}{{- end -}}
+{{- return $r -}}
