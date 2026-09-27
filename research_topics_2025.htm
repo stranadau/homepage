@@ -263,16 +263,15 @@
   ======================================================== -->
   <section class="topic">
     <details open>
-      <summary>
-        <span class="topic-title">Modal and wave behaviors of a Timoshenko beam with an edge crack</span>
-      </summary>
+      <summary><span class="topic-title">Modal and wave behaviors of a Timoshenko beam with an edge crack</span></summary>
 
       <p class="topic-desc">
-        We develop analytical and semi-analytical formulations to quantify crack-induced changes in the modal and wave characteristics of beam-like waveguides,
-        particularly when <i>shear deformation</i> and <i>rotary inertia</i> require a Timoshenko-type description. At the wave level, the crack is represented by a local compliance
-        derived from linear elastic fracture mechanics, and closed-form scattering coefficients are obtained under axial&ndash;bending&ndash;shear coupling for both propagating and
-        evanescent incident waves. At the modal level, these wave-based descriptions yield explicit frequency equations that explain when and why modal sensitivity to a crack increases,
-        supporting both forward prediction and inversion-ready modeling.
+        We develop analytical and semi-analytical formulations for the modal and wave behaviors of beam-like waveguides with an edge crack,
+        for which <i>shear deformation</i> and <i>rotary inertia</i> require a Timoshenko-type description. The crack is represented by a local compliance
+        derived from linear elastic fracture mechanics (LEFM). At the wave level, closed-form scattering coefficients are derived under axial&ndash;bending&ndash;shear coupling
+        for both propagating and evanescent incident waves, and their consistency is verified through the power-flux balance. At the modal level, wave-based descriptions
+        yield explicit frequency equations that clarify when and why the sensitivity of modal frequencies to a crack increases, providing a basis for both forward prediction
+        and inverse crack identification.
       </p>
 
       <div class="subtopic">
@@ -355,10 +354,10 @@
       <summary><span class="topic-title">Physics-informed machine learning for engineering structures</span></summary>
 
       <p class="topic-desc">
-        We develop physics-informed learning pipelines for structural mechanics problems where governing equations are known but parameter estimation and prediction
-        can be ill-posed under sparse/noisy measurements. The focus is on embedding physics (constraints from mechanics and evolution laws) into learning
-        to obtain data-efficient, physically consistent, and engineering-usable models for prediction and state/parameter inference. Current applications include
-        the time-dependent behavior of prestressed concrete members and the assessment of multiple incipient cracks from broadband modal frequencies measured with piezoelectric wafers.
+        We develop physics-informed learning frameworks for structural problems in which the governing equations are known but prediction and parameter estimation
+        become ill-posed under sparse or noisy measurements. Mechanical constraints and evolution laws are embedded in the learning process to obtain data-efficient and
+        physically consistent models for response prediction and state/parameter inference. Current applications include the time-dependent behavior of prestressed concrete
+        members and the assessment of multiple incipient cracks from broadband modal frequencies measured with piezoelectric wafers.
       </p>
 
       <div class="subtopic">
@@ -394,17 +393,17 @@
 
 
   <!-- =======================================================
-       (3) Prestressed concrete (PSC) structures
+       (3) Prestressed concrete (PSC) structures: time-dependent behavior and measurement-driven calibration
   ======================================================== -->
   <section class="topic">
     <details>
       <summary><span class="topic-title">Prestressed concrete (PSC) structures: time-dependent behavior and measurement-driven calibration</span></summary>
 
       <p class="topic-desc">
-        We develop models and estimation procedures for the as-built and long-term states of prestressed concrete members, in which the effective prestress
-        and camber are governed by construction conditions and by time-dependent creep, shrinkage, and relaxation. The approach couples mechanics-based formulations
-        of time-dependent prestress loss with field measurements (e.g., tendon elongation, camber, and strain) to rationally calibrate the initial state of the member
-        and to reconstruct quantities that cannot be measured directly.
+        We develop models and estimation procedures for the initial and long-term states of prestressed concrete members, whose effective prestress and camber
+        are governed by construction conditions and by time-dependent creep, shrinkage, and relaxation. Mechanics-based formulations of time-dependent prestress loss
+        are combined with field measurements: tendon elongation is used to estimate the tendon force and friction coefficients that define the initial state of
+        post-tensioned members, and strain measurements are used to reconstruct camber, which is difficult to measure directly.
       </p>
 
       <div class="subtopic">
@@ -455,8 +454,10 @@
       <summary><span class="topic-title">Guided wave propagation using surface-bonded piezoelectric wafers</span></summary>
 
       <p class="topic-desc">
-        This theme investigates guided-wave excitation, propagation, scattering, and wavefield manipulation using surface-bonded piezoelectric (PZT) wafers/transducers for active SHM.
-        We emphasize physics-based interpretation of wave/electromechanical signals, time-reversal acoustics, baseline-independent diagnostics, and efficient coupled PZT&ndash;structure modeling.
+        We investigate the excitation, propagation, and scattering of guided waves generated and sensed by surface-bonded piezoelectric (PZT) wafers for active
+        structural health monitoring. The work includes time-reversal processes of Lamb waves, reference-free damage diagnosis based on electromechanical signals,
+        efficient spectral element modeling of coupled PZT&ndash;structure systems, and wave-based interpretation of electromechanical admittance. The same sensing principle
+        has recently been extended to in-situ monitoring of the evolution of dynamic properties in cement-based materials.
       </p>
 
       <div class="subtopic">
@@ -496,7 +497,6 @@
               </a>
             </div>
           </div>
-
         </details>
       </div>
 
@@ -523,7 +523,6 @@
               </a>
             </div>
           </div>
-
         </details>
       </div>
 
@@ -566,7 +565,6 @@
               </a>
             </div>
           </div>
-
         </details>
       </div>
 
@@ -587,16 +585,63 @@
 
 
   <!-- =======================================================
-       (5) Inverse problems and system identification
+       (5) Statistical damage diagnosis for structural health monitoring
+  ======================================================== -->
+  <section class="topic">
+    <details>
+      <summary><span class="topic-title">Statistical damage diagnosis for structural health monitoring</span></summary>
+
+      <p class="topic-desc">
+        We develop statistical frameworks for deciding whether damage has occurred from measured damage features that are inevitably affected by noise and
+        operational variability. Because such decisions are governed by the tail of the feature distribution, extreme value statistics are used to establish baseline
+        distributions and decision thresholds, including parameter estimation of the generalized extreme value (GEV) distribution and the asymptotic convergence of its
+        domain of attraction. These statistical tools are combined with time-reversal processes to enable baseline-free damage diagnosis through consecutive outlier analysis.
+      </p>
+
+      <div class="subtopic">
+        <details>
+          <summary><span class="subtopic-title">Extreme value statistics for establishing baseline distributions</span></summary>
+          <div class="papers">
+            <a class="paper" href="https://doi.org/10.1016/j.probengmech.2005.11.009" target="_blank" rel="noopener">
+              Parameter estimation of the generalized extreme value distribution for structural health monitoring
+              <span class="meta"><i>Probabilistic Engineering Mechanics</i>, 2006</span>
+            </a>
+            <a class="paper" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001330841" target="_blank" rel="noopener">
+              Understanding the asymptotic convergence of domain of attraction in extreme value distribution for establishing baseline distribution in statistical damage assessment of a structure
+              <span class="meta"><i>Journal of the Korea Institute for Structural Maintenance and Inspection</i>, 2009</span>
+            </a>
+          </div>
+        </details>
+      </div>
+
+      <div class="subtopic">
+        <details>
+          <summary><span class="subtopic-title">Baseline-free damage diagnosis via time reversal and consecutive outlier analysis</span></summary>
+          <div class="papers">
+            <a class="paper" href="https://doi.org/10.1177/1045389X06066292" target="_blank" rel="noopener">
+              Combination of a time reversal process and a consecutive outlier analysis for baseline-free damage diagnosis
+              <span class="meta"><i>Journal of Intelligent Material Systems and Structures</i>, 2007</span>
+            </a>
+          </div>
+        </details>
+      </div>
+
+    </details>
+  </section>
+
+
+  <!-- =======================================================
+       (6) Inverse problems and system identification
   ======================================================== -->
   <section class="topic">
     <details>
       <summary><span class="topic-title">Inverse problems and system identification</span></summary>
 
       <p class="topic-desc">
-        We develop numerically stable inverse-analysis and system-identification methodologies to infer hidden structural states and parameters from limited, noise-contaminated measurements.
-        Emphasis is placed on <b>regularization design</b> (Tikhonov, sparsity-promoting, and spatial regularization), <b>robust hyperparameter selection</b>, and practical inverse pipelines
-        such as <b>acceleration-to-displacement reconstruction</b> for low-frequency dominant structures.
+        We develop numerically stable inverse-analysis and system-identification methods to infer structural parameters and states from limited,
+        noise-contaminated measurements. Emphasis is placed on regularization design (Tikhonov, 1-norm, and spatial regularization) and on the rational selection
+        of regularization parameters. Applications include the identification of inclusions in finite bodies, the detection of abrupt damage induced by an earthquake
+        using a moving time window, and the reconstruction of displacement from measured acceleration in low-frequency dominant structures.
       </p>
 
       <div class="subtopic">
@@ -606,6 +651,18 @@
             <a class="paper" href="https://doi.org/10.1002/nme.2769" target="_blank" rel="noopener">
               Design of an FIR filter for the displacement reconstruction using measured acceleration in low-frequency dominant structures
               <span class="meta"><i>International Journal for Numerical Methods in Engineering</i>, 2010</span>
+            </a>
+          </div>
+        </details>
+      </div>
+
+      <div class="subtopic">
+        <details>
+          <summary><span class="subtopic-title">Detection of abrupt structural damage using a moving time window</span></summary>
+          <div class="papers">
+            <a class="paper" href="https://doi.org/10.1016/j.compstruc.2007.11.003" target="_blank" rel="noopener">
+              Detection of abrupt structural damage induced by an earthquake using a moving time window technique
+              <span class="meta"><i>Computers &amp; Structures</i>, 2008</span>
             </a>
           </div>
         </details>
@@ -634,7 +691,6 @@
               </a>
             </div>
           </div>
-
         </details>
       </div>
 
@@ -661,12 +717,12 @@
               </a>
             </div>
           </div>
-
         </details>
       </div>
 
     </details>
   </section>
+
 
 </div>
 
