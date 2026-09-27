@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
@@ -251,15 +251,6 @@
     --lvl1-size: 0.90rem;
   }
 }
-
-/* Korean page: English original title shown beneath the Korean title */
-.rt2 .title-en{
-  display: block;
-  margin-top: 2px;
-  font-weight: 400;
-  font-size: .86em;
-  color: var(--muted);
-}
 </style>
 </head>
 
@@ -268,54 +259,33 @@
 <div class="rt2">
 
   <!-- =======================================================
-       (1) Modal and wave behaviors of a Timoshenko beam with an edge crack
+       (1) Modal behaviors of a Timoshenko beam with an edge crack
   ======================================================== -->
   <section class="topic">
     <details open>
-      <summary><span class="topic-title">모서리 균열을 갖는 Timoshenko 보의 모드 및 파동 거동<span class="title-en">Modal and wave behaviors of a Timoshenko beam with an edge crack</span></span></summary>
+      <summary>
+        <span class="topic-title">Modal behaviors of a Timoshenko beam with an edge crack</span>
+      </summary>
 
       <p class="topic-desc">
-        전단 변형(<i>shear deformation</i>)과 회전 관성(<i>rotary inertia</i>)으로 인해 Timoshenko 보 모델이 요구되는 보형 도파관을 대상으로,
-        모서리 균열에 의한 모드 거동과 파동 거동의 변화를 해석적&middot;준해석적 정식화로 규명합니다. 균열은 선형탄성파괴역학(LEFM)에 기반한 국부 유연도로 모델링합니다.
-        파동 관점에서는 축방향&ndash;휨&ndash;전단 연성 조건에서 전파파와 소산파(evanescent wave) 입사 모두에 대한 산란계수를 닫힌 형태로 유도하고,
-        파워 플럭스 평형(power-flux balance)을 통해 그 정합성을 검증합니다. 모드 관점에서는 파동 기반 기술로부터 명시적인 진동수 방정식을 유도하여
-        균열에 대한 고유진동수의 민감도가 언제, 왜 커지는지를 규명하고, 이를 순방향 예측과 균열 역식별의 기반으로 활용합니다.
+          보(beam) 구조물에 균열이 생기면 고유진동수와 모드형상 같은 “진동 특성”이 어떻게 달라지는지,
+  해석식(수식 기반 모델)과 준해석 기법을 이용해 정량적으로 설명합니다.
+  특히 전단 변형(<i>shear deformation</i>)과 회전 관성(<i>rotary inertia</i>)의 영향이 커서
+  Timoshenko 보 모델이 필요한 경우를 중점적으로 다룹니다.
+  또한 “왜 어떤 경우에 균열 민감도가 커지는지”를 주파수 방정식과 결합 메커니즘으로 직관적으로 보여주어,
+  예측(순방향 해석)뿐 아니라 균열 위치/크기 추정 같은 역문제(inversion)에도 바로 활용할 수 있는 모델링을 목표로 합니다.
       </p>
 
       <div class="subtopic">
         <details>
-          <summary><span class="subtopic-title">축방향&ndash;휨&ndash;전단 연성을 고려한 파동 산란계수의 닫힌 형태 해<span class="title-en">Closed-form wave scattering coefficients under axial&ndash;bending&ndash;shear coupling</span></span></summary>
+          <summary><span class="subtopic-title">Closed-form frequency equations for cracked beams under arbitary supports</span></summary>
           <div class="papers">
-            <a class="paper" href="https://doi.org/10.1016/j.wavemoti.2026.103801" target="_blank" rel="noopener">
-              Closed-form scattering coefficients for incident axial and evanescent bending waves in edge-cracked Timoshenko beams: Completion of the 18-coefficient scattering matrix
-              <span class="meta"><i>Wave Motion</i>, 2026</span>
-            </a>
-            <a class="paper" href="https://doi.org/10.1016/j.apm.2026.116748" target="_blank" rel="noopener">
-              Closed-form solutions for wave scattering coefficients of a Timoshenko beam with an edge crack considering axial&ndash;bending&ndash;shear coupling
-              <span class="meta"><i>Applied Mathematical Modelling</i>, 2026</span>
-            </a>
-            <a class="paper" href="https://doi.org/10.12652/Ksce.2025.45.1.0013" target="_blank" rel="noopener">
-              Determination of wave scattering coefficients in an infinite elastic waveguide with a crack considering axial&ndash;bending coupling
-              <span class="meta"><i>KSCE Journal of Civil and Environmental Engineering Research</i>, 2025</span>
-            </a>
-          </div>
-        </details>
-      </div>
-
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">균열 보의 닫힌 형태 및 파동 기반 진동수 방정식<span class="title-en">Closed-form and wave-based frequency equations for cracked beams</span></span></summary>
-          <div class="papers">
-            <a class="paper" href="https://doi.org/10.1016/j.jsv.2021.116675" target="_blank" rel="noopener">
-              Generic frequency equation for one-dimensional waveguides with incipient cracks based on the phase closure principle
-              <span class="meta"><i>Journal of Sound and Vibration</i>, 2022</span>
-            </a>
             <a class="paper" href="https://doi.org/10.1016/j.jsv.2020.115336" target="_blank" rel="noopener">
-              A closed-form frequency equation of an arbitrarily supported beam with a transverse open crack considering axial&ndash;bending modal coupling
+              A closed-form frequency equation of an arbitrarily supported beam with a transverse open crack considering axial–bending modal coupling
               <span class="meta"><i>Journal of Sound and Vibration</i>, 2020</span>
             </a>
             <a class="paper" href="https://doi.org/10.1016/j.wavemoti.2017.08.001" target="_blank" rel="noopener">
-              A simplified frequency equation and its approximate solution of a beam with an incipient crack from a wave perspective
+              A simplified frequency equation for a beam with an open crack from a wave perspective
               <span class="meta"><i>Wave Motion</i>, 2017</span>
             </a>
           </div>
@@ -324,7 +294,7 @@
 
       <div class="subtopic">
         <details>
-          <summary><span class="subtopic-title">모서리 균열을 갖는 깊은 보의 모드 거동<span class="title-en">Modal behaviors of a deep beam with an edge crack</span></span></summary>
+          <summary><span class="subtopic-title">Modal behaviros of a deep beam with an edge crack</span></summary>
           <div class="papers">
             <a class="paper" href="https://doi.org/10.1016/j.jsv.2024.118613" target="_blank" rel="noopener">
               Investigating the modal behaviors of a deep beam with a transverse open crack
@@ -336,10 +306,10 @@
 
       <div class="subtopic">
         <details>
-          <summary><span class="subtopic-title">균열 보 SHM의 통념에 대한 검증<span class="title-en">Investigating common premises in SHM for cracked beams</span></span></summary>
+          <summary><span class="subtopic-title">Investigating common premises in SHM for cracked beams</span></summary>
           <div class="papers">
             <a class="paper" href="https://doi.org/10.1016/j.engstruct.2018.08.102" target="_blank" rel="noopener">
-              Investigating a common premise in structural health monitoring: Are higher modal frequencies more sensitive to an incipient crack on a beam than lower ones?
+              Investigating a common premise in SHM: Are higher modal frequencies more sensitive to an incipient crack on a beam than lower ones?
               <span class="meta"><i>Engineering Structures</i>, 2018</span>
             </a>
             <a class="paper" href="https://doi.org/10.1016/j.ijmecsci.2022.107217" target="_blank" rel="noopener">
@@ -359,78 +329,25 @@
   ======================================================== -->
   <section class="topic">
     <details>
-      <summary><span class="topic-title">공학 구조물을 위한 물리 정보 기반 머신러닝<span class="title-en">Physics-informed machine learning for engineering structures</span></span></summary>
+      <summary><span class="topic-title">Physics-informed machine learning for engineering structures</span></summary>
 
       <p class="topic-desc">
-        지배방정식은 알려져 있으나 계측 데이터가 희소하거나 잡음을 포함하여 응답 예측과 파라미터 추정이 불량조건(ill-posed)이 되는 구조 문제를 대상으로,
-        물리 정보 기반(physics-informed) 학습 기법을 개발합니다. 역학적 제약 조건과 시간 발전 법칙을 학습 과정에 반영하여, 적은 데이터로도 물리적으로 일관된
-        응답 예측과 상태&middot;파라미터 추정이 가능한 모델을 구축합니다. 현재 프리스트레스트 콘크리트 부재의 시간의존적 거동 예측과,
-        압전 웨이퍼로 계측한 광대역 고유진동수를 이용한 다중 미세 균열 평가에 적용하고 있습니다.
-      </p>
-
+        구조역학 문제에서는 지배방정식(물리 법칙)은 알고 있지만,
+  센서 데이터가 적거나 잡음이 많아 예측과 파라미터 추정이 어려운 경우가 많습니다.
+  이 연구는 물리 법칙(역학 제약, 시간 변화 법칙 등)을 머신러닝 학습 과정에 함께 넣는
+  physics-informed 접근을 통해, 적은 데이터로도 신뢰할 수 있고 물리적으로 말이 되는 모델을 만드는 데 초점을 둡니다.
+  최종 목표는 구조물의 거동 예측뿐 아니라 상태 추정과 재료/구조 파라미터 추정까지
+  공학적으로 “바로 쓸 수 있는” 학습 기반 해석 도구를 구축하는 것입니다.
+    </p>
       <div class="subtopic">
         <details>
-          <summary><span class="subtopic-title">PSC 부재의 시간의존적 거동 예측을 위한 물리 정보 신경망(PINN)<span class="title-en">Physics-informed neural networks (PINNs) for time-dependent behavior of prestressed concrete (PSC) members</span></span></summary>
+          <summary><span class="subtopic-title">Physics-informed neural networks (PINNs) for time-dependent behavior of prestressed concrete (PSC) members</span></summary>
           <div class="papers">
             <a class="paper" href="https://doi.org/10.3390/s23146649" target="_blank" rel="noopener">
-              Predicting the early-age time-dependent behaviors of a prestressed concrete beam by using physics-informed neural network
+              Predicting the Early-Age Time-Dependent Behaviors of a Prestressed Concrete Beam by Using Physics-Informed Neural Network
               <span class="meta"><i>Sensors</i>, 2023</span>
             </a>
-          </div>
-        </details>
-      </div>
-
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">PZT 웨이퍼 광대역 고유진동수를 이용한 물리 정보 기반 ML 균열 평가<span class="title-en">Physics-informed ML-assisted crack assessment using broadband modal frequencies from PZT wafers</span></span></summary>
-          <div class="papers">
-            <a class="paper" href="https://doi.org/10.1155/stc/5524571" target="_blank" rel="noopener">
-              Physics-informed machine learning-assisted assessment of multiple incipient cracks using broadband modal frequencies from piezoelectric wafers bonded on a beam
-              <span class="meta"><i>Structural Control and Health Monitoring</i>, 2026</span>
-            </a>
-            <a class="paper" href="https://doi.org/10.1007/978-981-19-7331-4_55" target="_blank" rel="noopener">
-              Crack assessment of beam using machine learning with augmented sensing
-              <span class="meta"><i>Proceedings of the 17th East Asian-Pacific Conference on Structural Engineering and Construction</i>, 2022</span>
-            </a>
-          </div>
-        </details>
-      </div>
-
-    </details>
-  </section>
-
-
-  <!-- =======================================================
-       (3) Prestressed concrete (PSC) structures: time-dependent behavior and measurement-driven calibration
-  ======================================================== -->
-  <section class="topic">
-    <details>
-      <summary><span class="topic-title">프리스트레스트 콘크리트(PSC) 구조물: 시간의존적 거동 및 계측 기반 보정<span class="title-en">Prestressed concrete (PSC) structures: time-dependent behavior and measurement-driven calibration</span></span></summary>
-
-      <p class="topic-desc">
-        프리스트레스트 콘크리트 부재의 유효 프리스트레스와 솟음(camber)은 시공 조건과 크리프&middot;건조수축&middot;릴랙세이션에 따른 시간의존적 거동에 의해 결정됩니다.
-        본 연구에서는 시간의존적 프리스트레스 손실에 대한 역학 기반 정식화와 현장 계측 데이터를 결합하여 부재의 초기 상태와 장기 거동을 추정합니다.
-        긴장재 신장량으로부터 긴장력과 마찰계수를 추정하여 포스트텐션 부재의 초기 상태를 합리적으로 결정하고,
-        변형률 계측으로부터 직접 계측하기 어려운 솟음을 재구성합니다.
-      </p>
-
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">현장 계측 데이터를 이용한 포스트텐션 부재의 초기 상태 추정<span class="title-en">Estimating the initial state of post-tensioned members from field measurement data</span></span></summary>
-          <div class="papers">
-            <a class="paper" href="https://doi.org/10.1186/s40069-026-00910-8" target="_blank" rel="noopener">
-              Rational estimation of initial state of post-tensioned concrete beams using field measurement data
-              <span class="meta"><i>International Journal of Concrete Structures and Materials</i>, 2026</span>
-            </a>
-          </div>
-        </details>
-      </div>
-
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">Volterra 적분방정식 기반 시간의존적 프리스트레스 손실 추정<span class="title-en">Time-dependent prestress loss via the Volterra integral equation</span></span></summary>
-          <div class="papers">
-            <a class="paper" href="https://doi.org/10.1016/j.istruc.2024.107437" target="_blank" rel="noopener">
+             <a class="paper" href="https://doi.org/10.1016/j.istruc.2024.107437" target="_blank" rel="noopener">
               Finite difference equation of Volterra integral equation for estimating the time-dependent prestress loss of a prestressed concrete beam
               <span class="meta"><i>Structures</i>, 2024</span>
             </a>
@@ -440,11 +357,15 @@
 
       <div class="subtopic">
         <details>
-          <summary><span class="subtopic-title">변형률 계측을 이용한 PSC 거더의 솟음(camber) 재구성<span class="title-en">Camber reconstruction of PSC girders from strain measurements</span></span></summary>
+          <summary><span class="subtopic-title">ML-assisted crack assessment via physics-based feature construction and sensing augmentation</span></summary>
           <div class="papers">
-            <a class="paper" href="http://journal.auric.kr/jksce/ArticleDetail/RD_R/412524" target="_blank" rel="noopener">
-              Camber reconstruction for a prefab PSC girder using collocated strain measurements
-              <span class="meta"><i>KSCE Journal of Civil and Environmental Engineering Research</i>, 2022</span>
+            <a class="paper" href="https://doi.org/10.1007/978-981-19-7331-4_55" target="_blank" rel="noopener">
+              Crack Assessment of Beam Using Machine Learning with Augmented Sensing
+              <span class="meta"> <i>Proceedings of The 17th East Asian-Pacific Conference on Structural Engineering and Construction</i>, 2022</span>
+            </a>
+            <a class="paper" href="https://doi.org/10.1016/j.jsv.2021.116675" target="_blank" rel="noopener">
+              Generic frequency equation for a cracked beam based on the phase closure principle
+              <span class="meta"><i>Journal of Sound and Vibration</i>, 2022</span>
             </a>
           </div>
         </details>
@@ -455,27 +376,28 @@
 
 
   <!-- =======================================================
-       (4) Guided wave propagation using surface-bonded piezoelectric wafers
+       (3) Guided wave propagation using surface-bonded piezoelectric wafers
   ======================================================== -->
   <section class="topic">
     <details>
-      <summary><span class="topic-title">표면 부착형 압전 웨이퍼를 이용한 유도파 전파<span class="title-en">Guided wave propagation using surface-bonded piezoelectric wafers</span></span></summary>
+      <summary><span class="topic-title">Guided wave propagation using surface-bonded piezoelectric wafers</span></summary>
 
       <p class="topic-desc">
-        표면 부착형 압전(PZT) 웨이퍼로 가진&middot;계측하는 유도파(guided wave)의 발생, 전파, 산란을 연구하여 능동형 구조건전성 모니터링(SHM)에 활용합니다.
-        주요 내용은 Lamb파의 시간역전(time reversal) 과정, 전기-기계 신호에 기반한 기준신호 없는(reference-free) 손상 진단,
-        PZT&ndash;구조물 연성계의 효율적인 스펙트럴 요소 모델링, 전기-기계 어드미턴스의 파동 기반 해석입니다.
-        최근에는 동일한 계측 원리를 시멘트계 재료의 동적 물성 변화를 현장에서 추적하는 데까지 확장하고 있습니다.
+        구조물 표면에 부착한 압전(PZT) 센서/구동기를 이용해 유도파(guided wave)를 발생시키고,
+  그 파동이 구조물 내부를 어떻게 전파하고(Propagation) 결함에서 어떻게 산란되는지(Scattering)를 연구합니다.
+  시간역전(time reversal) 같은 파동 제어 기법, 기준 신호 없이도 진단하는 방법(baseline-independent),
+  그리고 PZT와 구조물이 함께 움직이는 연성(전기-기계 결합) 모델링을 통해
+  효율적이고 해석 가능한 능동형 SHM(구조건전성 모니터링) 기술을 발전시키는 것이 목적입니다.
       </p>
 
       <div class="subtopic">
         <details>
-          <summary><span class="subtopic-title">시간역전 유도파(Lamb파)<span class="title-en">Time-reversal guided waves (Lamb waves)</span></span></summary>
+          <summary><span class="subtopic-title">Time-reversal guided waves (Lamb waves)</span></summary>
 
           <div class="subsub">
-            <div class="subsub-title">Lamb파 전파에서 시간역전 과정의 물리적 이해<span class="title-en">Physical understanding of time reversal in Lamb-wave propagation</span></div>
+            <div class="subsub-title">Physical understanding of time reversal in Lamb-wave propagation</div>
             <div class="papers">
-              <a class="paper" href="https://doi.org/10.1016/j.wavemoti.2009.04.004" target="_blank" rel="noopener">
+              <a class="paper" href="http://dx.doi.org/10.1016/j.wavemoti.2009.04.004" target="_blank" rel="noopener">
                 Understanding a time reversal process in Lamb wave propagation
                 <span class="meta"><i>Wave Motion</i>, 2009</span>
               </a>
@@ -483,13 +405,13 @@
           </div>
 
           <div class="subsub">
-            <div class="subsub-title">복합재 판의 시간역전 능동 센싱(손상 탐지)<span class="title-en">Time-reversal active sensing for composite plates (damage detection)</span></div>
+            <div class="subsub-title">Time-reversal active sensing for composite plates (damage detection)</div>
             <div class="papers">
-              <a class="paper" href="https://doi.org/10.1016/j.jsv.2006.10.044" target="_blank" rel="noopener">
+              <a class="paper" href="http://dx.doi.org/10.1016/j.jsv.2006.10.044" target="_blank" rel="noopener">
                 Time reversal active sensing for health monitoring of a composite plate
                 <span class="meta"><i>Journal of Sound and Vibration</i>, 2007</span>
               </a>
-              <a class="paper" href="https://doi.org/10.1061/(ASCE)0893-1321(2007)20:3(141)" target="_blank" rel="noopener">
+              <a class="paper" href="http://dx.doi.org/10.1061/(ASCE)0893-1321(2007)20:3(141)" target="_blank" rel="noopener">
                 Damage detection in composite plates by using an enhanced time reversal method
                 <span class="meta"><i>Journal of Aerospace Engineering</i> (ASCE), 2007</span>
               </a>
@@ -497,25 +419,26 @@
           </div>
 
           <div class="subsub">
-            <div class="subsub-title">A0 Lamb파 모드의 공간 집속(수치해석 및 성능 평가)<span class="title-en">Spatial focusing of A0 Lamb-wave mode (numerical simulation and performance evaluation)</span></div>
+            <div class="subsub-title">Spatial focusing of A0 Lamb-wave mode (numerical simulation and performance evaluation)</div>
             <div class="papers">
-              <a class="paper" href="https://doi.org/10.1016/j.jsv.2012.12.030" target="_blank" rel="noopener">
+              <a class="paper" href="http://dx.doi.org/10.1016/j.jsv.2012.12.030" target="_blank" rel="noopener">
                 Numerical simulation and investigation of the spatial focusing of time reversal A0 Lamb wave mode using circular piezoelectric transducers collocated on a rectangular plate
                 <span class="meta"><i>Journal of Sound and Vibration</i>, 2013</span>
               </a>
             </div>
           </div>
+
         </details>
       </div>
 
       <div class="subtopic">
         <details>
-          <summary><span class="subtopic-title">PZT 웨이퍼를 이용한 기준신호 없는 손상 진단(임피던스 / 전기-기계 신호)<span class="title-en">Reference-free damage diagnosis with PZT wafers (impedance / electromechanical signals)</span></span></summary>
+          <summary><span class="subtopic-title">Reference-free damage diagnosis with PZT wafers (impedance / electromechanical signals)</span></summary>
 
           <div class="subsub">
-            <div class="subsub-title">임피던스 기반의 기준신호 없는 판 균열 탐지<span class="title-en">Reference-free impedance-based crack detection in plates</span></div>
+            <div class="subsub-title">Reference-free impedance-based crack detection in plates</div>
             <div class="papers">
-              <a class="paper" href="https://doi.org/10.1016/j.jsv.2011.07.025" target="_blank" rel="noopener">
+              <a class="paper" href="http://dx.doi.org/10.1016/j.jsv.2011.07.025" target="_blank" rel="noopener">
                 Reference-free impedance-based crack detection in plates
                 <span class="meta"><i>Journal of Sound and Vibration</i>, 2011</span>
               </a>
@@ -523,22 +446,23 @@
           </div>
 
           <div class="subsub">
-            <div class="subsub-title">동일 위치 PZT 웨이퍼의 전기-기계 신호를 이용한 기준신호 없는 진단<span class="title-en">Reference-free diagnosis using electromechanical signals from collocated PZT wafers</span></div>
+            <div class="subsub-title">Reference-free diagnosis using electromechanical signals from collocated PZT wafers</div>
             <div class="papers">
-              <a class="paper" href="https://doi.org/10.1088/0964-1726/20/6/065001" target="_blank" rel="noopener">
+              <a class="paper" href="http://iopscience.iop.org/0964-1726/20/6/065001" target="_blank" rel="noopener">
                 Investigating electro-mechanical signals from collocated piezoelectric wafers for the reference-free damage diagnosis of a plate
-                <span class="meta"><i>Smart Materials and Structures</i>, 2011</span>
+                <span class="meta"><i>Smart Materials &amp; Structures</i>, 2011</span>
               </a>
             </div>
           </div>
+
         </details>
       </div>
 
       <div class="subtopic">
         <details>
-          <summary><span class="subtopic-title">효율적인 PZT&ndash;구조물 연성 모델링(광대역 해석 / 스펙트럴 요소)<span class="title-en">Efficient coupled PZT&ndash;structure modeling (broadband simulation / spectral elements)</span></span></summary>
+          <summary><span class="subtopic-title">Efficient coupled PZT–structure modeling (broadband simulation / spectral elements)</span></summary>
           <div class="papers">
-            <a class="paper" href="https://doi.org/10.1016/j.compstruc.2010.01.010" target="_blank" rel="noopener">
+            <a class="paper" href="http://dx.doi.org/10.1016/j.compstruc.2010.01.010" target="_blank" rel="noopener">
               Spectral element formulation for dynamic analysis of a coupled piezoelectric wafer and beam system
               <span class="meta"><i>Computers &amp; Structures</i>, 2010</span>
             </a>
@@ -546,43 +470,50 @@
         </details>
       </div>
 
-      <div class="subtopic">
+        <div class="subtopic">
         <details>
-          <summary><span class="subtopic-title">파동 전파 관점에서 본 PZT 변환기의 전기-기계 어드미턴스/임피던스<span class="title-en">Electromechanical admittance/impedance of PZT transducers from a wave-propagation perspective</span></span></summary>
+          <summary><span class="subtopic-title">Electromechanical admittance/impedance of PZT transducers from a wave-propagation perspective</span></summary>
 
           <div class="subsub">
-            <div class="subsub-title">보에서의 어드미턴스 형성과 해석(Timoshenko / 유한 보 효과)<span class="title-en">Admittance evolution and interpretation on beams (Timoshenko / finite-beam effects)</span></div>
+            <div class="subsub-title">Admittance evolution and interpretation on beams (Timoshenko / finite-beam effects)</div>
             <div class="papers">
+
               <a class="paper" href="https://doi.org/10.1177/1045389X16667555" target="_blank" rel="noopener">
                 Evolution of electromechanical admittance of piezoelectric transducers on a Timoshenko beam from wave propagation perspective
-                <span class="meta"><i>Journal of Intelligent Material Systems and Structures</i>, 2017</span>
+                <span class="meta"><i>Journal of Intelligent Material Systems and Structures</i>, Vol. 28, No. 9, 1221–1245, 2017</span>
               </a>
+
               <a class="paper" href="https://doi.org/10.1177/1045389X14549874" target="_blank" rel="noopener">
                 Understanding the electromechanical admittance of piezoelectric transducers collocated on a finite beam from the perspective of wave propagation
-                <span class="meta"><i>Journal of Intelligent Material Systems and Structures</i>, 2014</span>
+                <span class="meta"><i>Journal of Intelligent Material Systems and Structures</i>, Vol. 25, No. 17, 2122–2140, 2014</span>
               </a>
+
             </div>
           </div>
 
           <div class="subsub">
-            <div class="subsub-title">전기-기계 신호를 이용한 고주파 감쇠 추정<span class="title-en">High-frequency damping estimation via electromechanical signatures</span></div>
+            <div class="subsub-title">High-frequency damping estimation via electromechanical signatures</div>
             <div class="papers">
+
               <a class="paper" href="https://doi.org/10.12652/Ksce.2017.37.1.0217" target="_blank" rel="noopener">
-                Estimating high-frequency damping of a beam through electro-mechanical signatures of piezoelectric wafer mounted on the beam
-                <span class="meta"><i>Journal of the Korean Society of Civil Engineers</i>, 2017</span>
+                Estimating High-Frequency Damping of a Beam through Electro-Mechanical Signatures of Piezoelectric Wafer Mounted on the Beam
+                <span class="meta"><i>Journal of the Korean Society of Civil Engineers</i>, Vol. 37, No. 1, 217–229, 2017</span>
               </a>
+
             </div>
           </div>
+
         </details>
       </div>
 
+
       <div class="subtopic">
         <details>
-          <summary><span class="subtopic-title">시멘트계 재료로의 확장(다중 모드 PZT 센싱)<span class="title-en">Extension to cement-based materials (multi-mode PZT sensing)</span></span></summary>
+          <summary><span class="subtopic-title">Extension to cement-based materials (multi-mode PZT sensing)</span></summary>
           <div class="papers">
             <a class="paper" href="https://doi.org/10.1016/j.cemconcomp.2025.106445" target="_blank" rel="noopener">
               Multi-mode piezoelectric (PZT) sensing for in-situ profiling of the evolution of dynamic properties in cement-based materials
-              <span class="meta"><i>Cement and Concrete Composites</i>, 2026</span>
+              <span class="meta"><i>Cement and Concrete Composites</i>, 2025</span>
             </a>
           </div>
         </details>
@@ -593,144 +524,91 @@
 
 
   <!-- =======================================================
-       (5) Statistical damage diagnosis for structural health monitoring
+       (4) Inverse problems and system identification
   ======================================================== -->
   <section class="topic">
     <details>
-      <summary><span class="topic-title">구조건전성 모니터링을 위한 통계적 손상 진단<span class="title-en">Statistical damage diagnosis for structural health monitoring</span></span></summary>
+      <summary><span class="topic-title">Inverse problems and system identification</span></summary>
 
       <p class="topic-desc">
-        계측된 손상 지표는 잡음과 운용 환경 변화의 영향을 피할 수 없으므로, 이로부터 손상 발생 여부를 통계적으로 판정하는 기법을 연구합니다.
-        손상 판정은 지표 분포의 꼬리 영역에 의해 좌우되므로, 극치 통계(extreme value statistics)를 이용하여 기준 분포와 판정 임계값을 설정하며,
-        이를 위해 일반화 극치(GEV) 분포의 파라미터 추정과 흡인 영역(domain of attraction)의 점근 수렴 특성을 다룹니다.
-        또한 이러한 통계 기법을 시간역전 과정과 결합하여, 연속 이상치 분석(consecutive outlier analysis)을 통한 기준 데이터 없는(baseline-free) 손상 진단을 구현합니다.
+        잡음이 섞인 제한된 계측 데이터만으로 구조물의 숨은 상태(변위, 손상, 물성 등)를 추정하는
+  역문제(inverse analysis) 및 시스템 식별(system identification) 기법을 연구합니다.
+  특히 정규화(regularization)를 어떻게 설계하느냐가 결과 안정성을 좌우하기 때문에,
+  Tikhonov 정규화, 희소 정규화, 공간 정규화 등 다양한 방법과
+  정규화 계수(하이퍼파라미터)를 안정적으로 고르는 절차에 집중합니다.
+  또한 저주파 거동이 중요한 구조물에서 “가속도 → 변위”를 안정적으로 복원하는 등
+  실제 현장에서 바로 적용 가능한 역해석 파이프라인도 함께 다룹니다.
       </p>
 
       <div class="subtopic">
         <details>
-          <summary><span class="subtopic-title">기준 분포 설정을 위한 극치 통계<span class="title-en">Extreme value statistics for establishing baseline distributions</span></span></summary>
+          <summary><span class="subtopic-title">Displacement reconstruction from acceleration</span></summary>
           <div class="papers">
-            <a class="paper" href="https://doi.org/10.1016/j.probengmech.2005.11.009" target="_blank" rel="noopener">
-              Parameter estimation of the generalized extreme value distribution for structural health monitoring
-              <span class="meta"><i>Probabilistic Engineering Mechanics</i>, 2006</span>
-            </a>
-            <a class="paper" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001330841" target="_blank" rel="noopener">
-              Understanding the asymptotic convergence of domain of attraction in extreme value distribution for establishing baseline distribution in statistical damage assessment of a structure
-              <span class="meta"><i>Journal of the Korea Institute for Structural Maintenance and Inspection</i>, 2009</span>
-            </a>
-          </div>
-        </details>
-      </div>
-
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">시간역전과 연속 이상치 분석을 이용한 기준 데이터 없는 손상 진단<span class="title-en">Baseline-free damage diagnosis via time reversal and consecutive outlier analysis</span></span></summary>
-          <div class="papers">
-            <a class="paper" href="https://doi.org/10.1177/1045389X06066292" target="_blank" rel="noopener">
-              Combination of a time reversal process and a consecutive outlier analysis for baseline-free damage diagnosis
-              <span class="meta"><i>Journal of Intelligent Material Systems and Structures</i>, 2007</span>
-            </a>
-          </div>
-        </details>
-      </div>
-
-    </details>
-  </section>
-
-
-  <!-- =======================================================
-       (6) Inverse problems and system identification
-  ======================================================== -->
-  <section class="topic">
-    <details>
-      <summary><span class="topic-title">역문제 및 시스템 식별<span class="title-en">Inverse problems and system identification</span></span></summary>
-
-      <p class="topic-desc">
-        잡음이 포함된 제한된 계측 데이터로부터 구조물의 파라미터와 상태를 추정하기 위한, 수치적으로 안정한 역해석 및 시스템 식별 기법을 연구합니다.
-        특히 정규화 기법(Tikhonov, 1-norm, 공간 정규화)의 설계와 정규화 계수의 합리적 결정에 중점을 둡니다.
-        적용 대상은 유한 물체 내 개재물의 식별, 이동 시간창(moving time window)을 이용한 지진 시 급격한 손상의 탐지,
-        저주파 성분이 지배적인 구조물에서 계측 가속도로부터의 변위 재구성 등입니다.
-      </p>
-
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">가속도로부터의 변위 재구성<span class="title-en">Displacement reconstruction from acceleration</span></span></summary>
-          <div class="papers">
-            <a class="paper" href="https://doi.org/10.1002/nme.2769" target="_blank" rel="noopener">
+           <a class="paper" href="http://dx.doi.org/10.1002/nme.2769" target="_blank" rel="noopener">
               Design of an FIR filter for the displacement reconstruction using measured acceleration in low-frequency dominant structures
               <span class="meta"><i>International Journal for Numerical Methods in Engineering</i>, 2010</span>
             </a>
           </div>
         </details>
       </div>
-
+      
       <div class="subtopic">
         <details>
-          <summary><span class="subtopic-title">이동 시간창을 이용한 급격한 구조 손상 탐지<span class="title-en">Detection of abrupt structural damage using a moving time window</span></span></summary>
-          <div class="papers">
-            <a class="paper" href="https://doi.org/10.1016/j.compstruc.2007.11.003" target="_blank" rel="noopener">
-              Detection of abrupt structural damage induced by an earthquake using a moving time window technique
-              <span class="meta"><i>Computers &amp; Structures</i>, 2008</span>
+          <summary><span class="subtopic-title">Regularization-aware system identification</span></summary>
+
+          <div class="subsub">
+            <div class="subsub-title">1-norm regularization for discontinuous / localized system parameters</div>
+            <div class="papers">
+
+            <a class="paper" href="http://dx.doi.org/10.1002/nme.1778" target="_blank" rel="noopener">
+              1-norm based regularization scheme for system identification of structures with discontinuous system parameters
+              <span class="meta"><i>International Journal for Numerical Methods in Engineering</i>, 2007</span>
             </a>
+            </div>
           </div>
+
+          <div class="subsub">
+            <div class="subsub-title">Optimal selection of the Tikhonov regularization factor for linear elastic continua</div>
+            <div class="papers">              
+           <a class="paper" href="http://dx.doi.org/doi:10.1002/nme.219" target="_blank" rel="noopener">
+              Determination of an optimal regularization factor in system identification with Tikhonov regularization for linear elastic continua
+              <span class="meta"><i>International Journal for Numerical Methods in Engineering</i>, 2001</span>
+            </a>
+            </div>
+          </div>
+
         </details>
       </div>
 
       <div class="subtopic">
         <details>
-          <summary><span class="subtopic-title">정규화 기반 시스템 식별<span class="title-en">Regularization-aware system identification</span></span></summary>
+          <summary><span class="subtopic-title">Inverse identification of inclusions (geometry and material properties)</span></summary>
 
           <div class="subsub">
-            <div class="subsub-title">불연속 / 국부적 시스템 파라미터를 위한 1-norm 정규화<span class="title-en">1-norm regularization for discontinuous / localized system parameters</span></div>
+            <div class="subsub-title">Boundary parameterization for simultaneous identification of inclusion shape and material properties</div>
             <div class="papers">
-              <a class="paper" href="https://doi.org/10.1002/nme.1778" target="_blank" rel="noopener">
-                1-norm based regularization scheme for system identification of structures with discontinuous system parameters
-                <span class="meta"><i>International Journal for Numerical Methods in Engineering</i>, 2007</span>
-              </a>
+           <a class="paper" href="http://dx.doi.org/10.1016/S0045-7825(99)00165-6" target="_blank" rel="noopener">
+                  Identification of geometric shapes and material properties of inclusions in two-dimensional finite bodies by boundary parameterization
+              <span class="meta"><i>Computer Methods in Applied Mechanics and Engineering</i>, 2000</span>
+            </a>
             </div>
           </div>
 
           <div class="subsub">
-            <div class="subsub-title">선형 탄성 연속체에 대한 최적 Tikhonov 정규화 계수 결정<span class="title-en">Optimal selection of the Tikhonov regularization factor for linear elastic continua</span></div>
+            <div class="subsub-title">Spatial regularization for stable identification of inclusion geometry</div>
             <div class="papers">
-              <a class="paper" href="https://doi.org/10.1002/nme.219" target="_blank" rel="noopener">
-                Determination of an optimal regularization factor in system identification with Tikhonov regularization for linear elastic continua
-                <span class="meta"><i>International Journal for Numerical Methods in Engineering</i>, 2001</span>
-              </a>
-            </div>
-          </div>
-        </details>
-      </div>
-
-      <div class="subtopic">
-        <details>
-          <summary><span class="subtopic-title">개재물의 역식별(형상 및 재료 물성)<span class="title-en">Inverse identification of inclusions (geometry and material properties)</span></span></summary>
-
-          <div class="subsub">
-            <div class="subsub-title">경계 매개변수화를 이용한 개재물 형상과 재료 물성의 동시 식별<span class="title-en">Boundary parameterization for simultaneous identification of inclusion shape and material properties</span></div>
-            <div class="papers">
-              <a class="paper" href="https://doi.org/10.1016/S0045-7825(99)00165-6" target="_blank" rel="noopener">
-                Identification of geometric shapes and material properties of inclusions in two-dimensional finite bodies by boundary parameterization
-                <span class="meta"><i>Computer Methods in Applied Mechanics and Engineering</i>, 2000</span>
-              </a>
+            <a class="paper" href="https://doi.org/10.1002/(SICI)1097-0207(19991110)46:7<973::AID-NME730>3.0.CO;2-Q" target="_blank" rel="noopener">
+                  A new spatial regularization scheme for the identification of the geometric shape of an inclusion in a finite body
+              <span class="meta"><i>International Journal for Numerical Methods in Engineering</i>, 1999</span>
+            </a>
             </div>
           </div>
 
-          <div class="subsub">
-            <div class="subsub-title">개재물 형상의 안정적 식별을 위한 공간 정규화<span class="title-en">Spatial regularization for stable identification of inclusion geometry</span></div>
-            <div class="papers">
-              <a class="paper" href="https://doi.org/10.1002/(SICI)1097-0207(19991110)46:7%3C973::AID-NME730%3E3.0.CO;2-Q" target="_blank" rel="noopener">
-                A new spatial regularization scheme for the identification of the geometric shape of an inclusion in a finite body
-                <span class="meta"><i>International Journal for Numerical Methods in Engineering</i>, 1999</span>
-              </a>
-            </div>
-          </div>
         </details>
       </div>
 
     </details>
   </section>
-
 
 </div>
 
