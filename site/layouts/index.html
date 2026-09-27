@@ -18,7 +18,7 @@
 </section>
 
 {{ $pubs := .Site.Data.publications }}{{ $th := .Site.Data.theses }}
-<section class="stats wrap">
+<section class="facts wrap">
   <div><strong>{{ len $pubs.journals }}</strong><span>{{ i18n "statJournals" }}</span></div>
   <div><strong>{{ len $th.phd }}</strong><span>{{ i18n "statPhD" }}</span></div>
   <div><strong>{{ len .Site.Data.members.alumni }}</strong><span>{{ i18n "statAlumni" }}</span></div>
@@ -26,10 +26,9 @@
 
 <section class="wrap section">
   <h2>{{ i18n "researchTopics" }}</h2>
-  <div class="card-grid">
+  <div class="topic-grid">
   {{ range $i, $t := .Site.Data.research.topics }}
-    <a class="card topic-card" href="{{ "research/" | relLangURL }}#topic-{{ add $i 1 }}">
-      <span class="topic-icon">{{ partial "icon.html" $t.icon }}</span>
+    <a class="topic-card" href="{{ "research/" | relLangURL }}#topic-{{ add $i 1 }}">
       <h3>{{ if eq $lang "ko" }}{{ $t.ko }}{{ else }}{{ $t.en }}{{ end }}</h3>
       <p>{{ if eq $lang "ko" }}{{ $t.short_ko }}{{ else }}{{ $t.short_en }}{{ end }}</p>
     </a>

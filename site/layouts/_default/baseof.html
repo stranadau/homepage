@@ -6,6 +6,8 @@
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ i18n "labName" }}{{ end }}</title>
 <meta name="description" content="{{ i18n "intro" }}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
 {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
@@ -15,8 +17,7 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="{{ "" | relLangURL }}">
-      <span class="brand-mark">S</span>
-      <span class="brand-text"><strong>{{ i18n "labName" }}</strong><small>Dong-A University</small></span>
+      <span class="brand-text"><strong>{{ i18n "labName" }}</strong><small>STRANA · Dong-A University</small></span>
     </a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="menu">
     <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
