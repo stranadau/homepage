@@ -21,5 +21,7 @@ Prof. Hyun Woo Park, Structural Analysis Lab., Dong-A University. Communicate wi
 ## Conventions
 - Entry format: `Authors, "Title," <i>Journal</i>, Vol., pages/article, year.` with `https://doi.org/` links.
 - Author name order: "Nur Indah Mukharromah".
+- Contact e-mail: hwpark@dau.ac.kr (written "hwpark at dau.ac.kr" in resume text).
+- Resume: `resume.htm` (EN, CP949 bytes) and `resume_kor.htm` (KR, UTF-8); members pages link to them.
 - `publications*.htm` and `main.htm` use CRLF line endings; `main.htm` contains CP949 bytes — edit it byte-preserving (e.g. latin-1 round trip).
 - When renaming a year-suffixed page, update every menu that links to it.
