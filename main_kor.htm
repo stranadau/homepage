@@ -5,19 +5,6 @@
 <link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
 <link rel="stylesheet" media="print" type="text/css" href="./style.css" />
 <title>Main</title>
-<style>
-.hero { width:700px; max-width:100%; margin:10px 0 30px 0; }
-.hero-tabs { margin:0 0 8px 0; }
-.hero-tabs button { font:12px/1.4 Verdana, AppleGothic, Sans-serif; letter-spacing:.5px; color:#51617c; background:#f1f5f9;
-  border:1px solid #cbd5e1; border-radius:14px; padding:4px 14px; margin:0 6px 0 0; cursor:pointer; }
-.hero-tabs button.on { color:#fff; background:#4f46e5; border-color:#4f46e5; }
-.hero-frame { position:relative; width:100%; padding-top:57.143%; }
-.hero-frame a { position:absolute; left:0; top:0; width:100%; height:100%; opacity:0; visibility:hidden; transition:opacity .8s ease, visibility .8s; }
-.hero-frame a.on { opacity:1; visibility:visible; }
-.hero-frame img { width:100%; height:100%; display:block; }
-.hero-note { font:11px/1.5 Verdana, AppleGothic, Sans-serif; color:#8a94a6; margin-top:4px; }
-@media (prefers-reduced-motion: reduce) { .hero-frame a { transition:none; } }
-</style>
 </head>
 
 <body>
@@ -27,41 +14,8 @@
 <h3><img src="images/donga_icon.gif""> 동아대학교 건설시스템공학과 구조해석연구실에 오신 것을 환영합니다~!</h3>
 
 
-<div class="hero" id="hero">
-  <div class="hero-tabs" role="tablist">
-    <button type="button" role="tab" class="on" aria-selected="true">현재 연구</button><button type="button" role="tab" aria-selected="false">연구 이력</button>
-  </div>
-  <div class="hero-frame">
-    <a class="on" href="images/main_2026_current.png" target="_blank"><img src="images/main_2026_current.png" alt="Current research: PZT-instrumented notched beam, LEFM notch model, vibration and wave methods, two-stage inversion for mode I and II stress intensity factors"></a>
-    <a href="images/main_2026_timeline.png" target="_blank"><img src="images/main_2026_timeline.png" alt="Research timeline: inverse problems (1999-), time reversal and PZT guided waves (2007-), closed-form models of cracked beams (2017-), physics-informed ML and PSC calibration (2022-), next: PZT-based fracture parameters and concrete"></a>
-  </div>
-  <div class="hero-note">이미지를 클릭하면 크게 볼 수 있습니다.</div>
-</div>
-<script type="text/javascript">
-(function () {
-  var hero = document.getElementById('hero'); if (!hero) return;
-  var tabs = hero.getElementsByTagName('button');
-  var slides = hero.getElementsByTagName('a');
-  var cur = 0, timer = null, paused = false;
-  function show(i) {
-    cur = i;
-    for (var k = 0; k < slides.length; k++) {
-      slides[k].className = (k === i) ? 'on' : '';
-      tabs[k].className = (k === i) ? 'on' : '';
-      tabs[k].setAttribute('aria-selected', k === i ? 'true' : 'false');
-    }
-  }
-  function stop() { if (timer) { clearInterval(timer); timer = null; } }
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!reduce) timer = setInterval(function () { if (!paused) show((cur + 1) % slides.length); }, 10000);
-  for (var k = 0; k < tabs.length; k++) {
-    tabs[k].onclick = (function (i) { return function () { stop(); show(i); }; })(k);
-  }
-  hero.onmouseover = function () { paused = true; };
-  hero.onmouseout = function () { paused = false; };
-})();
-</script>
-
+<a href="images/main_2026_timeline.png" target="_blank"><img src="images/main_2026_timeline.png" style="margin:10px 0 4px 0; width:700px; max-width:100%;" alt="연구 이력: 역문제 및 정규화(1999-), 시간역전 및 PZT 유도파(2007-), 균열 보의 닫힌 형태 모델(2017-), 물리 정보 기반 머신러닝 및 PSC 보정(2022-), 향후: PZT 기반 파괴역학 파라미터 및 콘크리트"></a>
+<div style="font:11px/1.5 Verdana, AppleGothic, Sans-serif; color:#8a94a6; margin:0 0 30px 0;">이미지를 클릭하면 크게 볼 수 있습니다.</div>
 
 </div>
 
