@@ -473,12 +473,12 @@ conferences:
   venue: Proceedings of KSCE 2021 Conference
   details: '2021'
   year: 2021
-- authors: Kim, Hyunyoung, Ko, Dohyeon, Park, Hyunwoo
+- authors: Hyun Young Kim, Do Hyeon Ko and Hyun Woo Park
   title: Reconstructing the camber shape of prefab PSC girder using strain measurements
   venue: Proceedings of KSCE 2021 Conference
   details: '2021'
   year: 2021
-- authors: Kim, Hyunyoung, Ko, Dohyeon, Park, Hyunwoo
+- authors: Hyun Young Kim, Do Hyeon Ko and Hyun Woo Park
   title: Development of structural module for predicting core performance of prefab PSC girders considering time-dependent behavior
   venue: Proceedings of KIBIM 2021 Conference
   details: '2021'
@@ -547,6 +547,11 @@ conferences:
   title: Error factor analysis of cable tension estimation for cable-stayed bridge using multiple natural frequencies
   venue: Proceedings of KSCE 2018 Convention
   details: 351-352, 2018
+  year: 2018
+- authors: Taejeong Lim and Hyun Woo Park
+  title: Frequency equation of a cracked Timoshenko beam considering axial-bending coupling
+  venue: Proceedings of KIBSE 2018 Technology Conference
+  details: Best Paper Award (poster session), 2018
   year: 2018
 - authors: Taejeong Lim and Hyun Woo Park
   title: Natural frequencies of a cracked beam with axial force considering axial-bending coupling
