@@ -9,13 +9,9 @@
   {{ range slice "journals" "conferences" }}{{ $sec := . }}
     <h2 id="{{ $sec }}">{{ i18n $sec }}</h2>
     {{ $list := index $p $sec }}
-    {{ $years := slice }}{{ range $list }}{{ $years = $years | append .year }}{{ end }}
-    {{ range sort (uniq $years) "value" "desc" }}{{ $y := . }}
-      <h3 class="year">{{ $y }}</h3>
-      <ol class="pubs">{{ range $list }}{{ if eq .year $y }}
-        <li class="pub"><span class="pub-title">{{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .title }}{{ with .url }}</a>{{ end }}</span><span class="pub-auth">{{ .authors }}</span><span class="pub-venue"><i>{{ .venue }}</i>{{ with .details }}, {{ . }}{{ end }}</span></li>
-      {{ end }}{{ end }}</ol>
-    {{ end }}
+    <ol class="pubs">{{ range $i, $e := $list }}{{ with $e }}
+      <li class="pub" value="{{ add $i 1 }}"><span class="pub-title">{{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .title }}{{ with .url }}</a>{{ end }}</span><span class="pub-auth">{{ .authors }}</span><span class="pub-venue"><i>{{ .venue }}</i>{{ with .details }}, {{ . }}{{ end }}</span></li>
+    {{ end }}{{ end }}</ol>
   {{ end }}
   <h2 id="theses">{{ i18n "theses" }}</h2>
   {{ range slice "phd" "ms" }}{{ $k := . }}
