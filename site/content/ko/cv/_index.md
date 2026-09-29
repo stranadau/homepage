@@ -49,14 +49,14 @@ title: "박현우 교수 이력"
 - **2016.12.26** 박현우, “부착형 압전소자의 어드미턴스 신호를 이용한 단순보 공진 예측 기법,” 대한민국 특허 제10-1691458호 (출원 10-2015-0129482, 2015.9.14), 권리자: 동아대학교 산학협력단
 
 ## 교외봉사
-**국제학술대회**
-- **2026.9** IABSE Congress Incheon 2026 학술위원회(Scientific Committee) 위원 (2026.9.16 – 9.18, 인천)
-- **2025.7** ICSV31 (31st International Congress on Sound and Vibration) 현지조직위원회(Local Organizing Committee) 위원 (2025.7.6 – 7.11, 인천)
-
 **국내학술대회**
 - **2025** 2025 부울경 토목컨벤션 조직위원장 (대한토목학회 부산·울산·경남지회)
 - **2023 – 2024** 부울경 토목컨벤션 조직위원회 학술분과위원장
 - **2021 – 2026** 한국소음진동공학회 학술대회 조직위원회 위원
+
+**국제학술대회**
+- **2026.9** IABSE Congress Incheon 2026 학술위원회(Scientific Committee) 위원 (2026.9.16 – 9.18, 인천)
+- **2025.7** ICSV31 (31st International Congress on Sound and Vibration) 현지조직위원회(Local Organizing Committee) 위원 (2025.7.6 – 7.11, 인천)
 
 **학회활동 — 대한토목학회 부산·울산·경남지회**
 - **2025** 연구소장
