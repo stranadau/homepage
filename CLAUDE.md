@@ -3,7 +3,9 @@
 Prof. Hyun Woo Park, Structural Analysis Lab., Dong-A University. Communicate with the owner in Korean.
 
 ## Publishing
-- The live site is served directly from `main`. Develop on a branch, get the owner's review, then fast-forward `main`.
+- Live site: https://stranadau.github.io/homepage/ — the Hugo site in `site/`, built and deployed by `.github/workflows/pages.yml` on every push to `main` (Pages source: "GitHub Actions").
+- Develop on a branch, get the owner's review, then fast-forward `main`.
+- Rollback: set Settings -> Pages -> Source back to "Deploy from a branch" (`main`, root) to serve the legacy HTML directly.
 
 ## Sources of truth when updating
 - Publication lists: `publications.htm` (EN) and `publications_kor.htm` (KR) must stay identical in content.
@@ -14,8 +16,8 @@ Prof. Hyun Woo Park, Structural Analysis Lab., Dong-A University. Communicate wi
 
 ## New site (Hugo, `site/`)
 - Source in `site/` (custom theme, no external modules; Hugo 0.123.7). Data-driven: `site/data/*.yaml`, one YAML file per news item in `site/data/news/`.
-- `.github/workflows/pages.yml` builds and deploys on push to `main` (Pages source must be "GitHub Actions"). The old site is bundled under `/legacy/`.
-- Keep the legacy pages and the Hugo data in sync until the legacy site is retired.
+- The old site is bundled under `/legacy/` by `site/build.sh`. Keep updating the legacy pages together with the Hugo data (owner's decision): every content change goes to both.
+- `site/static/*.htm` are redirect stubs so old root URLs keep working: current pages point to the matching new page, archives to `legacy/<same file>`. Add a stub when a new root-level legacy page is created.
 
 ## Page map (legacy site)
 - Frames: `index.htm` / `index_kor.htm` -> menus `top.htm` / `top_kor.htm` + content frame.
