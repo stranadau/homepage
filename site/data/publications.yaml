@@ -743,15 +743,15 @@ conferences:
   venue: ''
   details: SPIE 6932 (28), pp. 1-11, March, 2008
   year: 2008
-- authors: Yun Hwa Hong, Hyun Woo Park and Hae Sung Lee
-  title: A Regularization scheme for displacement reconstruction using acceleration data measured from structures
-  venue: Proceedings of 2007 KSMI Spring Conference
-  details: Seoul, May. 11, 2007.5
-  year: 2007
 - authors: Jongheon Kim, Hyun Woo Park, Yun Hwa Hong, Hae Sung Lee
   title: Moving vehicle identification using measured bridge acceleration
   venue: Proceedings of 2007 KSCE Conference
   details: Taegu EXCO, Taegu, Oct. 10-12, pp.3019-3022, 2007.10. (Poster)
+  year: 2007
+- authors: Yun Hwa Hong, Hyun Woo Park and Hae Sung Lee
+  title: A Regularization scheme for displacement reconstruction using acceleration data measured from structures
+  venue: Proceedings of 2007 KSMI Spring Conference
+  details: Seoul, May. 11, 2007.5
   year: 2007
 - authors: Yun Hwa Hong, Hyun Woo Park, Sung Uk Lee and Hae Sung Lee
   title: A Regularization scheme for displacement reconstruction using acceleration data measured from structures
