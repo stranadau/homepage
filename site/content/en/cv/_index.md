@@ -33,8 +33,9 @@ Tel +82-51-200-7630 · Fax +82-51-201-1419 · E-mail hwpark@dau.ac.kr
 - **Nov. 2025** ICSV31 Best Paper Award, Korean Society for Noise and Vibration Engineering — “Wave scattering coefficients at the crack in an infinite elastic beam considering axial-bending coupling” (Nur Indah Mukharromah, Taejeong Lim and Hyun Woo Park)
 - **Dec. 2018** Commendation from the Minister of the Interior and Safety, for contributions to national safety policy through the 2018 evaluation of disaster and safety programs
 
-## Patent
+## Patents
 - **May 2018** Hyun Woo Park, “Method for estimating the damping ratio of a beam using electromechanical signals of surface-bonded piezoelectric transducers,” Korean Patent No. 10-1864665 (filed Mar. 30, 2017)
+- **Dec. 2016** Hyun Woo Park, “Method for predicting the resonance of a simply supported beam using admittance signals of surface-bonded piezoelectric transducers,” Korean Patent No. 10-1691458 (filed Sept. 14, 2015)
 
 ## Professional Service
 **Editorial**
