@@ -2,10 +2,6 @@
 {{ partial "pagehead.html" . }}
 <section class="wrap prose">{{ .Content }}</section>
 <section class="wrap section">
-  <h2>{{ if eq $lang "ko" }}졸업생은 이런 곳에서 일합니다{{ else }}Where our alumni work{{ end }}</h2>
-  <div class="card-grid">{{ range .Site.Data.members.alumni }}<div class="card small-card"><b>{{ partial "l.html" (dict "v" .name "lang" $lang) }}</b><span class="small">{{ partial "l.html" (dict "v" .degree "lang" $lang) }}</span><p>{{ partial "l.html" (dict "v" .now "lang" $lang) }}</p></div>{{ end }}</div>
-</section>
-<section class="wrap section">
   <h2>{{ if eq $lang "ko" }}연구실 학생들의 최근 성과{{ else }}Recent achievements of our students{{ end }}</h2>
   {{ $all := partial "newsitems.html" (dict "limit" 0) }}
   <h3>{{ if eq $lang "ko" }}학생 공동 수상{{ else }}Awards with students{{ end }}</h3>

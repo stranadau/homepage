@@ -17,13 +17,6 @@
   </div>
 </section>
 
-{{ $pubs := .Site.Data.publications }}{{ $th := .Site.Data.theses }}
-<section class="facts wrap">
-  <div><strong>{{ len $pubs.journals }}</strong><span>{{ i18n "statJournals" }}</span></div>
-  <div><strong>{{ len $th.phd }}</strong><span>{{ i18n "statPhD" }}</span></div>
-  <div><strong>{{ len .Site.Data.members.alumni }}</strong><span>{{ i18n "statAlumni" }}</span></div>
-</section>
-
 <section class="wrap section">
   <h2>{{ i18n "researchTopics" }}</h2>
   <div class="topic-grid">
