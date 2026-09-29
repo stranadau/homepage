@@ -27,3 +27,20 @@ Tel +82-51-200-7630 · Fax +82-51-201-1419 · E-mail hwpark@dau.ac.kr
 - **Nov. 2004 – Apr. 2005** Visiting Scholar, Carnegie Mellon University (Host: Prof. Hoon Sohn)
 - **Aug. 2003 – Aug. 2004** Postdoctoral Scholar, Stanford University (KOSEF postdoctoral program; Supervisor: Prof. Kincho H. Law)
 - **Mar. 2002 – Apr. 2003** Postdoctoral Researcher, Korea Atomic Energy Research Institute
+
+## Awards and Honors
+- **Mar. 2026** Commendation from the Minister of Land, Infrastructure and Transport (29th Civil Engineering Day), for contributions to the advancement of construction technology
+- **Nov. 2025** ICSV31 Best Paper Award, Korean Society for Noise and Vibration Engineering — “Wave scattering coefficients at the crack in an infinite elastic beam considering axial-bending coupling” (Nur Indah Mukharromah, Taejeong Lim and Hyun Woo Park)
+- **Dec. 2018** Commendation from the Minister of the Interior and Safety, for contributions to national safety policy through the 2018 evaluation of disaster and safety programs
+
+## Patent
+- **May 2018** Hyun Woo Park, “Method for estimating the damping ratio of a beam using electromechanical signals of surface-bonded piezoelectric transducers,” Korean Patent No. 10-1864665 (filed Mar. 30, 2017)
+
+## Professional Service
+**Editorial**
+- **Jun. 2024 – Mar. 2026** Associate Editor, KSCE Journal of Civil Engineering
+
+**National advisory committees**
+- **Mar. 2023 – Feb. 2025** Member, Central Construction Technology Deliberation Committee (13th and 14th design review subcommittees), Ministry of Land, Infrastructure and Transport
+- **Oct. 2021 – Dec. 2024** Member, Policy Advisory Committee (safety policy, disaster management and natural disaster subcommittees), Ministry of the Interior and Safety
+- **Dec. 2019 – Nov. 2021** Member, 4th Technical Advisory Committee (civil structures), Ministry of Oceans and Fisheries
