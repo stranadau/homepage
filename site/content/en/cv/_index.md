@@ -40,6 +40,10 @@ Tel +82-51-200-7630 · Fax +82-51-201-1419 · E-mail hwpark@dau.ac.kr
 **Editorial**
 - **Jun. 2024 – Mar. 2026** Associate Editor, KSCE Journal of Civil Engineering
 
+**International conferences**
+- **Sept. 2026** Member, Scientific Committee, IABSE Congress Incheon 2026 (Sept. 16 – 18, 2026, Incheon, Korea)
+- **July 2025** Member, Local Organizing Committee, 31st International Congress on Sound and Vibration (ICSV31) (July 6 – 11, 2025, Incheon, Korea)
+
 **National advisory committees**
 - **Mar. 2023 – Feb. 2025** Member, Central Construction Technology Deliberation Committee (13th and 14th design review subcommittees), Ministry of Land, Infrastructure and Transport
 - **Oct. 2021 – Dec. 2024** Member, Policy Advisory Committee (safety policy, disaster management and natural disaster subcommittees), Ministry of the Interior and Safety
