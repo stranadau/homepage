@@ -3,6 +3,7 @@
 
 Each paper is a PDF and/or a short card (.yaml) with the same file name.
 The card is flat "key: value" lines, so no YAML library is needed.
+A card line "pdf: no" hides the PDF link.
 A PDF without a card is still listed, using its file name
 (YYYY[-MM[-DD]]_Venue_Title.pdf) for year, venue and title.
 """
@@ -11,7 +12,7 @@ import json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, '..', '..', 'conference_papers')
 OUT = os.path.join(HERE, '..', 'data', 'conference_uploads.json')
-KEYS = ('authors', 'title', 'venue', 'details', 'year', 'date', 'url')
+KEYS = ('authors', 'title', 'venue', 'details', 'year', 'date', 'url', 'pdf')
 
 
 def read_card(path):
@@ -67,7 +68,9 @@ def main():
         e['year'] = int(e['year'])
         e.setdefault('details', str(e['year']))
         e.setdefault('date', '%d-00-00' % e['year'])
-        if 'pdf' in it:
+        # "pdf: no" in the card keeps an uploaded file (e.g. evidence) unlinked
+        show_pdf = str(e.pop('pdf', 'yes')).lower() not in ('no', 'false', '0', '아니오')
+        if 'pdf' in it and show_pdf:
             e['pdf'] = it['pdf']
         out.append(e)
     out.sort(key=lambda e: e['date'], reverse=True)
