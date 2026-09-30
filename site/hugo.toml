@@ -85,3 +85,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
   [[module.mounts]]
     source = "../theses"
     target = "static/theses"
+  [[module.mounts]]
+    source = "../conference_papers"
+    target = "static/conference_papers"
+    includeFiles = "*.pdf"

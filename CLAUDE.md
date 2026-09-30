@@ -17,6 +17,7 @@ Prof. Hyun Woo Park, Structural Analysis Lab., Dong-A University. Communicate wi
 ## New site (Hugo, `site/`)
 - Source in `site/` (custom theme, no external modules; Hugo 0.123.7). Data-driven: `site/data/*.yaml`, one YAML file per news item in `site/data/news/`.
 - The old site is bundled under `/legacy/` by `site/build.sh`. Keep updating the legacy pages together with the Hugo data (owner's decision): every content change goes to both.
+- `conference_papers/`: owner uploads conference PDFs + flat `key: value` cards (same file name) via the GitHub web UI; `site/tools/conference_uploads.py` (run by `site/build.sh`) turns them into `site/data/conference_uploads.json`, merged on top of `publications.yaml` conferences by year. These are not copied into the legacy `publications*.htm`; when asked to sync, move an uploaded entry into `publications.yaml` and the legacy lists, and delete its card (keep the PDF and add `pdf:` if needed).
 - `site/static/*.htm` are redirect stubs so old root URLs keep working: current pages point to the matching new page, archives to `legacy/<same file>`. Add a stub when a new root-level legacy page is created.
 
 ## Page map (legacy site)

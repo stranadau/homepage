@@ -1,16 +1,16 @@
-{{ define "main" }}{{ $lang := .Site.Language.Lang }}{{ $p := .Site.Data.publications }}{{ $th := .Site.Data.theses }}
+{{ define "main" }}{{ $lang := .Site.Language.Lang }}{{ $p := .Site.Data.publications }}{{ $up := .Site.Data.conference_uploads | default slice }}{{ $confs := sort ($up | append $p.conferences) "year" "desc" }}{{ $th := .Site.Data.theses }}
 {{ partial "pagehead.html" . }}
 <section class="wrap">
   <div class="pub-tools">
     <input type="search" id="pub-search" placeholder="{{ i18n "search" }}">
     <a class="btn btn-small" href="{{ site.Params.scholar }}" target="_blank" rel="noopener">{{ i18n "scholar" }}</a>
   </div>
-  <nav class="toc"><a href="#journals">{{ i18n "journals" }} ({{ len $p.journals }})</a><a href="#conferences">{{ i18n "conferences" }} ({{ len $p.conferences }})</a><a href="#theses">{{ i18n "theses" }}</a><a href="#reports">{{ i18n "reports" }}</a></nav>
+  <nav class="toc"><a href="#journals">{{ i18n "journals" }} ({{ len $p.journals }})</a><a href="#conferences">{{ i18n "conferences" }} ({{ len $confs }})</a><a href="#theses">{{ i18n "theses" }}</a><a href="#reports">{{ i18n "reports" }}</a></nav>
   {{ range slice "journals" "conferences" }}{{ $sec := . }}
     <h2 id="{{ $sec }}">{{ i18n $sec }}</h2>
-    {{ $list := index $p $sec }}
+    {{ $list := cond (eq $sec "conferences") $confs (index $p $sec) }}
     <ol class="pubs">{{ range $i, $e := $list }}{{ with $e }}
-      <li class="pub" value="{{ add $i 1 }}"><span class="pub-title">{{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .title }}{{ with .url }}</a>{{ end }}</span><span class="pub-auth">{{ .authors }}</span><span class="pub-venue"><i>{{ .venue }}</i>{{ with .details }}, {{ . }}{{ end }}</span></li>
+      <li class="pub" value="{{ add $i 1 }}"><span class="pub-title">{{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .title }}{{ with .url }}</a>{{ end }}</span><span class="pub-auth">{{ .authors }}</span><span class="pub-venue"><i>{{ .venue }}</i>{{ with .details }}, {{ . }}{{ end }}{{ with .pdf }} <a class="pdf" href="{{ printf "conference_papers/%s" . | relURL }}" target="_blank" rel="noopener">PDF</a>{{ end }}</span></li>
     {{ end }}{{ end }}</ol>
   {{ end }}
   <h2 id="theses">{{ i18n "theses" }}</h2>

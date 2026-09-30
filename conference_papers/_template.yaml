@@ -1,0 +1,12 @@
+# 학술대회 논문 정보 카드 (예시)
+# 이 파일을 복사해 PDF와 같은 이름으로 저장하세요.
+#   예) 2026-05-28_KSNVE_multi-crack.pdf  ->  2026-05-28_KSNVE_multi-crack.yaml
+# '#' 뒤는 설명이므로 지우지 않아도 됩니다.
+
+authors: Jin Ho Hwang and Hyun Woo Park
+title: Multiple-crack diagnosis of beams using broadband modal frequencies and physics-informed machine learning
+venue: Proceedings of the KSNVE Spring Conference 2026
+year: 2026
+date: 2026-05-28            # 발표일 (선택) - 같은 해 안에서 순서를 정합니다
+details: 2026               # 쪽수, 장소 등 (선택) - 비우면 연도만 표시
+url:                        # DOI 등 링크 (선택)
