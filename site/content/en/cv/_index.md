@@ -39,7 +39,7 @@ Tel +82-51-200-7630 · Fax +82-51-201-1419 · E-mail hwpark@dau.ac.kr
 
 ## Professional Service
 **Editorial**
-- **Jun. 2024 – Mar. 2026** Associate Editor, KSCE Journal of Civil Engineering
+- **Jun. 2024 – Present** Associate Editor, KSCE Journal of Civil Engineering
 
 **International conferences**
 - **Sept. 2026** Member, Scientific Committee, IABSE Congress Incheon 2026 (Sept. 16 – 18, 2026, Incheon, Korea)
