@@ -63,7 +63,7 @@ title: "박현우 교수 이력"
 - **2023 – 2024** 학술교육 분과위원장
 
 **학회활동 — 대한토목학회**
-- **2024.6 – 2026.3** KSCE Journal of Civil Engineering Associate Editor
+- **2024.6 – 현재** KSCE Journal of Civil Engineering Associate Editor
 - **2012** 대한토목학회지 편집위원
 
 **학회활동 — 한국소음진동공학회**
