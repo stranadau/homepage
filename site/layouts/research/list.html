@@ -5,6 +5,7 @@
   {{ range $i, $t := .Site.Data.research.topics }}
   <article class="topic" id="topic-{{ add $i 1 }}">
     <div class="topic-head"><div><h2>{{ if eq $lang "ko" }}{{ $t.ko | safeHTML }}{{ else }}{{ $t.en | safeHTML }}{{ end }}</h2>{{ if eq $lang "ko" }}<p class="sub-en">{{ $t.en | safeHTML }}</p>{{ end }}</div></div>
+    {{ with (cond (eq $lang "ko") $t.lead_ko $t.lead_en) }}<p class="topic-lead">{{ . | safeHTML }}</p>{{ end }}
     <p>{{ if eq $lang "ko" }}{{ $t.desc_ko | safeHTML }}{{ else }}{{ $t.desc_en | safeHTML }}{{ end }}</p>
     {{ range $t.subs }}
       <details class="sub"><summary>{{ if eq $lang "ko" }}{{ .ko | safeHTML }}{{ else }}{{ .en | safeHTML }}{{ end }}</summary>

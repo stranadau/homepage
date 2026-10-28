@@ -1,6 +1,8 @@
 topics:
 - en: Modal and wave behaviors of a Timoshenko beam with an edge crack
   ko: 모서리 균열을 갖는 Timoshenko 보의 모드 및 파동 거동
+  lead_ko: '보에 생긴 균열이 파동과 진동을 어떻게 바꾸는지 수식으로 밝혀, 균열을 찾아내는 이론적 근거를 만듭니다.'
+  lead_en: 'We determine how an edge crack alters the waves and vibrations of a beam, providing the theoretical basis for detecting and sizing cracks.'
   desc_en: We develop analytical and semi-analytical formulations for the modal and wave behaviors of beam-like waveguides with an edge crack, for which <i>shear deformation</i> and <i>rotary inertia</i> require a Timoshenko-type description. The crack is represented by a local compliance derived from linear elastic fracture mechanics (LEFM). At the wave level, closed-form scattering coefficients are derived under axial&ndash;bending&ndash;shear coupling for both propagating and evanescent incident waves, and their consistency is verified through the power-flux balance. At the modal level, wave-based descriptions yield explicit frequency equations that clarify when and why the sensitivity of modal frequencies to a crack increases, providing a basis for both forward prediction and inverse crack identification.
   desc_ko: 전단 변형(<i>shear deformation</i>)과 회전 관성(<i>rotary inertia</i>)으로 인해 Timoshenko 보 모델이 요구되는 보형 도파관을 대상으로, 모서리 균열에 의한 모드 거동과 파동 거동의 변화를 해석적&middot;준해석적 정식화로 규명합니다. 균열은 선형탄성파괴역학(LEFM)에 기반한 국부 유연도로 모델링합니다. 파동 관점에서는 축방향&ndash;휨&ndash;전단 연성 조건에서 전파파와 소산파(evanescent wave) 입사 모두에 대한 산란계수를 닫힌 형태로 유도하고, 파워 플럭스 평형(power-flux balance)을 통해 그 정합성을 검증합니다. 모드 관점에서는 파동 기반 기술로부터 명시적인 진동수 방정식을 유도하여 균열에 대한 고유진동수의 민감도가 언제, 왜 커지는지를 규명하고, 이를 순방향 예측과 균열 역식별의 기반으로 활용합니다.
   subs:
@@ -57,6 +59,8 @@ topics:
   icon: wave
 - en: Physics-informed machine learning for engineering structures
   ko: 공학 구조물을 위한 물리 정보 기반 머신러닝
+  lead_ko: '역학 법칙을 머신러닝에 직접 넣어, 적은 계측 데이터로도 믿을 수 있는 예측을 하는 방법을 연구합니다.'
+  lead_en: 'We embed the governing mechanics into machine learning so that reliable predictions can be made from sparse measurements.'
   desc_en: We develop physics-informed learning frameworks for structural problems in which the governing equations are known but prediction and parameter estimation become ill-posed under sparse or noisy measurements. Mechanical constraints and evolution laws are embedded in the learning process to obtain data-efficient and physically consistent models for response prediction and state/parameter inference. Current applications include the time-dependent behavior of prestressed concrete members and the assessment of multiple incipient cracks from broadband modal frequencies measured with piezoelectric wafers.
   desc_ko: 지배방정식은 알려져 있으나 계측 데이터가 희소하거나 잡음을 포함하여 응답 예측과 파라미터 추정이 불량조건(ill-posed)이 되는 구조 문제를 대상으로, 물리 정보 기반(physics-informed) 학습 기법을 개발합니다. 역학적 제약 조건과 시간 발전 법칙을 학습 과정에 반영하여, 적은 데이터로도 물리적으로 일관된 응답 예측과 상태&middot;파라미터 추정이 가능한 모델을 구축합니다. 현재 프리스트레스트 콘크리트 부재의 시간의존적 거동 예측과, 압전 웨이퍼로 계측한 광대역 고유진동수를 이용한 다중 미세 균열 평가에 적용하고 있습니다.
   subs:
@@ -83,6 +87,8 @@ topics:
   icon: brain
 - en: 'Prestressed concrete (PSC) structures: time-dependent behavior and measurement-driven calibration'
   ko: '프리스트레스트 콘크리트(PSC) 구조물: 시간의존적 거동 및 계측 기반 보정'
+  lead_ko: '시공 현장의 계측 데이터로 PSC 부재의 실제 긴장력과 솟음을 추정해, 설계 가정과 실제 거동의 차이를 줄입니다.'
+  lead_en: 'We use field measurements to estimate the actual prestressing force and camber of PSC members, narrowing the gap between design assumptions and as-built behavior.'
   desc_en: 'We develop models and estimation procedures for the initial and long-term states of prestressed concrete members, whose effective prestress and camber are governed by construction conditions and by time-dependent creep, shrinkage, and relaxation. Mechanics-based formulations of time-dependent prestress loss are combined with field measurements: tendon elongation is used to estimate the tendon force and friction coefficients that define the initial state of post-tensioned members, and strain measurements are used to reconstruct camber, which is difficult to measure directly.'
   desc_ko: 프리스트레스트 콘크리트 부재의 유효 프리스트레스와 솟음(camber)은 시공 조건과 크리프&middot;건조수축&middot;릴랙세이션에 따른 시간의존적 거동에 의해 결정됩니다. 본 연구에서는 시간의존적 프리스트레스 손실에 대한 역학 기반 정식화와 현장 계측 데이터를 결합하여 부재의 초기 상태와 장기 거동을 추정합니다. 긴장재 신장량으로부터 긴장력과 마찰계수를 추정하여 포스트텐션 부재의 초기 상태를 합리적으로 결정하고, 변형률 계측으로부터 직접 계측하기 어려운 솟음을 재구성합니다.
   subs:
@@ -112,6 +118,8 @@ topics:
   icon: bridge
 - en: Guided wave propagation using surface-bonded piezoelectric wafers
   ko: 표면 부착형 압전 웨이퍼를 이용한 유도파 전파
+  lead_ko: '구조물 표면에 붙인 얇은 압전 센서로 초음파를 보내고 받아, 눈에 보이지 않는 손상을 찾아냅니다.'
+  lead_en: 'We transmit and receive ultrasonic guided waves with thin piezoelectric sensors bonded to a structure to detect hidden damage.'
   desc_en: We investigate the excitation, propagation, and scattering of guided waves generated and sensed by surface-bonded piezoelectric (PZT) wafers for active structural health monitoring. The work includes time-reversal processes of Lamb waves, reference-free damage diagnosis based on electromechanical signals, efficient spectral element modeling of coupled PZT&ndash;structure systems, and wave-based interpretation of electromechanical admittance. The same sensing principle has recently been extended to in-situ monitoring of the evolution of dynamic properties in cement-based materials.
   desc_ko: 표면 부착형 압전(PZT) 웨이퍼로 가진&middot;계측하는 유도파(guided wave)의 발생, 전파, 산란을 연구하여 능동형 구조건전성 모니터링(SHM)에 활용합니다. 주요 내용은 Lamb파의 시간역전(time reversal) 과정, 전기-기계 신호에 기반한 기준신호 없는(reference-free) 손상 진단, PZT&ndash;구조물 연성계의 효율적인 스펙트럴 요소 모델링, 전기-기계 어드미턴스의 파동 기반 해석입니다. 최근에는 동일한 계측 원리를 시멘트계 재료의 동적 물성 변화를 현장에서 추적하는 데까지 확장하고 있습니다.
   subs:
@@ -200,6 +208,8 @@ topics:
   icon: sensor
 - en: Statistical damage diagnosis for structural health monitoring
   ko: 구조건전성 모니터링을 위한 통계적 손상 진단
+  lead_ko: '계측 잡음과 환경 변화 속에서도 &ldquo;손상이 생겼다&rdquo;고 판정할 수 있는 통계적 기준을 세웁니다.'
+  lead_en: 'We establish statistical criteria that can reliably declare damage despite measurement noise and changing operating conditions.'
   desc_en: We develop statistical frameworks for deciding whether damage has occurred from measured damage features that are inevitably affected by noise and operational variability. Because such decisions are governed by the tail of the feature distribution, extreme value statistics are used to establish baseline distributions and decision thresholds, including parameter estimation of the generalized extreme value (GEV) distribution and the asymptotic convergence of its domain of attraction. These statistical tools are combined with time-reversal processes to enable baseline-free damage diagnosis through consecutive outlier analysis.
   desc_ko: 계측된 손상 지표는 잡음과 운용 환경 변화의 영향을 피할 수 없으므로, 이로부터 손상 발생 여부를 통계적으로 판정하는 기법을 연구합니다. 손상 판정은 지표 분포의 꼬리 영역에 의해 좌우되므로, 극치 통계(extreme value statistics)를 이용하여 기준 분포와 판정 임계값을 설정하며, 이를 위해 일반화 극치(GEV) 분포의 파라미터 추정과 흡인 영역(domain of attraction)의 점근 수렴 특성을 다룹니다. 또한 이러한 통계 기법을 시간역전 과정과 결합하여, 연속 이상치 분석(consecutive outlier analysis)을 통한 기준 데이터 없는(baseline-free) 손상 진단을 구현합니다.
   subs:
@@ -226,6 +236,8 @@ topics:
   icon: chart
 - en: Inverse problems and system identification
   ko: 역문제 및 시스템 식별
+  lead_ko: '잡음이 섞인 불완전한 계측 데이터로부터 구조물의 물성과 상태를 안정적으로 역추정하는 방법을 연구합니다.'
+  lead_en: 'We develop numerically stable methods to back-calculate structural properties and states from incomplete, noisy measurements.'
   desc_en: We develop numerically stable inverse-analysis and system-identification methods to infer structural parameters and states from limited, noise-contaminated measurements. Emphasis is placed on regularization design (Tikhonov, 1-norm, and spatial regularization) and on the rational selection of regularization parameters. Applications include the identification of inclusions in finite bodies, the detection of abrupt damage induced by an earthquake using a moving time window, and the reconstruction of displacement from measured acceleration in low-frequency dominant structures.
   desc_ko: 잡음이 포함된 제한된 계측 데이터로부터 구조물의 파라미터와 상태를 추정하기 위한, 수치적으로 안정한 역해석 및 시스템 식별 기법을 연구합니다. 특히 정규화 기법(Tikhonov, 1-norm, 공간 정규화)의 설계와 정규화 계수의 합리적 결정에 중점을 둡니다. 적용 대상은 유한 물체 내 개재물의 식별, 이동 시간창(moving time window)을 이용한 지진 시 급격한 손상의 탐지, 저주파 성분이 지배적인 구조물에서 계측 가속도로부터의 변위 재구성 등입니다.
   subs:
